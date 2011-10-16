@@ -1,0 +1,17 @@
+ This is a note what this repository is all about.
+
+It contains various attempts usable as unuseable code of Autorealm.
+see sourceforge for details on autorealm.
+
+Why did I do this?
+Because the Project is on hold, after the delphi code is not maintained, and an attemt to port the Programm failed twice.
+Since there seem again some interest to continue development (by myself and others) i decided to give a clean aproach first.
+
+So this repositary will contain its versions in different branches.
+delphi will contain the delphi Code (working)
+cpp contains the wxWidgets port, not finalized.
+wxpython contains a aproach with python and wxWidgets. I am unaware what development status is of this.
+
+Have Fun!
+
+Peter
