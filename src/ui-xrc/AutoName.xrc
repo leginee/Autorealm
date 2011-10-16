@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<resource>
+  <object class="wxFrame" name="dlgNameGen" subclass="AutoNameDlg">
+    <title>AutoName</title>
+    <centered>1</centered>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxBitmapButton">
+              <bitmap>dice.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBitmapButton">
+              <bitmap>list.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBitmapButton">
+              <bitmap>twoflaps.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBitmapButton">
+              <bitmap>paste.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxChoice">
+              <content/>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxCheckListBox">
+          <content/>
+        </object>
+        <flag>wxEXPAND|wxGROW</flag>
+      </object>
+    </object>
+  </object>
+</resource>

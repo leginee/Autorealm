@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<resource>
+  <object class="wxDialog" name="dlgAbout">
+    <title>About AutoREALM</title>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxStaticBitmap">
+          <bitmap>about.png</bitmap>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText" name="lblVerNum">
+          <label>Version 2.0</label>
+        </object>
+        <flag>wxALIGN_CENTRE</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxTextCtrl">
+          <value>Andy Gryc:  Original Design &amp; Implementation, Project Maintainer
+John W. Hicks III:  QA, Creative Consultation
+Vincent Callies:    Localization, French Translation
+Antoine Dinimant:   French Translation
+Sean Mathews:   JPEG enhancements
+Chad Burnett, LaChimere, Denis Conruyt: Additional symbols
+Michael Pedersen: Port to wxWidgets/C++
+---------------------------------------------------------------------------------------------------
+Web:       http://gryc.ws/autorealm.htm         Email:      support@gryc.ws
+---------------------------------------------------------------------------------------------------
+Feature suggestions and bug reports by: Denis Conruyt, Keith Davies, Richard Di Ioia, Joe Slaton, Scott 
+Stanek, Chris Tutty, A. White, and many others...
+Code additions by: Rick Crew, Tom Deprez, John Dullea, Jakim Friant
+---------------------------------------------------------------------------------------------------
+Copyright ? 2000, 2001, 2002, Andrew J. Gryc.  AutoREALM is distributed under the terms of the GNU General Public License (GPL). 
+</value>
+          <size>100,135</size>
+          <style>wxTE_MULTILINE|wxTE_READONLY</style>
+        </object>
+        <option>1</option>
+        <flag>wxEXPAND|wxGROW</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxButton" name="wxID_OK">
+          <label>&amp;OK</label>
+          <default>1</default>
+          <focused>1</focused>
+        </object>
+        <flag>wxALIGN_CENTRE|wxALIGN_CENTRE_HORIZONTAL</flag>
+      </object>
+    </object>
+    <centered>1</centered>
+    <style>wxDEFAULT_DIALOG_STYLE|wxDIALOG_MODAL</style>
+  </object>
+</resource>

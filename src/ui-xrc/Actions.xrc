@@ -1,0 +1,2311 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<resource>
+  <object class="wxDialog" name="dlgAddSymbolGroup">
+    <title>Add Symbol Group</title>
+    <object class="wxFlexGridSizer">
+      <cols>2</cols>
+      <rows>2</rows>
+      <vgap>5</vgap>
+      <hgap>5</hgap>
+      <growablecols>0</growablecols>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          
+          <label>Please enter a name for the new symbol group:</label>
+        </object>
+        
+        <flag>wxEXPAND|wxGROW</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxButton" name="wxOK">
+          
+          <label>&amp;Ok</label>
+          
+          <default>1</default>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxTextCtrl" name="edtGrpName"/>
+        
+        <flag>wxEXPAND|wxGROW</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxButton" name="wxCANCEL">
+          
+          <label>&amp;Cancel</label>
+        </object>
+      </object>
+    </object>
+    <centered>1</centered>
+  </object>
+  <object class="wxDialog" name="dlgCreateArray" subclass="ArrayDlg">
+    <title>Create Array</title>
+    <centered>1</centered>
+    <object class="wxFlexGridSizer">
+      <cols>2</cols>
+      <rows>4</rows>
+      <object class="sizeritem">
+        <object class="wxPanel">
+          <object class="wxStaticBoxSizer">
+            <label>Horizontal</label>
+            <orient>wxVERTICAL</orient>
+            <object class="sizeritem">
+              <object class="wxFlexGridSizer">
+                <cols>3</cols>
+                <rows>2</rows>
+                <object class="sizeritem">
+                  <object class="wxStaticText">
+                    
+                    <label>Count</label>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxSpinCtrl"/>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxRadioBox">
+                    
+                    <label></label>
+                    
+                    <content>
+                      <item>Between</item>
+                      <item>Every</item>
+                    </content>
+                    
+                    <style>wxNO_BORDER</style>
+                  </object>
+                  
+                  <flag>wxTOP</flag>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxStaticText">
+                    
+                    <label>Spacing</label>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxTextCtrl"/>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxChoice">
+                    
+                    <content/>
+                  </object>
+                  
+                  <flag>wxEXPAND|wxGROW</flag>
+                </object>
+              </object>
+              
+              <flag>wxEXPAND|wxGROW</flag>
+            </object>
+          </object>
+        </object>
+        
+        <option>5</option>
+        
+        <flag>wxEXPAND|wxGROW</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxButton" name="wxOK">
+          
+          <label>&amp;Ok</label>
+          
+          <default>1</default>
+        </object>
+        
+        <flag>wxALIGN_CENTRE</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxPanel">
+          <object class="wxStaticBoxSizer">
+            <label>Vertical</label>
+            <orient>wxVERTICAL</orient>
+            <object class="sizeritem">
+              <object class="wxFlexGridSizer">
+                <cols>3</cols>
+                <rows>2</rows>
+                <object class="sizeritem">
+                  <object class="wxStaticText">
+                    
+                    <label>Count</label>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxSpinCtrl"/>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxRadioBox">
+                    
+                    <label></label>
+                    
+                    <content>
+                      <item>Between</item>
+                      <item>Every</item>
+                    </content>
+                    
+                    <style>wxNO_BORDER</style>
+                  </object>
+                  
+                  <flag>wxTOP</flag>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxStaticText">
+                    
+                    <label>Spacing</label>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxTextCtrl"/>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxChoice">
+                    
+                    <content/>
+                  </object>
+                  
+                  <flag>wxEXPAND|wxGROW</flag>
+                </object>
+              </object>
+              
+              <flag>wxEXPAND|wxGROW</flag>
+            </object>
+          </object>
+        </object>
+        
+        <flag>wxEXPAND|wxGROW</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxButton" name="wxCANCEL">
+          
+          <label>&amp;Cancel</label>
+        </object>
+        
+        <flag>wxALIGN_CENTRE</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxCheckBox">
+          
+          <label>Wrap grid around an ellipse</label>
+        </object>
+      </object>
+      <object class="spacer">
+        
+        <size>0,0</size>
+      </object>
+      <object class="sizeritem">
+        <object class="wxPanel">
+          <object class="wxStaticBoxSizer">
+            <label>Ellipse</label>
+            <orient>wxVERTICAL</orient>
+            <object class="sizeritem">
+              <object class="wxCheckBox">
+                
+                <label>Rotate symbols around the ellipse</label>
+              </object>
+            </object>
+            <object class="sizeritem">
+              <object class="wxFlexGridSizer">
+                <cols>3</cols>
+                <rows>2</rows>
+                <object class="sizeritem">
+                  <object class="wxStaticText">
+                    
+                    <label>Inner horizzontal radius</label>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxTextCtrl"/>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxChoice">
+                    
+                    <content/>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxStaticText">
+                    
+                    <label>Inner Vertical Radius</label>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxTextCtrl"/>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxChoice">
+                    
+                    <content/>
+                  </object>
+                </object>
+              </object>
+              
+              <flag>wxEXPAND|wxGROW</flag>
+            </object>
+          </object>
+        </object>
+        
+        <flag>wxEXPAND|wxGROW</flag>
+      </object>
+      <object class="spacer">
+        
+        <size>0,0</size>
+      </object>
+      <hgap>8</hgap>
+    </object>
+  </object>
+  <object class="wxDialog" name="dlgDeleteView" subclass="DeleteViewDlg">
+    <title>Delete View</title>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxListBox">
+          
+          <content/>
+        </object>
+        
+        <flag>wxEXPAND|wxGROW</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxButton" name="wxOK">
+              
+              <label>&amp;Ok</label>
+              
+              <default>1</default>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxButton" name="wxCANCEL">
+              
+              <label>&amp;Cancel</label>
+            </object>
+          </object>
+        </object>
+        
+        <flag>wxALIGN_CENTRE|wxALIGN_CENTRE_VERTICAL|wxALIGN_CENTRE_HORIZONTAL</flag>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="dlgSaveView" subclass="SaveViewDlg">
+    <title>Save View</title>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          
+          <label>Name of view?</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxChoice">
+          
+          <content/>
+        </object>
+        
+        <flag>wxEXPAND|wxGROW</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxButton" name="wxOK">
+              
+              <label>&amp;Ok</label>
+              
+              <default>1</default>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxButton" name="wxCANCEL">
+              
+              <label>&amp;Cancel</label>
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="dlgFlip" subclass="FlipDlg">
+    <title>Flip Selection</title>
+    <object class="wxGridSizer">
+      <cols>2</cols>
+      <rows>2</rows>
+      <object class="sizeritem">
+        <object class="wxCheckBox">
+          
+          <label>Horizontal</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxButton" name="wxID_OK">
+          
+          <label>&amp;Ok</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxCheckBox">
+          
+          <label>Vertical</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxButton" name="wxID_CANCEL">
+          
+          <label>&amp;Cancel</label>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="dlgSymbolLibrary">
+    <title>Symbol Library</title>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxTreeCtrl"/>
+            
+            <option>1</option>
+            
+            <flag>wxEXPAND|wxGROW</flag>
+            
+            <minsize>160,100</minsize>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <object class="wxBoxSizer">
+                  <orient>wxVERTICAL</orient>
+                  <object class="sizeritem">
+                    <object class="wxFlexGridSizer">
+                      <cols>2</cols>
+                      <rows>2</rows>
+                      <object class="sizeritem">
+                        <object class="wxStaticText">
+                          
+                          <label>Name</label>
+                        </object>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxTextCtrl"/>
+                        
+                        <flag>wxEXPAND</flag>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxStaticText">
+                          
+                          <label>Group</label>
+                        </object>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxComboBox">
+                          
+                          <content/>
+                        </object>
+                        
+                        <flag>wxEXPAND</flag>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxStaticText">
+                          
+                          <label>Comments</label>
+                        </object>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxTextCtrl">
+                          
+                          <style>wxTE_MULTILINE</style>
+                        </object>
+                        
+                        <option>1</option>
+                        
+                        <flag>wxEXPAND|wxGROW</flag>
+                        
+                        <minsize>100,100</minsize>
+                      </object>
+                      <object class="spacer">
+                        
+                        <size>0,0</size>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxCheckBox">
+                          
+                          <label>Sort symbol first in list</label>
+                        </object>
+                      </object>
+                    </object>
+                    
+                    <flag>wxEXPAND|wxGROW</flag>
+                  </object>
+                  <object class="sizeritem">
+                    <object class="wxBoxSizer">
+                      <orient>wxHORIZONTAL</orient>
+                      <object class="sizeritem">
+                        <object class="wxButton">
+                          
+                          <label>Edit Properties</label>
+                        </object>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxButton">
+                          
+                          <label>Edit Drawing</label>
+                        </object>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxButton">
+                          
+                          <label>Delete</label>
+                        </object>
+                      </object>
+                    </object>
+                  </object>
+                </object>
+                
+                <flag>wxEXPAND|wxGROW</flag>
+              </object>
+              <object class="sizeritem">
+                <object class="wxStaticBitmap">
+                  
+                  <bitmap></bitmap>
+                </object>
+                
+                <flag>wxEXPAND|wxGROW</flag>
+                
+                <minsize>160,160</minsize>
+              </object>
+            </object>
+            
+            <flag>wxEXPAND|wxGROW</flag>
+          </object>
+        </object>
+        
+        <flag>wxEXPAND|wxGROW</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxButton">
+              
+              <label>Insert</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxButton">
+              
+              <label>Define</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxButton">
+              
+              <label>Close</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxButton">
+              
+              <label>Add Group</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxButton">
+              
+              <label>Del Group</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxButton">
+              
+              <label>Reload All</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxButton">
+              
+              <label>Save All</label>
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="dlgSkew" subclass="SkewDlg">
+    <title>Skew Selection</title>
+    <object class="wxFlexGridSizer">
+      <cols>3</cols>
+      <rows>3</rows>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          
+          <label>Horizontal</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxSpinCtrl">
+          
+          <value>100</value>
+          
+          <min>1</min>
+          
+          <max>100</max>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          
+          <label>%</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          
+          <label>Vertical</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxSpinCtrl">
+          
+          <value>100</value>
+          
+          <min>1</min>
+          
+          <max>100</max>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          
+          <label>%</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxButton" name="wxID_OK">
+          
+          <label>Ok</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxButton" name="wxID_CANCEL">
+          
+          <label>Cancel</label>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="dlgScale" subclass="ScaleDlg">
+    <title>Scale Selection</title>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxRadioButton">
+              
+              <label>Uniform Scaling</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxSpinCtrl">
+              
+              <value>100</value>
+              
+              <min>1</min>
+              
+              <max>100</max>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              
+              <label>%</label>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxFlexGridSizer">
+          <cols>4</cols>
+          <rows>2</rows>
+          <object class="sizeritem">
+            <object class="wxRadioButton">
+              
+              <label>Assymmetric Scaling</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              
+              <label>Horizontal</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxSpinCtrl">
+              
+              <value>100</value>
+              
+              <min>1</min>
+              
+              <max>100</max>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              
+              <label>%</label>
+            </object>
+          </object>
+          <object class="spacer">
+            
+            <size>0,0</size>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              
+              <label>Vertical Scaling</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxSpinCtrl">
+              
+              <value>100</value>
+              
+              <min>1</min>
+              
+              <max>100</max>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              
+              <label>%</label>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxButton">
+              
+              <label>Ok</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxButton">
+              
+              <label>Cancel</label>
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="dlgReplacementOverlay" subclass="ReplacementOverlayDlg">
+    <title>Replacement Overlay</title>
+    <object class="wxFlexGridSizer">
+      <cols>2</cols>
+      <rows>2</rows>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          
+          <label>Select a new overlay for all objects\nwithin the deleted overlay</label>
+          
+          <style></style>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxButton">
+          
+          <label>Ok</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxListBox">
+          
+          <content/>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxButton">
+          
+          <label>Cancel</label>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="dlgPolygonSides" subclass="PolygonSidesDlg">
+    <title>Polygon Sides</title>
+    <object class="wxFlexGridSizer">
+      <cols>2</cols>
+      <rows>2</rows>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          
+          <label>Enter number of sides</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxButton">
+          
+          <label>Ok</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxSpinCtrl">
+          
+          <value>5</value>
+          
+          <min>3</min>
+          
+          <max>100</max>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxButton">
+          
+          <label>Cancel</label>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="dlgNewSymbol" subclass="DefineNewSymbolDlg">
+    <title>Define New Symbol</title>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxFlexGridSizer">
+          <cols>2</cols>
+          <rows>2</rows>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              
+              <label>Name</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            
+            <flag>wxEXPAND</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              
+              <label>Group</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxComboBox">
+              
+              <content/>
+            </object>
+            
+            <flag>wxEXPAND</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              
+              <label>Comments</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl">
+              
+              <style>wxTE_MULTILINE</style>
+            </object>
+            
+            <flag>wxEXPAND|wxGROW</flag>
+            
+            <minsize>100,100</minsize>
+          </object>
+          <object class="spacer">
+            
+            <size>0,0</size>
+          </object>
+          <object class="sizeritem">
+            <object class="wxCheckBox">
+              
+              <label>Show symbol in favorites</label>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxButton">
+              
+              <label>Ok</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxButton">
+              
+              <label>Cancel</label>
+            </object>
+          </object>
+        </object>
+        
+        <flag>wxALIGN_CENTRE</flag>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="dlgMoveSelection">
+    <title>Move Selection</title>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxFlexGridSizer">
+          <cols>3</cols>
+          <rows>42</rows>
+          <object class="sizeritem">
+            <object class="wxRadioButton">
+              
+              <label>Cartesian</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              
+              <label>X=</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+          </object>
+          <object class="spacer">
+            
+            <size>0,0</size>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              
+              <label>Y=</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+          </object>
+          <object class="sizeritem">
+            <object class="wxRadioButton">
+              
+              <label>Polar</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              
+              <label>Angle=</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+          </object>
+          <object class="spacer">
+            
+            <size>0,0</size>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              
+              <label>Distance=</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              
+              <label>Units</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxComboBox">
+              
+              <content/>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxButton">
+              
+              <label>Ok</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxButton">
+              
+              <label>Cancel</label>
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="dlgHyperlinkProps" subclass="HyperlinkPropDlg">
+    <title>Hyperlink/Popup Properties</title>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxRadioButton">
+              
+              <label>Hyperlink</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxRadioButton">
+              
+              <label>Popup</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxCheckBox">
+              
+              <label>Hidden</label>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxTextCtrl">
+          
+          <style>wxTE_MULTILINE</style>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxFrame" name="dlgMakeFrom3D">
+    <title>Rooftops and Columns</title>
+    <object class="wxBoxSizer">
+      <orient>wxHORIZONTAL</orient>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <object class="wxStaticBoxSizer">
+              <label>Symmetry</label>
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <object class="wxFlexGridSizer">
+                  <cols>2</cols>
+                  <rows>3</rows>
+                  <object class="sizeritem">
+                    <object class="wxRadioButton">
+                      
+                      <label>Cone</label>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <object class="wxStaticText">
+                      
+                      <label>Sides/Spars:</label>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <object class="wxRadioButton">
+                      
+                      <label>Cylindrical</label>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <object class="wxSpinCtrl">
+                      
+                      <value>3</value>
+                      
+                      <min>3</min>
+                      
+                      <max>16</max>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <object class="wxRadioButton">
+                      
+                      <label>Spherical</label>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <object class="wxCheckBox">
+                      
+                      <label>Polygonal</label>
+                    </object>
+                  </object>
+                </object>
+              </object>
+            </object>
+            
+            <flag>wxEXPAND</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBoxSizer">
+              <label>Shape</label>
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <object class="wxBoxSizer">
+                  <orient>wxHORIZONTAL</orient>
+                  <object class="sizeritem">
+                    <object class="wxStaticText">
+                      
+                      <label>Elasticity (0-100):</label>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <object class="wxSpinCtrl">
+                      
+                      <value>0</value>
+                      
+                      <min>0</min>
+                      
+                      <max>100</max>
+                    </object>
+                  </object>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <object class="wxSlider">
+                  
+                  <value></value>
+                  
+                  <min></min>
+                  
+                  <max></max>
+                  
+                  <selmin>0</selmin>
+                  
+                  <selmax>100</selmax>
+                </object>
+                
+                <flag>wxEXPAND</flag>
+              </object>
+              <object class="sizeritem">
+                <object class="wxBoxSizer">
+                  <orient>wxHORIZONTAL</orient>
+                  <object class="sizeritem">
+                    <object class="wxCheckBox">
+                      
+                      <label>Top</label>
+                      
+                      <checked>1</checked>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <object class="wxCheckBox">
+                      
+                      <label>Sides</label>
+                      
+                      <checked>1</checked>
+                    </object>
+                  </object>
+                </object>
+                
+                <flag>wxALIGN_CENTRE</flag>
+              </object>
+              <object class="sizeritem">
+                <object class="wxStaticLine"/>
+                
+                <flag>wxEXPAND</flag>
+              </object>
+              <object class="sizeritem">
+                <object class="wxBoxSizer">
+                  <orient>wxHORIZONTAL</orient>
+                  <object class="sizeritem">
+                    <object class="wxStaticText">
+                      
+                      <label>Height (0-1000):</label>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <object class="wxSpinCtrl">
+                      
+                      <value>0</value>
+                      
+                      <min>0</min>
+                      
+                      <max>1000</max>
+                    </object>
+                  </object>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <object class="wxSlider">
+                  
+                  <value></value>
+                  
+                  <min></min>
+                  
+                  <max></max>
+                  
+                  <selmin>0</selmin>
+                  
+                  <selmax>1000</selmax>
+                </object>
+                
+                <flag>wxEXPAND</flag>
+              </object>
+              <object class="sizeritem">
+                <object class="wxStaticLine"/>
+                
+                <flag>wxGROW</flag>
+              </object>
+              <object class="sizeritem">
+                <object class="wxBoxSizer">
+                  <orient>wxHORIZONTAL</orient>
+                  <object class="sizeritem">
+                    <object class="wxStaticText">
+                      
+                      <label>Top Radius(0-100):</label>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <object class="wxSpinCtrl">
+                      
+                      <value>0</value>
+                      
+                      <min>0</min>
+                      
+                      <max>100</max>
+                    </object>
+                  </object>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <object class="wxSlider">
+                  
+                  <value></value>
+                  
+                  <min></min>
+                  
+                  <max></max>
+                  
+                  <selmin>0</selmin>
+                  
+                  <selmax>100</selmax>
+                </object>
+                
+                <flag>wxEXPAND</flag>
+              </object>
+              <object class="sizeritem">
+                <object class="wxStaticLine"/>
+                
+                <flag>wxEXPAND</flag>
+              </object>
+              <object class="sizeritem">
+                <object class="wxBoxSizer">
+                  <orient>wxHORIZONTAL</orient>
+                  <object class="sizeritem">
+                    <object class="wxStaticText">
+                      
+                      <label>Bottom Radius(0-100):</label>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <object class="wxSpinCtrl">
+                      
+                      <value>100</value>
+                      
+                      <min>0</min>
+                      
+                      <max>100</max>
+                    </object>
+                  </object>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <object class="wxSlider">
+                  
+                  <value>100</value>
+                  
+                  <min></min>
+                  
+                  <max></max>
+                  
+                  <selmin>0</selmin>
+                  
+                  <selmax>100</selmax>
+                </object>
+                
+                <flag>wxEXPAND</flag>
+              </object>
+            </object>
+            
+            <flag>wxEXPAND</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBoxSizer">
+              <label>View</label>
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <object class="wxFlexGridSizer">
+                  <cols>3</cols>
+                  <rows>3</rows>
+                  <object class="sizeritem">
+                    <object class="wxStaticText">
+                      
+                      <label>X Rot.</label>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <object class="wxSpinCtrl">
+                      
+                      <value>0</value>
+                      
+                      <min>0</min>
+                      
+                      <max>360</max>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <object class="wxSlider">
+                      
+                      <value>0</value>
+                      
+                      <min>0</min>
+                      
+                      <max>360</max>
+                    </object>
+                    
+                    <flag>wxEXPAND</flag>
+                  </object>
+                  <object class="sizeritem">
+                    <object class="wxStaticText">
+                      
+                      <label>Y Rot.</label>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <object class="wxSpinCtrl">
+                      
+                      <value>0</value>
+                      
+                      <min>0</min>
+                      
+                      <max>360</max>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <object class="wxSlider">
+                      
+                      <value>0</value>
+                      
+                      <min>0</min>
+                      
+                      <max>360</max>
+                    </object>
+                    
+                    <flag>wxEXPAND</flag>
+                  </object>
+                  <object class="sizeritem">
+                    <object class="wxStaticText">
+                      
+                      <label>Z Rot.</label>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <object class="wxSpinCtrl">
+                      
+                      <value>0</value>
+                      
+                      <min>0</min>
+                      
+                      <max>360</max>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <object class="wxSlider">
+                      
+                      <value>0</value>
+                      
+                      <min>0</min>
+                      
+                      <max>360</max>
+                    </object>
+                    
+                    <flag>wxEXPAND</flag>
+                  </object>
+                  <growablecols>2</growablecols>
+                </object>
+                
+                <flag>wxEXPAND</flag>
+              </object>
+            </object>
+            
+            <flag>wxEXPAND</flag>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap">
+              
+              <bitmap></bitmap>
+            </object>
+            
+            <flag>wxEXPAND|wxGROW</flag>
+            
+            <minsize>200,200</minsize>
+          </object>
+          <object class="sizeritem">
+            <object class="wxNotebook">
+              <object class="notebookpage">
+                <label>Model color</label>
+                <object class="wxPanel">
+                  <object class="wxBoxSizer">
+                    <orient>wxHORIZONTAL</orient>
+                    <object class="sizeritem">
+                      <object class="wxFlexGridSizer">
+                        <cols>3</cols>
+                        <rows>6</rows>
+                        <object class="sizeritem">
+                          <object class="wxStaticText">
+                            
+                            <label>Red</label>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSpinCtrl">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSlider">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                          
+                          <flag>wxEXPAND</flag>
+                          
+                          <minsize>100,12</minsize>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxStaticText">
+                            
+                            <label>Green</label>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSpinCtrl">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSlider">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                          
+                          <flag>wxEXPAND</flag>
+                          
+                          <minsize>100,12</minsize>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxStaticText">
+                            
+                            <label>Blue</label>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSpinCtrl">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSlider">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                          
+                          <flag>wxEXPAND</flag>
+                          
+                          <minsize>100,12</minsize>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxStaticText">
+                            
+                            <label>Hue</label>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSpinCtrl">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSlider">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                          
+                          <flag>wxEXPAND</flag>
+                          
+                          <minsize>100,12</minsize>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxStaticText">
+                            
+                            <label>Saturation</label>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSpinCtrl">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSlider">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                          
+                          <flag>wxEXPAND</flag>
+                          
+                          <minsize>100,12</minsize>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxStaticText">
+                            
+                            <label>Luminance</label>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSpinCtrl">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSlider">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                          
+                          <flag>wxEXPAND</flag>
+                          
+                          <minsize>100,12</minsize>
+                        </object>
+                      </object>
+                      
+                      <flag>wxEXPAND</flag>
+                    </object>
+                    <object class="sizeritem">
+                      <object class="wxPanel"/>
+                      
+                      <flag>wxEXPAND|wxGROW</flag>
+                      
+                      <minsize>20,20</minsize>
+                    </object>
+                  </object>
+                </object>
+              </object>
+              <object class="notebookpage">
+                <label>Light Color</label>
+                <object class="wxPanel">
+                  <object class="wxBoxSizer">
+                    <orient>wxHORIZONTAL</orient>
+                    <object class="sizeritem">
+                      <object class="wxFlexGridSizer">
+                        <cols>3</cols>
+                        <rows>6</rows>
+                        <object class="sizeritem">
+                          <object class="wxStaticText">
+                            
+                            <label>Red</label>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSpinCtrl">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSlider">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                          
+                          <flag>wxEXPAND</flag>
+                          
+                          <minsize>100,12</minsize>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxStaticText">
+                            
+                            <label>Green</label>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSpinCtrl">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSlider">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                          
+                          <flag>wxEXPAND</flag>
+                          
+                          <minsize>100,12</minsize>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxStaticText">
+                            
+                            <label>Blue</label>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSpinCtrl">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSlider">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                          
+                          <flag>wxEXPAND</flag>
+                          
+                          <minsize>100,12</minsize>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxStaticText">
+                            
+                            <label>Hue</label>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSpinCtrl">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSlider">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                          
+                          <flag>wxEXPAND</flag>
+                          
+                          <minsize>100,12</minsize>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxStaticText">
+                            
+                            <label>Saturation</label>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSpinCtrl">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSlider">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                          
+                          <flag>wxEXPAND</flag>
+                          
+                          <minsize>100,12</minsize>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxStaticText">
+                            
+                            <label>Luminance</label>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSpinCtrl">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSlider">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                          
+                          <flag>wxEXPAND</flag>
+                          
+                          <minsize>100,12</minsize>
+                        </object>
+                      </object>
+                      
+                      <flag>wxEXPAND</flag>
+                    </object>
+                    <object class="sizeritem">
+                      <object class="wxPanel"/>
+                      
+                      <flag>wxEXPAND|wxGROW</flag>
+                      
+                      <minsize>20,20</minsize>
+                    </object>
+                  </object>
+                </object>
+              </object>
+              <object class="notebookpage">
+                <label>Ambient Color</label>
+                <object class="wxPanel">
+                  <object class="wxBoxSizer">
+                    <orient>wxHORIZONTAL</orient>
+                    <object class="sizeritem">
+                      <object class="wxFlexGridSizer">
+                        <cols>3</cols>
+                        <rows>6</rows>
+                        <object class="sizeritem">
+                          <object class="wxStaticText">
+                            
+                            <label>Red</label>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSpinCtrl">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSlider">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                          
+                          <flag>wxEXPAND</flag>
+                          
+                          <minsize>100,12</minsize>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxStaticText">
+                            
+                            <label>Green</label>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSpinCtrl">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSlider">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                          
+                          <flag>wxEXPAND</flag>
+                          
+                          <minsize>100,12</minsize>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxStaticText">
+                            
+                            <label>Blue</label>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSpinCtrl">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSlider">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                          
+                          <flag>wxEXPAND</flag>
+                          
+                          <minsize>100,12</minsize>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxStaticText">
+                            
+                            <label>Hue</label>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSpinCtrl">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSlider">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                          
+                          <flag>wxEXPAND</flag>
+                          
+                          <minsize>100,12</minsize>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxStaticText">
+                            
+                            <label>Saturation</label>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSpinCtrl">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSlider">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                          
+                          <flag>wxEXPAND</flag>
+                          
+                          <minsize>100,12</minsize>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxStaticText">
+                            
+                            <label>Luminance</label>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSpinCtrl">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSlider">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                          
+                          <flag>wxEXPAND</flag>
+                          
+                          <minsize>100,12</minsize>
+                        </object>
+                      </object>
+                      
+                      <flag>wxEXPAND</flag>
+                    </object>
+                    <object class="sizeritem">
+                      <object class="wxPanel"/>
+                      
+                      <flag>wxEXPAND|wxGROW</flag>
+                      
+                      <minsize>20,20</minsize>
+                    </object>
+                  </object>
+                </object>
+              </object>
+              <object class="notebookpage">
+                <label>Outline Color</label>
+                <object class="wxPanel">
+                  <object class="wxBoxSizer">
+                    <orient>wxHORIZONTAL</orient>
+                    <object class="sizeritem">
+                      <object class="wxFlexGridSizer">
+                        <cols>3</cols>
+                        <rows>6</rows>
+                        <object class="sizeritem">
+                          <object class="wxStaticText">
+                            
+                            <label>Red</label>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSpinCtrl">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSlider">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                          
+                          <flag>wxEXPAND</flag>
+                          
+                          <minsize>100,12</minsize>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxStaticText">
+                            
+                            <label>Green</label>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSpinCtrl">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSlider">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                          
+                          <flag>wxEXPAND</flag>
+                          
+                          <minsize>100,12</minsize>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxStaticText">
+                            
+                            <label>Blue</label>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSpinCtrl">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSlider">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                          
+                          <flag>wxEXPAND</flag>
+                          
+                          <minsize>100,12</minsize>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxStaticText">
+                            
+                            <label>Hue</label>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSpinCtrl">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSlider">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                          
+                          <flag>wxEXPAND</flag>
+                          
+                          <minsize>100,12</minsize>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxStaticText">
+                            
+                            <label>Saturation</label>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSpinCtrl">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSlider">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                          
+                          <flag>wxEXPAND</flag>
+                          
+                          <minsize>100,12</minsize>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxStaticText">
+                            
+                            <label>Luminance</label>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSpinCtrl">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSlider">
+                            
+                            <value>0</value>
+                            
+                            <min>0</min>
+                            
+                            <max>255</max>
+                          </object>
+                          
+                          <flag>wxEXPAND</flag>
+                          
+                          <minsize>100,12</minsize>
+                        </object>
+                      </object>
+                      
+                      <flag>wxEXPAND</flag>
+                    </object>
+                    <object class="sizeritem">
+                      <object class="wxPanel"/>
+                      
+                      <flag>wxEXPAND|wxGROW</flag>
+                      
+                      <minsize>20,20</minsize>
+                    </object>
+                  </object>
+                </object>
+              </object>
+              <usenotebooksizer>1</usenotebooksizer>
+            </object>
+            
+            <flag>wxEXPAND</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxCheckBox">
+              
+              <label>Remove hidden surfaces</label>
+            </object>
+          </object>
+        </object>
+        
+        <flag>wxEXPAND</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <object class="wxButton">
+              
+              <label>Ok</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxButton">
+              
+              <label>Cancel</label>
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="dlgRotate" subclass="RotateBitmap">
+    <title>Rotate Selection</title>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxPanel">
+          <object class="wxBoxSizer">
+            <orient>wxHORIZONTAL</orient>
+            <object class="sizeritem">
+              <object class="wxStaticBitmap" name="bmpRotatePicture">
+                
+                <bitmap>rblank.png</bitmap>
+                
+                <size>180,180</size>
+              </object>
+            </object>
+            <object class="sizeritem">
+              <object class="wxBoxSizer">
+                <orient>wxVERTICAL</orient>
+                <object class="sizeritem">
+                  <object class="wxSpinCtrl" name="spnDegree">
+                    
+                    <value>0</value>
+                    
+                    <min>-359</min>
+                    
+                    <max>359</max>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxGridSizer">
+                    <cols>2</cols>
+                    <rows>2</rows>
+                    <object class="sizeritem">
+                      <object class="wxButton" name="btnMinusFive">
+                        
+                        <label>-5</label>
+                      </object>
+                    </object>
+                    <object class="sizeritem">
+                      <object class="wxButton" name="btnMinusOne">
+                        
+                        <label>-1</label>
+                      </object>
+                    </object>
+                    <object class="sizeritem">
+                      <object class="wxButton" name="btnPlusFive">
+                        
+                        <label>+5</label>
+                      </object>
+                    </object>
+                    <object class="sizeritem">
+                      <object class="wxButton" name="btnPlusOne">
+                        
+                        <label>+1</label>
+                      </object>
+                    </object>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+        
+        <option>1</option>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          
+          <label>Positive values are clockwise (negative values are
+counter-clockwise).</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxButton" name="wxID_OK">
+              
+              <label>Ok</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxButton" name="wxID_CANCEL">
+              
+              <label>Cancel</label>
+            </object>
+          </object>
+        </object>
+        
+        <flag>wxALIGN_CENTRE</flag>
+      </object>
+    </object>
+  </object>
+</resource>

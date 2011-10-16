@@ -1,0 +1,1824 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<resource>
+  <object class="wxFrame" name="frmMain" subclass="MainWin">
+    <title>AutoRealm</title>
+    <centered>1</centered>
+    <style>wxDEFAULT_FRAME_STYLE</style>
+    <object class="wxBoxSizer">
+      <orient>wxHORIZONTAL</orient>
+      <object class="sizeritem">
+        <object class="wxPanel">
+          <object class="wxBoxSizer">
+            <orient>wxVERTICAL</orient>
+            <object class="sizeritem">
+              <object class="wxGridSizer">
+                <cols>6</cols>
+                <object class="sizeritem">
+                  <object class="wxBitmapButton" name="btnTopFile">
+                    <bitmap>tool-open.png</bitmap>
+                    <tooltip>File Tools</tooltip>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxBitmapButton" name="btnTopSelect">
+                    <bitmap>tool-select.png</bitmap>
+                    <tooltip>Select Object</tooltip>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxBitmapButton" name="btnTopUndo">
+                    <bitmap>tool-undo.png</bitmap>
+                    <tooltip>Undo Last Action</tooltip>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxBitmapButton" name="btnToolRedo">
+                    <bitmap>tool-redo.png</bitmap>
+                    <tooltip>Redo Last Undone Action</tooltip>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxBitmapButton" name="btnTopLines">
+                    <bitmap>tool-polyline.png</bitmap>
+                    <tooltip>Line Tools</tooltip>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxBitmapButton" name="btnTopShapes">
+                    <bitmap>tool-polygon.png</bitmap>
+                    <tooltip>Shape Tools</tooltip>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxBitmapButton" name="btnTopText">
+                    <bitmap>tool-text.png</bitmap>
+                    <tooltip>Text Tools</tooltip>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxBitmapButton" name="btnTopGroup">
+                    <bitmap>tool-group.png</bitmap>
+                    <tooltip>Grouping Tools</tooltip>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxBitmapButton" name="btnTopGrid">
+                    <bitmap>graph-square.png</bitmap>
+                    <tooltip>Grid Tools</tooltip>
+                  </object>
+                  <flag>wxEXPAND|wxGROW</flag>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxBitmapButton" name="btnTopTransform">
+                    <bitmap>tool-move.png</bitmap>
+                    <tooltip>Transformational Tools</tooltip>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxBitmapButton" name="btnTopPosition">
+                    <bitmap>tool-bring-forward.png</bitmap>
+                    <tooltip>Positional Tools</tooltip>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxBitmapButton" name="btnTopSnap">
+                    <bitmap>tool-toggle-grid-snap-dark.png</bitmap>
+                    <tooltip>Snap Tools</tooltip>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxBitmapButton" name="btnTopOverlays">
+                    <bitmap>tool-toggle-overlay-tags.png</bitmap>
+                    <tooltip>Overlay Tools</tooltip>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxBitmapButton" name="btnTopColorTranslation">
+                    <bitmap>tool-show-color-translation-manager.png</bitmap>
+                    <tooltip>Color Translation Tools</tooltip>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxBitmapButton" name="btnTopMeasurement">
+                    <bitmap>tool-ruler.png</bitmap>
+                    <tooltip>Measuring Tools</tooltip>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxBitmapButton" name="btnTopPan">
+                    <bitmap>tool-pan.png</bitmap>
+                    <tooltip>Pan Across The Map</tooltip>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxBitmapButton" name="btnTopSymbols">
+                    <bitmap>tool-symbol-library.png</bitmap>
+                    <tooltip>Symbol Library</tooltip>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxBitmapButton" name="btnTopPushpins">
+                    <bitmap>pushpin-02.png</bitmap>
+                    <tooltip>Pushpin Tools</tooltip>
+                  </object>
+                  <flag>wxEXPAND|wxGROW</flag>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxBitmapButton" name="btnTopHyperlink">
+                    <bitmap>tool-hyperlink-popup.png</bitmap>
+                    <tooltip>Hyperlink / Popup Tools</tooltip>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxBitmapButton" name="btnTopClipboard">
+                    <bitmap>tool-paste.png</bitmap>
+                    <tooltip>Clipboard Tools</tooltip>
+                  </object>
+                </object>
+                <rows>4</rows>
+                <object class="sizeritem">
+                  <object class="wxBitmapButton" name="btnTopErase">
+                    <bitmap>tool-delete.png</bitmap>
+                    <tooltip>Delete Object</tooltip>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxBitmapButton" name="btnTopMakeArray">
+                    <bitmap>tool-array.png</bitmap>
+                    <tooltip>Make Array of Objects</tooltip>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxBitmapButton" name="btnTopRepaint">
+                    <bitmap>tool-repaint.png</bitmap>
+                    <tooltip>Repaint Current View</tooltip>
+                  </object>
+                </object>
+              </object>
+              <minsize>150</minsize>
+            </object>
+            <object class="sizeritem">
+              <object class="wxStaticLine"/>
+              <option>1</option>
+              <flag>wxEXPAND</flag>
+            </object>
+            <object class="sizeritem">
+              <object class="wxGridSizer">
+                <cols>3</cols>
+                <rows>2</rows>
+                <object class="sizeritem">
+                  <object class="arColorButton" name="btnColorMain">
+                    <size>8</size>
+                    <tooltip>Main Color</tooltip>
+                    <defaultcolor>#000000</defaultcolor>
+                  </object>
+                  <flag>wxEXPAND|wxSHAPED|wxALIGN_CENTRE_VERTICAL|wxALIGN_CENTRE_HORIZONTAL</flag>
+                  <ratio>1</ratio>
+                </object>
+                <object class="sizeritem">
+                  <object class="arColorButton" name="btnColorBackground">
+                    <defaultcolor>#FFFFFF</defaultcolor>
+                    <size>8</size>
+                    <tooltip>Background Color</tooltip>
+                  </object>
+                  <flag>wxEXPAND|wxSHAPED|wxALIGN_CENTRE_VERTICAL|wxALIGN_CENTRE_HORIZONTAL</flag>
+                  <ratio>1</ratio>
+                </object>
+                <object class="sizeritem">
+                  <object class="arColorButton" name="btnColorTextOutline">
+                    <nocolor>1</nocolor>
+                    <size>8</size>
+                    <tooltip>Text Outline Color</tooltip>
+                  </object>
+                  <flag>wxEXPAND|wxSHAPED|wxALIGN_CENTRE_VERTICAL|wxALIGN_CENTRE_HORIZONTAL</flag>
+                  <ratio>1</ratio>
+                </object>
+                <object class="sizeritem">
+                  <object class="arColorButton" name="btnColorFill">
+                    <defaultcolor>#FFFFFF</defaultcolor>
+                    <size>8</size>
+                    <tooltip>Fill Color</tooltip>
+                  </object>
+                  <flag>wxEXPAND|wxSHAPED|wxALIGN_CENTRE_VERTICAL|wxALIGN_CENTRE_HORIZONTAL</flag>
+                  <ratio>1</ratio>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxBitmapButton" name="btnColorFillPattern">
+                    <bitmap>fill-00.png</bitmap>
+                    <tooltip>Fill Pattern</tooltip>
+                  </object>
+                  <flag>wxEXPAND</flag>
+                </object>
+                <object class="sizeritem">
+                  <object class="arColorButton" name="btnGridColor">
+                    <defaultcolor>#00FFFF</defaultcolor>
+                    <size>8</size>
+                    <tooltip>Grid Color</tooltip>
+                  </object>
+                  <flag>wxEXPAND|wxSHAPED|wxALIGN_CENTRE_VERTICAL|wxALIGN_CENTRE_HORIZONTAL</flag>
+                  <ratio>1</ratio>
+                </object>
+                <vgap>2</vgap>
+                <hgap>6</hgap>
+              </object>
+              <flag>wxEXPAND|wxALIGN_CENTRE_HORIZONTAL</flag>
+              <border>3</border>
+            </object>
+            <object class="sizeritem">
+              <object class="wxStaticLine"/>
+              <option>1</option>
+              <flag>wxEXPAND</flag>
+            </object>
+            <object class="sizeritem">
+              <object_ref ref="pnlToolFile"/>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxNotebook">
+          <object class="notebookpage">
+            <label></label>
+            <object class="wxScrolledWindow">
+              <style>wxHSCROLL|wxVSCROLL|wxCLIP_CHILDREN</style>
+            </object>
+          </object>
+        </object>
+        <option>1</option>
+        <flag>wxALL|wxEXPAND|wxGROW</flag>
+        <minsize>640,480</minsize>
+      </object>
+    </object>
+    <object class="wxStatusBar">
+      <fields>3</fields>
+      <widths>-70,-15,-15</widths>
+    </object>
+    <object class="wxMenuBar" name="mnuMain">
+      <object class="wxMenu" name="mnuFile">
+        <label>&amp;File</label>
+        <object class="wxMenuItem" name="mnuFileNew">
+          <label>&amp;New</label>
+        </object>
+        <object class="wxMenuItem" name="mnuFileOpen">
+          <label>&amp;Open</label>
+        </object>
+        <object class="wxMenu" name="mnuFileReopen">
+          <label>&amp;Reopen</label>
+        </object>
+        <object class="separator"/>
+        <object class="wxMenuItem" name="mnuFileSave">
+          <label>&amp;Save</label>
+        </object>
+        <object class="wxMenuItem" name="mnuFileSaveAs">
+          <label>Save &amp;As</label>
+        </object>
+        <object class="wxMenuItem" name="mnuFileInsert">
+          <label>&amp;Insert</label>
+        </object>
+        <object class="separator"/>
+        <object class="wxMenuItem" name="mnuFilePrint">
+          <label>&amp;Print</label>
+        </object>
+        <object class="wxMenuItem" name="mnuFilePrintSetup">
+          <label>Print S&amp;etup</label>
+        </object>
+        <object class="separator"/>
+        <object class="wxMenuItem" name="mnuFileProperties">
+          <label>P&amp;roperties</label>
+        </object>
+        <object class="separator"/>
+        <object class="wxMenuItem" name="mnuFileExit">
+          <label>E&amp;xit</label>
+        </object>
+      </object>
+      <object class="wxMenu" name="mnuEdit">
+        <label>&amp;Edit</label>
+        <object class="wxMenuItem" name="mnuEditUndo">
+          <label>&amp;Undo</label>
+        </object>
+        <object class="wxMenuItem" name="mnuEditRedo">
+          <label>&amp;Redo</label>
+        </object>
+        <object class="separator"/>
+        <object class="wxMenuItem" name="mnuEditCut">
+          <label>Cu&amp;t</label>
+        </object>
+        <object class="wxMenuItem" name="mnuEditCopy">
+          <label>&amp;Copy</label>
+        </object>
+        <object class="wxMenuItem" name="mnuEditPaste">
+          <label>&amp;Paste</label>
+        </object>
+        <object class="wxMenuItem" name="mnuEditDelete">
+          <label>&amp;Delete</label>
+        </object>
+        <object class="separator"/>
+        <object class="wxMenuItem" name="mnuEditSelectAll">
+          <label>Se&amp;lect All</label>
+        </object>
+        <object class="wxMenuItem" name="mnuEditSelectNone">
+          <label>Select &amp;None</label>
+        </object>
+        <object class="separator"/>
+        <object class="wxMenuItem" name="mnuEditSelectArrowTool">
+          <label>Use Select/Arro&amp;w Tool</label>
+        </object>
+        <object class="wxMenuItem" name="mnuEditUsePanningTool">
+          <label>Use &amp;Panning Tool</label>
+        </object>
+      </object>
+      <object class="wxMenu" name="mnuView">
+        <label>&amp;View</label>
+        <object class="wxMenuItem" name="mnuViewZoomIn">
+          <label>Zoom &amp;In</label>
+        </object>
+        <object class="wxMenuItem" name="mnuViewZoomOut">
+          <label>Zoom &amp;Out</label>
+        </object>
+        <object class="wxMenu" name="mnuViewZoom">
+          <label>Zoom</label>
+          <object class="wxMenuItem" name="mnuViewZoomFit">
+            <label>Fit</label>
+          </object>
+          <object class="wxMenuItem" name="mnuViewZoom10">
+            <label>10%</label>
+          </object>
+          <object class="wxMenuItem" name="mnuViewZoom25">
+            <label>25%</label>
+          </object>
+          <object class="wxMenuItem" name="mnuViewZoom50">
+            <label>50%</label>
+          </object>
+          <object class="wxMenuItem" name="mnuViewZoom75">
+            <label>75%</label>
+          </object>
+          <object class="wxMenuItem" name="mnuViewZoom100">
+            <label>100%</label>
+          </object>
+          <object class="wxMenuItem" name="mnuViewZoom150">
+            <label>150%</label>
+          </object>
+          <object class="wxMenuItem" name="mnuViewZoom200">
+            <label>200%</label>
+          </object>
+          <object class="wxMenuItem" name="mnuViewZoom300">
+            <label>300%</label>
+          </object>
+          <object class="wxMenuItem" name="mnuViewZoom400">
+            <label>400%</label>
+          </object>
+          <object class="wxMenuItem" name="mnuViewZoom500">
+            <label>500%</label>
+          </object>
+          <object class="wxMenuItem" name="mnuViewZoomCustom">
+            <label>Custom</label>
+          </object>
+        </object>
+        <object class="wxMenuItem" name="mnuViewShowAllObjects">
+          <label>Show &amp;All Objects</label>
+        </object>
+        <object class="wxMenuItem" name="mnuViewReadOnly">
+          <label>&amp;Read Only</label>
+        </object>
+        <object class="separator"/>
+        <object class="wxMenuItem" name="mnuViewSaveCurrentView">
+          <label>&amp;Save Current View</label>
+        </object>
+        <object class="wxMenuItem" name="mnuViewDeleteView">
+          <label>&amp;Delete View</label>
+        </object>
+      </object>
+      <object class="wxMenu" name="mnuTransform">
+        <label>&amp;Transform</label>
+        <object class="wxMenuItem" name="mnuTransformMove">
+          <label>&amp;Move</label>
+        </object>
+        <object class="wxMenuItem" name="mnuTransformScale">
+          <label>&amp;Scale</label>
+        </object>
+        <object class="wxMenuItem" name="mnuTransformRotate">
+          <label>&amp;Rotate</label>
+        </object>
+        <object class="wxMenuItem" name="mnuTransformSkew">
+          <label>S&amp;kew</label>
+        </object>
+        <object class="wxMenuItem" name="mnuTransformFlip">
+          <label>&amp;Flip</label>
+        </object>
+        <object class="separator"/>
+        <object class="wxMenuItem" name="mnuTransformAlign">
+          <label>&amp;Align</label>
+        </object>
+        <object class="wxMenuItem" name="mnuTransformCreateArray">
+          <label>&amp;Create Array</label>
+        </object>
+        <object class="separator"/>
+        <object class="wxMenuItem" name="mnuTransformOrder">
+          <label>&amp;Order</label>
+        </object>
+        <object class="wxMenu" name="mnuTransformPosition">
+          <label>Position</label>
+          <object class="wxMenuItem" name="mnuTransformPositionSendToBack">
+            <label>Send To &amp;Back</label>
+          </object>
+          <object class="wxMenuItem" name="mnuTransformPositionSendBackward">
+            <label>Send Backward</label>
+          </object>
+          <object class="wxMenuItem" name="mnuTransformPositionBringForward">
+            <label>Bring Forward</label>
+          </object>
+          <object class="wxMenuItem" name="mnuTransformPositionBringToFront">
+            <label>Bring To &amp;Front</label>
+          </object>
+          <object class="separator"/>
+          <object class="wxMenuItem" name="mnuTransformPositionSendGridBackward">
+            <label>Send Grid Backward</label>
+          </object>
+          <object class="wxMenuItem" name="mnuTransformPositionBringGridForward">
+            <label>Bring Grid Forward</label>
+          </object>
+        </object>
+        <object class="separator"/>
+        <object class="wxMenu" name="mnuTransformAlterFractalState">
+          <label>Alter Fractal State</label>
+          <object class="wxMenuItem" name="mnuTransformAlterFractalStateSetToNonFractalLines">
+            <label>Set To Non-Fractal Lines</label>
+          </object>
+          <object class="wxMenuItem" name="mnuTransformAlterFractalStateSetToFractalLines">
+            <label>Set To Fractal Lines</label>
+          </object>
+          <object class="wxMenuItem" name="mnuTransformAlterFractalStateToggleFractalState">
+            <label>Toggle Fractal State</label>
+          </object>
+        </object>
+        <object class="separator"/>
+        <object class="wxMenuItem" name="mnuTransformCloseSelectedFigures">
+          <label>Close Selected Fi&amp;gures</label>
+        </object>
+        <object class="wxMenuItem" name="mnuTransformReverseLineDirection">
+          <label>Re&amp;verse Line Direction</label>
+        </object>
+        <object class="wxMenuItem" name="mnuTransformFlipLineStyle">
+          <label>&amp;Flip Line Style</label>
+        </object>
+      </object>
+      <object class="wxMenu" name="mnuDrawing">
+        <label>&amp;Drawing</label>
+        <object class="wxMenu" name="mnuDrawingFractal">
+          <label>Fractal</label>
+          <object class="wxMenuItem" name="mnuDrawingFractalFreehand">
+            <label>Freehand</label>
+          </object>
+          <object class="wxMenuItem" name="mnuDrawingFractalLine">
+            <label>Line</label>
+          </object>
+          <object class="wxMenuItem" name="mnuDrawingFractalPolyline">
+            <label>Fractal Polyline</label>
+          </object>
+          <object class="wxMenuItem" name="mnuDrawingFractalCurve">
+            <label>Curve</label>
+          </object>
+          <object class="wxMenuItem" name="mnuDrawingFractalPolycurve">
+            <label>Polycurve</label>
+          </object>
+          <object class="separator"/>
+          <object class="wxMenuItem" name="mnuDrawingFractalRoughness">
+            <label>Roughness...</label>
+          </object>
+          <object class="wxMenuItem" name="mnuDrawingFractalSeed">
+            <label>Seed...</label>
+          </object>
+        </object>
+        <object class="wxMenu" name="mnuDrawingLines">
+          <label>Lines</label>
+          <object class="wxMenuItem" name="mnuDrawingLinesFreehand">
+            <label>Freehand</label>
+          </object>
+          <object class="wxMenuItem" name="mnuDrawingLinesLine">
+            <label>Line</label>
+          </object>
+          <object class="wxMenuItem" name="mnuDrawingLinesPolyline">
+            <label>Polyline</label>
+          </object>
+          <object class="wxMenuItem" name="mnuDrawingLinesCurve">
+            <label>Curve</label>
+          </object>
+          <object class="wxMenuItem" name="mnuDrawingLinesPolycurve">
+            <label>Polycurve</label>
+          </object>
+        </object>
+        <object class="wxMenu" name="mnuDrawingShapes">
+          <label>Shapes</label>
+          <object class="wxMenuItem" name="mnuDrawingShapesRectangle">
+            <label>Rectangle</label>
+          </object>
+          <object class="wxMenuItem" name="mnuDrawingShapesCircle">
+            <label>Circle</label>
+          </object>
+          <object class="wxMenuItem" name="mnuDrawingShapesPolygon">
+            <label>Polygon</label>
+          </object>
+          <object class="wxMenuItem" name="mnuDrawingShapesArc">
+            <label>Arc</label>
+          </object>
+          <object class="wxMenuItem" name="mnuDrawingShapesRosetteChartLines">
+            <label>Rosette Chart Lines</label>
+          </object>
+        </object>
+        <object class="wxMenu" name="mnuDrawingSymbols">
+          <label>Symbols</label>
+          <object class="wxMenuItem" name="mnuDrawingSymbolsPlaceSingle">
+            <label>Place Single</label>
+          </object>
+          <object class="wxMenuItem" name="mnuDrawingSymbolsPlaceSquare">
+            <label>Place Square</label>
+          </object>
+          <object class="wxMenuItem" name="mnuDrawingSymbolsPlaceDiamond">
+            <label>Place Diamond</label>
+          </object>
+          <object class="wxMenuItem" name="mnuDrawingSymbolsPlaceRandom">
+            <label>Place Random</label>
+          </object>
+          <object class="separator"/>
+          <object class="wxMenuItem" name="mnuDrawingSymbolsIconSize">
+            <label>Icon Size</label>
+          </object>
+          <object class="wxMenuItem" name="mnuDrawingSymbolsIconSpread">
+            <label>Icon Spread</label>
+          </object>
+          <object class="separator"/>
+          <object class="wxMenuItem" name="mnuDrawingSymbolsDefineSelectionAsNewSymbol">
+            <label>&amp;Define Selection as New Symbol</label>
+          </object>
+          <object class="wxMenuItem" name="mnuDrawingSymbolsSymbolLibrary">
+            <label>Symbol Library</label>
+          </object>
+        </object>
+        <object class="wxMenu" name="mnuDrawingText">
+          <label>Text</label>
+          <object class="wxMenuItem" name="mnuDrawingTextText">
+            <label>Text</label>
+          </object>
+          <object class="wxMenuItem" name="mnuDrawingTextCurvedText">
+            <label>Curved Text</label>
+          </object>
+          <object class="wxMenuItem" name="mnuDrawingTextHyperlinkPopup">
+            <label>Hyperlink/Popup</label>
+          </object>
+        </object>
+        <object class="separator"/>
+        <object class="wxMenu" name="mnuDrawingGraphPaper">
+          <label>Graph Paper</label>
+          <object class="wxMenuItem" name="mnuDrawingGraphPaperBlank">
+            <label>Blank</label>
+          </object>
+          <object class="wxMenuItem" name="mnuDrawingGraphPaperSquare">
+            <label>Square</label>
+          </object>
+          <object class="wxMenuItem" name="mnuDrawingGraphPaperHex">
+            <label>Hex (Vertical)</label>
+          </object>
+          <object class="wxMenuItem" name="mnuDrawingGraphPaperRHex">
+            <label>Hex (Horizontal)</label>
+          </object>
+          <object class="wxMenuItem" name="mnuDrawingGraphPaperTriangle">
+            <label>Triangle</label>
+          </object>
+          <object class="wxMenuItem" name="mnuDrawingGraphPaperDiamond">
+            <label>Diamond</label>
+          </object>
+          <object class="wxMenuItem" name="mnuDrawingGraphPaperHDiamond">
+            <label>Half Diamond</label>
+          </object>
+          <object class="wxMenuItem" name="mnuDrawingGraphPaperPolar">
+            <label>Polar</label>
+          </object>
+          <object class="separator"/>
+          <object class="wxMenuItem" name="mnuDrawingGraphPaperGridSize">
+            <label>Grid Size...</label>
+          </object>
+          <object class="wxMenuItem" name="mnuDrawingGraphPaperSecondaryGridSize">
+            <label>Secondary grid Size...</label>
+          </object>
+        </object>
+      </object>
+      <object class="wxMenu" name="mnuToolbar">
+        <label>Tool&amp;bar</label>
+        <object class="wxMenuItem" name="mnuToolbarRestoreDefaultToolbars">
+          <label>Restore Default Toolbars</label>
+        </object>
+        <object class="separator"/>
+        <object class="wxMenuItem" name="mnuToolbarColor">
+          <label>Color</label>
+        </object>
+        <object class="wxMenuItem" name="mnuToolbarDrawing">
+          <label>Drawing</label>
+        </object>
+        <object class="wxMenuItem" name="mnuToolbarEditing">
+          <label>Editing</label>
+        </object>
+        <object class="wxMenu">
+          <label>Fractal</label>
+        </object>
+        <object class="wxMenuItem" name="mnuToolbarGeneral">
+          <label>General</label>
+        </object>
+        <object class="wxMenuItem" name="mnuToolbarGraphPaper">
+          <label>Graph Paper</label>
+        </object>
+        <object class="wxMenuItem" name="mnuToolbarLinestyle">
+          <label>Linestyle</label>
+        </object>
+        <object class="wxMenu">
+          <label>Icon</label>
+        </object>
+        <object class="wxMenuItem" name="mnuToolbarOverlay">
+          <label>Overlay</label>
+        </object>
+        <object class="wxMenuItem" name="mnuToolbarPushpins">
+          <label>Pushpins</label>
+        </object>
+        <object class="wxMenuItem" name="mnuToolbarSettings">
+          <label>Settings</label>
+        </object>
+        <object class="wxMenuItem" name="mnuToolbarShape">
+          <label>Shape</label>
+        </object>
+        <object class="wxMenuItem" name="mnuToolbarText">
+          <label>Text</label>
+        </object>
+        <object class="wxMenuItem" name="mnuToolbarTransform">
+          <label>Transform</label>
+        </object>
+        <object class="wxMenuItem" name="mnuToolbarZoom">
+          <label>Zoom</label>
+        </object>
+      </object>
+      <object class="wxMenu" name="mnuOptions">
+        <label>&amp;Options</label>
+        <object class="wxMenuItem" name="mnuOptionsSettings">
+          <label>Settings...</label>
+        </object>
+        <object class="wxMenuItem" name="mnuOptionsAutoname">
+          <label>Autoname...</label>
+        </object>
+        <object class="separator"/>
+        <object class="wxMenuItem" name="mnuOptionsSnapToGrid">
+          <label>Snap To Grid</label>
+        </object>
+        <object class="wxMenuItem" name="mnuOptionsGravitySnap">
+          <label>Gravity-Snap</label>
+        </object>
+      </object>
+      <object class="wxMenu" name="mnuWizards">
+        <label>&amp;Wizards</label>
+        <object class="wxMenuItem" name="mnuWizardsColumnsAndRooftops">
+          <label>Columns and Rooftops</label>
+        </object>
+      </object>
+      <object class="wxMenu" name="mnuHelp">
+        <label>&amp;Help</label>
+        <object class="wxMenuItem" name="mnuHelpContents">
+          <label>Contents</label>
+        </object>
+        <object class="wxMenuItem" name="mnuHelpGettingStarted">
+          <label>Getting Started</label>
+        </object>
+        <object class="wxMenuItem" name="mnuHelpSearchHelp">
+          <label>Search Help</label>
+        </object>
+        <object class="separator"/>
+        <object class="wxMenuItem" name="mnuHelpHowDoI">
+          <label>How Do I ... ?</label>
+        </object>
+        <object class="wxMenuItem" name="mnuHelpReadMeContents">
+          <label>Read.Me Contents</label>
+        </object>
+        <object class="separator"/>
+        <object class="wxMenuItem" name="mnuHelpAbout">
+          <label>About</label>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxPanel" name="pnlToolFile">
+    <object class="wxFlexGridSizer">
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolFileNew">
+          <bitmap>tool-new.png</bitmap>
+          <tooltip>Make a new file</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>New File</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolFileOpen">
+          <bitmap>tool-open.png</bitmap>
+          <tooltip>Open an existing file</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Open File</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolFileReload">
+          <bitmap>tool-reload.png</bitmap>
+          <tooltip>Reload the current map</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Reload File</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolFileSave">
+          <bitmap>tool-save.png</bitmap>
+          <tooltip>Save the current map</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Save File</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolFileClose">
+          <bitmap>tool-close.png</bitmap>
+          <tooltip>Close the current viewpoint/tab</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Close File</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolFileReadOnly">
+          <bitmap>tool-read-only.png</bitmap>
+          <tooltip>Mark the current file as read only</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Mark as Read Only</label>
+        </object>
+      </object>
+      <cols>2</cols>
+      <rows>6</rows>
+    </object>
+  </object>
+  <object class="wxPanel" name="pnlToolMeasure">
+    <object class="wxFlexGridSizer">
+      <cols>2</cols>
+      <rows>2</rows>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolMeasureRuler">
+          <bitmap>tool-ruler.png</bitmap>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Use The Ruler</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolMeasureString">
+          <bitmap>tool-measurement-string.png</bitmap>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Use A String</label>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxPanel" name="pnlToolColorTranslation">
+    <object class="wxFlexGridSizer">
+      <cols>2</cols>
+      <rows>2</rows>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolColorTranslationActivate">
+          <bitmap>tool-show-color-translation-manager.png</bitmap>
+          <tooltip>Display Color Translation Manager</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Display Color Translation Manager</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolColorTranslationTranslate">
+          <bitmap>tool-translate-color.png</bitmap>
+          <tooltip>Translate Colors</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Translate Colors</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolColorTranslationInverseTranslate">
+          <bitmap>tool-inverse-translate-color.png</bitmap>
+          <tooltip>Inverse Translate Colors</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Inverse Translate Colors</label>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxPanel" name="pnlToolLine">
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxBitmapButton" name="btnToolLineFreehand">
+              <bitmap>tool-freehand.png</bitmap>
+              <tooltip>Draw lines in a freehand style</tooltip>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBitmapButton" name="btnToolLineStraight">
+              <bitmap>tool-line.png</bitmap>
+              <tooltip>Draw a straight line</tooltip>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBitmapButton" name="btnToolLineCurve">
+              <bitmap>tool-curve.png</bitmap>
+              <tooltip>Draw a curve</tooltip>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBitmapButton" name="btnToolLinePolyLine">
+              <bitmap>tool-polyline.png</bitmap>
+              <tooltip>Draw multiple straight lines, joined together</tooltip>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBitmapButton" name="btnToolLinePolyCurve">
+              <bitmap>tool-polycurve.png</bitmap>
+              <tooltip>Draw multiple curves, joined together</tooltip>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxCheckBox" name="boxToolLineFractal">
+              <label>Fractal?</label>
+              <tooltip>Should drawn lines be made fractal?</tooltip>
+            </object>
+            <option>1</option>
+            <flag>wxALIGN_CENTRE</flag>
+          </object>
+        </object>
+        <flag>wxEXPAND</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticLine"/>
+        <option>1</option>
+        <flag>wxEXPAND</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxChoice" name="chcToolLineBegin">
+              <content/>
+              <size>42,20</size>
+              <tooltip>What symbol to draw at the beginning of the line?</tooltip>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxChoice" name="chcToolLineStyle">
+              <content/>
+              <size>52,20</size>
+              <tooltip>What style to draw the line itself?</tooltip>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxChoice" name="chcToolLineEnd">
+              <content/>
+              <size>42,20</size>
+              <tooltip>What symbol to draw at the end of the line?</tooltip>
+            </object>
+          </object>
+        </object>
+        <flag>wxALIGN_CENTRE</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticLine"/>
+        <option>1</option>
+        <flag>wxEXPAND</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>Fractal\nSeed</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxSpinCtrl" name="spnFractalSeed">
+              <tooltip>Set the fractal seed number</tooltip>
+            </object>
+            <option>1</option>
+            <flag>wxEXPAND</flag>
+          </object>
+        </object>
+        <flag>wxEXPAND</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap">
+              <bitmap>acorn-main.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxSlider" name="sldFractalSeed">
+              <value></value>
+              <min></min>
+              <max></max>
+              <tooltip>Set the fractal seed number</tooltip>
+            </object>
+            <option>1</option>
+            <flag>wxEXPAND</flag>
+          </object>
+        </object>
+        <flag>wxEXPAND</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticLine"/>
+        <option>1</option>
+        <flag>wxEXPAND</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>Fractal\nRoughness</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxSpinCtrl" name="spnFractalRoughness">
+              <tooltip>Set the roughness of the fractal lines</tooltip>
+            </object>
+            <option>1</option>
+            <flag>wxEXPAND</flag>
+          </object>
+        </object>
+        <flag>wxEXPAND</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap">
+              <bitmap>roughness.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxSlider" name="sldFractalRoughness">
+              <value></value>
+              <min></min>
+              <max></max>
+              <tooltip>Set the roughness of the fractal lines</tooltip>
+            </object>
+            <option>1</option>
+            <flag>wxEXPAND</flag>
+          </object>
+        </object>
+        <flag>wxEXPAND</flag>
+      </object>
+    </object>
+  </object>
+  <object class="wxPanel" name="pnlToolShape">
+    <object class="wxFlexGridSizer">
+      <cols>2</cols>
+      <rows>5</rows>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolShapeRectangle">
+          <bitmap>tool-rectangle.png</bitmap>
+          <tooltip>Draw a Rectangle</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Draw a Rectangle</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolShapeCircle">
+          <bitmap>tool-circle.png</bitmap>
+          <tooltip>Draw a Circle</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Draw a Circle</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolShapePolygon">
+          <bitmap>tool-polygon.png</bitmap>
+          <tooltip>Draw a Polygon</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Draw a Polygon</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolShapeArc">
+          <bitmap>tool-arc.png</bitmap>
+          <tooltip>Draw an Arc</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Draw an Arc</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolShapeRosette">
+          <bitmap>tool-rosette-chart-lines.png</bitmap>
+          <tooltip>Draw a Rosette</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Draw a Rosette</label>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxPanel" name="pnlToolText">
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxBitmapButton" name="btnToolTextNormal">
+              <bitmap>tool-text.png</bitmap>
+              <style>wxNO_BORDER</style>
+              <tooltip>Draw Text on a Straight Line</tooltip>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticLine">
+              <style>wxLI_VERTICAL</style>
+            </object>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBitmapButton" name="btnToolTextCurved">
+              <bitmap>tool-curved-text.png</bitmap>
+              <tooltip>Draw Text on a Curve</tooltip>
+            </object>
+          </object>
+        </object>
+        <flag>wxALIGN_CENTRE_HORIZONTAL</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxChoice" name="chcToolTextFontName">
+              <content/>
+              <tooltip>Choose the Font Name</tooltip>
+            </object>
+            <option>2</option>
+            <flag>wxEXPAND</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxComboBox" name="cboxToolTextFontSize">
+              <content>
+                <item>4</item>
+                <item>5</item>
+                <item>6</item>
+                <item>7</item>
+                <item>8</item>
+                <item>9</item>
+                <item>10</item>
+                <item>12</item>
+                <item>14</item>
+                <item>16</item>
+                <item>18</item>
+                <item>20</item>
+                <item>24</item>
+                <item>28</item>
+                <item>30</item>
+                <item>32</item>
+                <item>40</item>
+                <item>48</item>
+                <item>56</item>
+                <item>64</item>
+                <item>72</item>
+                <item>80</item>
+                <item>96</item>
+              </content>
+              <selection>6</selection>
+              <tooltip>Choose the Font Size</tooltip>
+            </object>
+            <option>1</option>
+          </object>
+        </object>
+        <flag>wxEXPAND</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Type Your Text Here:</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxTextCtrl">
+          <tooltip>Type your text here</tooltip>
+        </object>
+        <option>1</option>
+        <flag>wxEXPAND|wxGROW</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxBitmapButton" name="btnToolTextBold">
+              <bitmap>speedbold.png</bitmap>
+              <tooltip>Use Bold</tooltip>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBitmapButton" name="btnToolTextItalic">
+              <bitmap>speeditalics.png</bitmap>
+              <tooltip>Use Italic</tooltip>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBitmapButton" name="btnToolTextUnderline">
+              <bitmap>speedunderline.png</bitmap>
+              <tooltip>Use Underline</tooltip>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticLine">
+              <style>wxLI_VERTICAL</style>
+            </object>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBitmapButton" name="btnToolTextAlignLeft">
+              <bitmap>speedleft.png</bitmap>
+              <tooltip>Align to the left</tooltip>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBitmapButton" name="btnToolTextAlignCenter">
+              <bitmap>speedcenter.png</bitmap>
+              <tooltip>Center Text</tooltip>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBitmapButton" name="btnToolTextAlignRight">
+              <bitmap>speedright.png</bitmap>
+              <tooltip>Align To The Right</tooltip>
+            </object>
+          </object>
+        </object>
+        <flag>wxALIGN_CENTRE_HORIZONTAL</flag>
+      </object>
+    </object>
+  </object>
+  <object class="wxPanel" name="pnlToolGroup">
+    <object class="wxFlexGridSizer">
+      <cols>2</cols>
+      <rows>2</rows>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolGroupGroup">
+          <bitmap>tool-group.png</bitmap>
+          <tooltip>Group objects together</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Group Objects</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolGroupUngroup">
+          <bitmap>tool-ungroup.png</bitmap>
+          <tooltip>Ungroup an existing group of objects</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Ungroup a group of objects</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolGroupDecompose">
+          <bitmap>tool-decompose.png</bitmap>
+          <tooltip>Decompose an object</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Decompose an object</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolGroupScalpel">
+          <bitmap>tool-scalpel.png</bitmap>
+          <tooltip>Slice apart an object</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Slice apart an object</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolGroupGlue">
+          <bitmap>tool-glue.png</bitmap>
+          <tooltip>Glue objects together</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Glue Objects Together</label>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxPanel" name="pnlToolTransform">
+    <object class="wxFlexGridSizer">
+      <cols>2</cols>
+      <rows>8</rows>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolTransformMove">
+          <bitmap>tool-move.png</bitmap>
+          <tooltip>Move selected object(s)</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Move selected object(s)</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolTransformRotate">
+          <bitmap>tool-rotate.png</bitmap>
+          <tooltip>Rotate selected object(s)</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText" name="">
+          <label>Rotate selected object(s)</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolTransformRotate45">
+          <bitmap>tool-rotate45.png</bitmap>
+          <tooltip>Rotate selected object(s) 45</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Rotate selected object(s) 45</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolTransformRotate90">
+          <bitmap>tool-rotate90.png</bitmap>
+          <tooltip>Rotate selected object(s) 90</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Rotate selected object(s) 90</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolTransformFlip">
+          <bitmap>tool-flip.png</bitmap>
+          <tooltip>Flip selected object(s)</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Flip selected object(s)</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolTransformScale">
+          <bitmap>tool-scale.png</bitmap>
+          <tooltip>Scale selected object(s)</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Scale selected object(s)</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolTransformSkew">
+          <bitmap>tool-skew.png</bitmap>
+          <tooltip>Skew selected object(s)</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Skew selected object(s)</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolTransformAlign">
+          <bitmap>tool-align.png</bitmap>
+          <tooltip>Align selected object(s)</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Align selected object(s)</label>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxPanel" name="pnlToolSnap">
+    <object class="wxFlexGridSizer">
+      <cols>2</cols>
+      <rows>2</rows>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolSnapGrid">
+          <bitmap>tool-toggle-grid-snap-dark.png</bitmap>
+          <tooltip>Toggle snap to grid</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Snap to Grid</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolSnapGravity">
+          <bitmap>tool-toggle-gravity-snap-dark.png</bitmap>
+          <tooltip>Toggle gravity snap</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Gravity Snap</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolSnapGravityAlong">
+          <bitmap>tool-toggle-gravity-snap-along-lines-and-curves-dark.png</bitmap>
+          <tooltip>Toggle gravity snap along lines and curves</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Gravity snap along\nlines and curves</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolSnapRotate">
+          <bitmap>tool-rotate-snapped-objects.png</bitmap>
+          <tooltip>Toggle rotate snapped objects</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Rotate snapped objects</label>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxPanel" name="pnlToolGrid">
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxGridSizer">
+          <cols>3</cols>
+          <rows>3</rows>
+          <object class="sizeritem">
+            <object class="wxBitmapButton" name="btnToolGridNone">
+              <bitmap>graph-none.png</bitmap>
+              <tooltip>Turn off the grid</tooltip>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBitmapButton" name="btnToolGridSquare">
+              <bitmap>graph-square.png</bitmap>
+              <tooltip>Use a square grid</tooltip>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBitmapButton" name="btnToolGridHex">
+              <bitmap>graph-hex.png</bitmap>
+              <tooltip>Use a hexagonal grid</tooltip>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBitmapButton" name="btnToolGridRHex">
+              <bitmap>graph-rhex.png</bitmap>
+              <tooltip>Use a hexagonal grid, rotated 90 degrees</tooltip>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBitmapButton" name="btnToolGridTriangle">
+              <bitmap>graph-triangle.png</bitmap>
+              <tooltip>Use a triangular grid</tooltip>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBitmapButton" name="btnToolGridDiamond">
+              <bitmap>graph-diamond.png</bitmap>
+              <tooltip>Use a diamond shaped grid</tooltip>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBitmapButton" name="btnToolGridHalfDiamond">
+              <bitmap>graph-hdiamond.png</bitmap>
+              <tooltip>Use a half-height diamond grid</tooltip>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBitmapButton" name="btnToolGridPolar">
+              <bitmap>graph-circle.png</bitmap>
+              <tooltip>Use a polar-coordinate based grid</tooltip>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBitmapButton" name="btnToolGridToggleDesign">
+              <bitmap>tool-toggle-design-grid.png</bitmap>
+              <tooltip>Toggle the design grid on and off</tooltip>
+            </object>
+          </object>
+        </object>
+        <flag>wxALIGN_CENTRE_HORIZONTAL</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>Cells / Inch</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl" name="txtToolGridCellsInch">
+              <tooltip>How many grid cells per inch?</tooltip>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap">
+              <bitmap>gridsize-image.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxSlider" name="sldToolGridCellsInch">
+              <value></value>
+              <min></min>
+              <max></max>
+              <tooltip>How many grid cells per inch?</tooltip>
+            </object>
+            <option>1</option>
+            <flag>wxEXPAND</flag>
+          </object>
+        </object>
+        <flag>wxEXPAND</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap">
+              <bitmap>boldgrid-image.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxSpinCtrl" name="spnToolGridSecondaryGridSize">
+              <tooltip>How many sub-cells in each big cell?</tooltip>
+            </object>
+            <flag>wxEXPAND</flag>
+          </object>
+        </object>
+        <flag>wxEXPAND</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxChoice" name="chcToolGridPrimaryGridLineStyle">
+              <content/>
+              <tooltip>What's the line style for the primary grid?</tooltip>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxChoice" name="chcToolGridSecondaryLineStyle">
+              <content/>
+              <tooltip>What's the line style for the secondary grid?</tooltip>
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxPanel" name="pnlToolOverlay">
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxComboBox" name="cbxToolOverlayName">
+          <content/>
+          <tooltip>Select an existing overlay, or type the name of a new one</tooltip>
+        </object>
+        <flag>wxEXPAND</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxCheckListBox" name="lstToolOverlayList">
+          <content/>
+          <tooltip>Select an overlay</tooltip>
+        </object>
+        <option>1</option>
+        <flag>wxEXPAND|wxGROW</flag>
+      </object>
+    </object>
+  </object>
+  <object class="wxPanel" name="pnlToolPositional">
+    <object class="wxFlexGridSizer">
+      <cols>2</cols>
+      <rows>2</rows>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolPositionalOrderObjects">
+          <bitmap>tool-order.png</bitmap>
+          <tooltip>Order objects</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Order objects</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolPositionalSendToBack">
+          <bitmap>tool-send-to-back.png</bitmap>
+          <tooltip>Send selected object(s) to back</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Send To Back</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolPositionalSendBackward">
+          <bitmap>tool-send-backward.png</bitmap>
+          <tooltip>Send selected object(s) backwards</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Send backward</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolPositionalBringForward">
+          <bitmap>tool-bring-forward.png</bitmap>
+          <tooltip>Bring selected object(s) forward</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Bring forward</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolPositionalBringToFront">
+          <bitmap>tool-bring-to-front.png</bitmap>
+          <tooltip>Bring selected object(s) to front</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Bring to front</label>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxPanel" name="pnlToolClipboard">
+    <object class="wxFlexGridSizer">
+      <cols>2</cols>
+      <rows>2</rows>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolClipboardCut">
+          <bitmap>tool-cut.png</bitmap>
+          <tooltip>Cut</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Cut</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolClipboardCopy">
+          <bitmap>tool-copy.png</bitmap>
+          <tooltip>Copy</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Copy</label>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBitmapButton" name="btnToolClipboardPaste">
+          <bitmap>tool-paste.png</bitmap>
+          <tooltip>Paste</tooltip>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText">
+          <label>Paste</label>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxPanel" name="pnlToolSymbol">
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <object class="sizeritem">
+            <object class="wxBitmapButton" name="btnToolSymbolPlaceSingle">
+              <bitmap>tool-single-icon.png</bitmap>
+              <style>wxNO_BORDER</style>
+              <tooltip>Place symbols singly</tooltip>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBitmapButton" name="btnToolSymbolPlaceSquare">
+              <bitmap>tool-square-placement.png</bitmap>
+              <tooltip>Place symbols in a square shape</tooltip>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBitmapButton" name="btnToolSymbolPlaceDiamond">
+              <bitmap>tool-diamond-placement.png</bitmap>
+              <tooltip>Place symbols in a diamond shape</tooltip>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBitmapButton" name="btnToolSymbolPlaceRandom">
+              <bitmap>tool-random-placement.png</bitmap>
+              <tooltip>Random placement of symbols</tooltip>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticLine">
+              <style>wxLI_VERTICAL</style>
+            </object>
+            <flag>wxGROW</flag>
+            <minsize>10,10</minsize>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBitmapButton" name="btnToolSymbolDefineSymbol">
+              <bitmap>tool-define-selection-as-symbol.png</bitmap>
+              <tooltip>Define selection as a new symbol</tooltip>
+            </object>
+          </object>
+          <orient>wxHORIZONTAL</orient>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticLine"/>
+        <flag>wxEXPAND</flag>
+        <minsize>10,10</minsize>
+      </object>
+      <object class="sizeritem">
+        <object class="wxFlexGridSizer">
+          <cols>3</cols>
+          <rows>4</rows>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap">
+              <bitmap>sizeimage.png</bitmap>
+              <style></style>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxSlider" name="sldToolSymbolIconSize">
+              <value></value>
+              <min></min>
+              <max></max>
+              <tooltip>Set the icon size</tooltip>
+            </object>
+            <option>3</option>
+            <flag>wxEXPAND</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxSpinCtrl" name="spnToolSymbolIconSize">
+              <tooltip>Set the icon size</tooltip>
+            </object>
+            <option>1</option>
+            <flag>wxEXPAND</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap">
+              <bitmap>densityimage.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxSlider" name="sldToolSymbolIconSpacing">
+              <value></value>
+              <min></min>
+              <max></max>
+              <tooltip>Set the icon spacing</tooltip>
+            </object>
+            <option>3</option>
+            <flag>wxEXPAND</flag>
+          </object>
+          <growablecols>1</growablecols>
+          <object class="sizeritem">
+            <object class="wxSpinCtrl" name="spnToolSymbolIconSpacing">
+              <tooltip>Set the icon spacing</tooltip>
+            </object>
+            <option>1</option>
+            <flag>wxEXPAND</flag>
+          </object>
+        </object>
+        <flag>wxEXPAND</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticLine"/>
+        <flag>wxEXPAND</flag>
+        <minsize>10,10</minsize>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>Library:</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxChoice" name="chcToolSymbolLibrary">
+              <content/>
+              <tooltip>Select a symbol library</tooltip>
+            </object>
+            <option>1</option>
+            <flag>wxEXPAND</flag>
+          </object>
+        </object>
+        <flag>wxEXPAND</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxListCtrl" name="lstToolSymbolSet">
+          <style>wxLC_ICON</style>
+          <tooltip>Select a symbol</tooltip>
+        </object>
+        <option>1</option>
+        <flag>wxEXPAND|wxGROW</flag>
+      </object>
+    </object>
+  </object>
+  <object class="wxPanel" name="pnlToolPushpin">
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxCheckListBox" name="lstToolPushpinList">
+          <content/>
+          <tooltip>Place a pushpin, or jump to its location</tooltip>
+        </object>
+        <option>1</option>
+        <flag>wxEXPAND|wxGROW</flag>
+      </object>
+    </object>
+  </object>
+</resource>

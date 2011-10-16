@@ -1,0 +1,98 @@
+<?xml version="1.0" ?>
+<resource>
+  <object class="wxMenu" name="mnuHyperlinkProps">
+    <object class="wxMenuItem">
+      <label>Cut</label>
+    </object>
+    <object class="wxMenuItem">
+      <label>Copy</label>
+    </object>
+    <object class="wxMenuItem">
+      <label>Paste</label>
+    </object>
+    <object class="wxMenuItem">
+      <label>Delete</label>
+    </object>
+    <object class="wxMenuItem">
+      <label>Cancel</label>
+    </object>
+  </object>
+  <object class="wxMenu" name="mnuPushpin">
+    <label></label>
+    <object class="wxMenuItem">
+      <label>No Pushpoint Selected</label>
+    </object>
+    <object class="separator"/>
+    <object class="wxMenuItem">
+      <label>Create Waypoint</label>
+    </object>
+    <object class="wxMenuItem">
+      <label>Clear History</label>
+    </object>
+    <object class="wxMenuItem">
+      <label>Rename</label>
+    </object>
+    <object class="separator"/>
+    <object class="wxMenuItem">
+      <label>Copy waypoints for checked pushpins</label>
+    </object>
+    <object class="wxMenuItem">
+      <label>Paste waypoints from clipboard</label>
+    </object>
+    <object class="separator"/>
+    <object class="wxMenuItem">
+      <label>Show waypoints</label>
+    </object>
+    <object class="wxMenuItem">
+      <label>Display waypoint number</label>
+    </object>
+    <object class="wxMenuItem">
+      <label>Display waypoint note</label>
+    </object>
+  </object>
+  <object class="wxMenu" name="mnuShape">
+    <label></label>
+    <object class="wxMenuItem">
+      <label>Create open figure</label>
+    </object>
+    <object class="wxMenuItem">
+      <label>Create closed figure</label>
+    </object>
+    <object class="separator"/>
+    <object class="wxMenuItem">
+      <label>Suppres this menu and use Shift for closed figures</label>
+    </object>
+  </object>
+  <object class="wxMenu" name="mnuMainPopup">
+    <label></label>
+    <object class="wxMenuItem">
+      <label>Cut</label>
+    </object>
+    <object class="wxMenuItem">
+      <label>Copy</label>
+    </object>
+    <object class="wxMenuItem">
+      <label>Paste</label>
+    </object>
+    <object class="wxMenuItem">
+      <label>Delete</label>
+    </object>
+    <object class="separator"/>
+    <object class="wxMenuItem">
+      <label>Select None</label>
+    </object>
+    <object class="wxMenuItem">
+      <label>Selection Tool</label>
+    </object>
+    <object class="wxMenuItem">
+      <label>Single Icon</label>
+    </object>
+    <object class="separator"/>
+    <object class="wxMenuItem">
+      <label>Place Pushpin</label>
+    </object>
+    <object class="wxMenuItem">
+      <label>Change Units</label>
+    </object>
+  </object>
+</resource>

@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<resource>
+  <object class="wxBitmap" name="pushpin-00">pushpin-00.png</object>
+  <object class="wxBitmap" name="pushpin-01">pushpin-01.png</object>
+  <object class="wxBitmap" name="pushpin-02">pushpin-02.png</object>
+  <object class="wxBitmap" name="pushpin-03">pushpin-03.png</object>
+  <object class="wxBitmap" name="pushpin-04">pushpin-04.png</object>
+  <object class="wxBitmap" name="pushpin-05">pushpin-05.png</object>
+  <object class="wxBitmap" name="pushpin-06">pushpin-06.png</object>
+  <object class="wxBitmap" name="pushpin-07">pushpin-07.png</object>
+  <object class="wxBitmap" name="pushpin-08">pushpin-08.png</object>
+  <object class="wxBitmap" name="pushpin-09">pushpin-09.png</object>
+  <object class="wxBitmap" name="pushpin-10">pushpin-10.png</object>
+  <object class="wxBitmap" name="pushpin-11">pushpin-11.png</object>
+</resource>

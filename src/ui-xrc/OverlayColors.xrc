@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<resource>
+  <object class="wxBitmap" name="overcol-00">overcol-00.png</object>
+  <object class="wxBitmap" name="overcol-01">overcol-01.png</object>
+  <object class="wxBitmap" name="overcol-02">overcol-02.png</object>
+  <object class="wxBitmap" name="overcol-03">overcol-03.png</object>
+  <object class="wxBitmap" name="overcol-04">overcol-04.png</object>
+  <object class="wxBitmap" name="overcol-05">overcol-05.png</object>
+  <object class="wxBitmap" name="overcol-06">overcol-06.png</object>
+  <object class="wxBitmap" name="overcol-07">overcol-07.png</object>
+  <object class="wxBitmap" name="overcol-08">overcol-08.png</object>
+  <object class="wxBitmap" name="overcol-09">overcol-09.png</object>
+  <object class="wxBitmap" name="overcol-10">overcol-10.png</object>
+  <object class="wxBitmap" name="overcol-11">overcol-11.png</object>
+  <object class="wxBitmap" name="overcol-12">overcol-12.png</object>
+  <object class="wxBitmap" name="overcol-13">overcol-13.png</object>
+  <object class="wxBitmap" name="overcol-14">overcol-14.png</object>
+  <object class="wxBitmap" name="overcol-15">overcol-15.png</object>
+  <object class="wxBitmap" name="overcol-16">overcol-16.png</object>
+  <object class="wxBitmap" name="overcol-17">overcol-17.png</object>
+  <object class="wxBitmap" name="overcol-18">overcol-18.png</object>
+  <object class="wxBitmap" name="overcol-19">overcol-19.png</object>
+  <object class="wxBitmap" name="overcol-20">overcol-20.png</object>
+  <object class="wxBitmap" name="overcol-21">overcol-21.png</object>
+  <object class="wxBitmap" name="overcol-22">overcol-22.png</object>
+  <object class="wxBitmap" name="overcol-23">overcol-23.png</object>
+  <object class="wxBitmap" name="overcol-24">overcol-24.png</object>
+  <object class="wxBitmap" name="overcol-25">overcol-25.png</object>
+  <object class="wxBitmap" name="overcol-26">overcol-26.png</object>
+  <object class="wxBitmap" name="overcol-27">overcol-27.png</object>
+  <object class="wxBitmap" name="overcol-28">overcol-28.png</object>
+  <object class="wxBitmap" name="overcol-29">overcol-29.png</object>
+  <object class="wxBitmap" name="hyperlinkbullet">hyperlinkbullet.png</object>
+</resource>

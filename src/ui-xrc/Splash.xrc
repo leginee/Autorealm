@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<resource>
+  <object class="wxFrame" name="frmSplash">
+    <title>Please wait, loading...</title>
+    <centered>1</centered>
+    <style></style>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxStaticBitmap">
+          <bitmap>splash.png</bitmap>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticText" name="lblSplashStatus">
+          <label>Status:</label>
+        </object>
+        <flag>wxLEFT</flag>
+      </object>
+    </object>
+  </object>
+</resource>

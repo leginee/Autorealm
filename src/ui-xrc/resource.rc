@@ -1,0 +1,96 @@
+/**
+ * This file is, more or less, a copy of the resource file used under Delphi.
+ * Once the port is complete, this file will be useless, and should be deleted.
+ */
+CIRCLE CURSOR "Cursor_1.cur"
+
+CURVE1 CURSOR "Cursor_2.cur"
+
+CURVE2 CURSOR "Cursor_3.cur"
+
+CURVE3 CURSOR "Cursor_4.cur"
+
+CURVE4 CURSOR "Cursor_5.cur"
+
+DIAICON CURSOR "Cursor_6.cur"
+
+FREE CURSOR "Cursor_7.cur"
+
+GLUE CURSOR "Cursor_8.cur"
+
+GLUEHND CURSOR "Cursor_9.cur"
+
+GLUEHNDT CURSOR "Cursor_10.cur"
+
+GLUET CURSOR "Cursor_11.cur"
+
+HYPERLINK CURSOR "Cursor_12.cur"
+
+LINE CURSOR "Cursor_13.cur"
+
+LINE1 CURSOR "Cursor_14.cur"
+
+LINE2 CURSOR "Cursor_15.cur"
+
+PAN CURSOR "Cursor_16.cur"
+
+POLYGON CURSOR "Cursor_17.cur"
+
+RNDICON CURSOR "Cursor_18.cur"
+
+ROSECLIP CURSOR "Cursor_19.cur"
+
+ROSETTE CURSOR "Cursor_20.cur"
+
+RULER CURSOR "Cursor_21.cur"
+
+SCPLADD CURSOR "Cursor_22.cur"
+
+SCPLADDI CURSOR "Cursor_23.cur"
+
+SCPLDEL CURSOR "Cursor_24.cur"
+
+SCPLSEP CURSOR "Cursor_25.cur"
+
+SNGICON CURSOR "Cursor_26.cur"
+
+SQICON CURSOR "Cursor_27.cur"
+
+SQUARE CURSOR "Cursor_28.cur"
+
+TEXT CURSOR "Cursor_29.cur"
+
+ZOOM CURSOR "Cursor_30.cur"
+
+MAINICON ICON "MainIcon.ico"
+
+
+1 VERSIONINFO
+FILEVERSION 1,0,0,66
+PRODUCTVERSION 1,0,0,66
+FILEOS 0x4
+FILETYPE 0x1
+{
+BLOCK "StringFileInfo"
+{
+	BLOCK "040904E4"
+	{
+		VALUE "CompanyName", "Andrew J. Gryc"
+		VALUE "FileDescription", "AutoREALM executeable"
+		VALUE "FileVersion", "1.0.0.66"
+		VALUE "InternalName", ""
+		VALUE "LegalCopyright", "Copyright © 1999, 2001, Andrew J. Gryc"
+		VALUE "LegalTrademarks", ""
+		VALUE "OriginalFilename", "AutoREALM.exe"
+		VALUE "ProductName", "AutoREALM"
+		VALUE "ProductVersion", "1.0.0.0"
+		VALUE "Comments", ""
+	}
+}
+
+BLOCK "VarFileInfo"
+{
+	VALUE "Translation", 0x0409 0x04E4
+}
+}
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<resource>
+  <object class="wxBitmap" name="overlay-00">overlay-00.png</object>
+  <object class="wxBitmap" name="overlay-01">overlay-01.png</object>
+  <object class="wxBitmap" name="overlay-02">overlay-02.png</object>
+  <object class="wxBitmap" name="overlay-03">overlay-03.png</object>
+  <object class="wxBitmap" name="overlay-04">overlay-04.png</object>
+  <object class="wxBitmap" name="overlay-05">overlay-05.png</object>
+  <object class="wxBitmap" name="overlay-06">overlay-06.png</object>
+  <object class="wxBitmap" name="overlay-07">overlay-07.png</object>
+  <object class="wxBitmap" name="overlay-08">overlay-08.png</object>
+  <object class="wxBitmap" name="overlay-09">overlay-09.png</object>
+  <object class="wxBitmap" name="overlay-10">overlay-10.png</object>
+  <object class="wxBitmap" name="overlay-11">overlay-11.png</object>
+  <object class="wxBitmap" name="overlay-12">overlay-12.png</object>
+  <object class="wxBitmap" name="overlay-13">overlay-13.png</object>
+  <object class="wxBitmap" name="overlay-14">overlay-14.png</object>
+  <object class="wxBitmap" name="overlay-15">overlay-15.png</object>
+  <object class="wxBitmap" name="overlay-16">overlay-16.png</object>
+  <object class="wxBitmap" name="overlay-17">overlay-17.png</object>
+  <object class="wxBitmap" name="overlay-18">overlay-18.png</object>
+  <object class="wxBitmap" name="overlay-19">overlay-19.png</object>
+  <object class="wxBitmap" name="overlay-20">overlay-20.png</object>
+  <object class="wxBitmap" name="overlay-21">overlay-21.png</object>
+  <object class="wxBitmap" name="overlay-22">overlay-22.png</object>
+  <object class="wxBitmap" name="overlay-23">overlay-23.png</object>
+  <object class="wxBitmap" name="overlay-24">overlay-24.png</object>
+  <object class="wxBitmap" name="overlay-25">overlay-25.png</object>
+  <object class="wxBitmap" name="overlay-26">overlay-26.png</object>
+  <object class="wxBitmap" name="overlay-27">overlay-27.png</object>
+  <object class="wxBitmap" name="overlay-28">overlay-28.png</object>
+  <object class="wxBitmap" name="overlay-29">overlay-29.png</object>
+</resource>

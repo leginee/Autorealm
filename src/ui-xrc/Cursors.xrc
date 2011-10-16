@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<resource>
+  <object class="wxBitmap" name="cursor-00">Circle.cur</object>
+  <object class="wxBitmap" name="cursor-01">Curve1.cur</object>
+  <object class="wxBitmap" name="cursor-02">Curve2.cur</object>
+  <object class="wxBitmap" name="cursor-03">Curve3.cur</object>
+  <object class="wxBitmap" name="cursor-04">Curve4.cur</object>
+  <object class="wxBitmap" name="cursor-05">DiaIcon.cur</object>
+  <object class="wxBitmap" name="cursor-06">Free.cur</object>
+  <object class="wxBitmap" name="cursor-07">Glue.cur</object>
+  <object class="wxBitmap" name="cursor-08">GlueHnd.cur</object>
+  <object class="wxBitmap" name="cursor-09">GlueHndT.cur</object>
+  <object class="wxBitmap" name="cursor-10">GlueT.cur</object>
+  <object class="wxBitmap" name="cursor-11">Hyperlink.cur</object>
+  <object class="wxBitmap" name="cursor-12">Line.cur</object>
+  <object class="wxBitmap" name="cursor-13">Line1.cur</object>
+  <object class="wxBitmap" name="cursor-14">Line2.cur</object>
+  <object class="wxBitmap" name="cursor-15">Pan.cur</object>
+  <object class="wxBitmap" name="cursor-16">Polygon.cur</object>
+  <object class="wxBitmap" name="cursor-17">RndIcon.cur</object>
+  <object class="wxBitmap" name="cursor-18">RoseClip.cur</object>
+  <object class="wxBitmap" name="cursor-19">Rosette.cur</object>
+  <object class="wxBitmap" name="cursor-20">Ruler.cur</object>
+  <object class="wxBitmap" name="cursor-21">SCplAdd.cur</object>
+  <object class="wxBitmap" name="cursor-22">SCplAddI.cur</object>
+  <object class="wxBitmap" name="cursor-23">SCplDel.cur</object>
+  <object class="wxBitmap" name="cursor-24">SCplSep.cur</object>
+  <object class="wxBitmap" name="cursor-25">SQIcon.cur</object>
+  <object class="wxBitmap" name="cursor-26">Square.cur</object>
+  <object class="wxBitmap" name="cursor-27">Text.cur</object>
+  <object class="wxBitmap" name="cursor-28">Zoom.cur</object>
+</resource>

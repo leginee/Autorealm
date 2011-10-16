@@ -1,0 +1,1008 @@
+<?xml version="1.0" ?>
+<resource>
+  <object class="wxDialog" name="dlgAlignment" subclass="AlignDlg">
+    <title>Alignment</title>
+    <centered>1</centered>
+    <object class="wxBoxSizer">
+      <orient>wxHORIZONTAL</orient>
+      <object class="sizeritem">
+        <object class="wxRadioBox" name="rdHorizontal">
+          <label>Horizontal</label>
+          <content>
+            <item>N&amp;o Change</item>
+            <item>Align &amp;Left</item>
+            <item>Align C&amp;enter</item>
+            <item>Align &amp;Right</item>
+            <item>Slant Left</item>
+            <item>Slant Right</item>
+            <item>Scatter</item>
+            <item>Jog</item>
+            <item>Space E&amp;qually</item>
+            <item>&amp;Stack</item>
+          </content>
+          <style>wxRA_SPECIFY_COLS</style>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxRadioBox" name="rdVertical">
+          <label>Vertical</label>
+          <content>
+            <item>&amp;No Change</item>
+            <item>Align &amp;Top</item>
+            <item>Align &amp;Center</item>
+            <item>Align &amp;Bottom</item>
+            <item>Slant Up</item>
+            <item>Slant Down</item>
+            <item>Scatter</item>
+            <item>Jog</item>
+            <item>Space Eq&amp;ually</item>
+            <item>Stac&amp;k</item>
+          </content>
+          <style>wxRA_SPECIFY_COLS</style>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <object class="wxRadioBox" name="rdWidth">
+              <label>Width</label>
+              <content>
+                <item>No Change</item>
+                <item>Narrowest</item>
+                <item>Average</item>
+                <item>Widest</item>
+                <item>Increasing</item>
+                <item>Decreasing</item>
+                <item>Scatter</item>
+                <item>Jog</item>
+              </content>
+              <style>wxRA_SPECIFY_COLS</style>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxButton" name="wxID_OK">
+              <label>&amp;Ok</label>
+              <default>1</default>
+            </object>
+            <flag>wxALIGN_CENTRE</flag>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <object class="wxRadioBox" name="rdHeight">
+              <label>Height</label>
+              <content>
+                <item>No Change</item>
+                <item>Shortest</item>
+                <item>Average</item>
+                <item>Tallest</item>
+                <item>Increasing</item>
+                <item>Decreasing</item>
+                <item>Scatter</item>
+                <item>Jog</item>
+              </content>
+              <style>wxRA_SPECIFY_COLS</style>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxButton" name="wxID_CANCEL">
+              <label>&amp;Cancel</label>
+            </object>
+            <flag>wxALIGN_CENTRE</flag>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="dlgBitmapProps" subclass="BitmapPropertiesDlg">
+    <title>Bitmap Properties</title>
+    <centered>1</centered>
+    <object class="wxBoxSizer">
+      <orient>wxHORIZONTAL</orient>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <object class="wxStaticBoxSizer">
+              <label>Bitmap Size</label>
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <object class="wxRadioBox">
+                  <label></label>
+                  <content>
+                    <item>320x200</item>
+                    <item>640x480</item>
+                    <item>800x600</item>
+                    <item>1024x768</item>
+                    <item>1152x864</item>
+                    <item>1280x1024</item>
+                    <item>1600x1200</item>
+                    <item>Custom</item>
+                    <item>Window Size</item>
+                  </content>
+                  <dimension>2</dimension>
+                  <style>wxRA_SPECIFY_COLS|wxNO_BORDER</style>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <object class="wxStaticText">
+                  <label>Custom Window Size</label>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <object class="wxBoxSizer">
+                  <orient>wxHORIZONTAL</orient>
+                  <object class="sizeritem">
+                    <object class="wxTextCtrl"/>
+                    <flag>wxEXPAND|wxGROW</flag>
+                  </object>
+                  <object class="sizeritem">
+                    <object class="wxStaticText">
+                      <label>x</label>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <object class="wxTextCtrl"/>
+                    <flag>wxEXPAND|wxGROW</flag>
+                  </object>
+                </object>
+                <flag>wxEXPAND|wxGROW</flag>
+              </object>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxRadioBox">
+              <label>Scaling</label>
+              <content>
+                <item>Current Zoom Level</item>
+                <item>Show Entire Map</item>
+              </content>
+              <style>wxRA_SPECIFY_COLS</style>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBoxSizer">
+              <label>JPEG Settings</label>
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <object class="wxStaticText">
+                  <label>Image Quality</label>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <object class="wxSlider">
+                  <value>75</value>
+                  <min></min>
+                  <max>100</max>
+                  <size>100,15</size>
+                  <style>wxSL_HORIZONTAL|wxSL_LABELS</style>
+                  <tickfreq>5</tickfreq>
+                  <tick>5</tick>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <object class="wxCheckBox">
+                  <label>Image Smoothing</label>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <object class="wxCheckBox">
+                  <label>Progressive Encoding</label>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+        <flag>wxEXPAND|wxGROW</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap">
+              <bitmap></bitmap>
+              <size>320,320</size>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBoxSizer">
+              <orient>wxHORIZONTAL</orient>
+              <object class="sizeritem">
+                <object class="wxButton" name="wxOK">
+                  <label>&amp;Ok</label>
+                  <default>1</default>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <object class="wxButton" name="wxCANCEL">
+                  <label>&amp;Cancel</label>
+                </object>
+              </object>
+            </object>
+            <flag>wxALIGN_CENTRE</flag>
+          </object>
+        </object>
+        <flag>wxEXPAND|wxGROW</flag>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="dlgChartGrid" subclass="ChartGrid">
+    <title>Rosette Chart Grid</title>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxStaticBoxSizer">
+              <label>Perimeter Points</label>
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <object class="wxRadioBox">
+                  <label></label>
+                  <content>
+                    <item>8</item>
+                    <item>16</item>
+                    <item>32</item>
+                    <item>Other</item>
+                  </content>
+                  <selection>1</selection>
+                  <style>wxRA_SPECIFY_COLS|wxNO_BORDER</style>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <object class="wxSpinCtrl">
+                  <value>16</value>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <object class="wxButton" name="wxOK">
+                  <label>&amp;Ok</label>
+                  <default>1</default>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <object class="wxButton" name="wxCANCEL">
+                  <label>&amp;Cancel</label>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticBoxSizer">
+          <label>Rosette Appearance</label>
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <object class="wxBoxSizer">
+              <orient>wxHORIZONTAL</orient>
+              <object class="sizeritem">
+                <object class="wxStaticText">
+                  <label>Number vertices to skip</label>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <object class="wxSpinCtrl"/>
+              </object>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxCheckBox">
+              <label>Crop rosette after placement</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxCheckBox">
+              <label>Extend lines to crop rectangle</label>
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="dlgOrder" subclass="OrderDlg">
+    <title>Order</title>
+    <object class="wxBoxSizer">
+      <orient>wxHORIZONTAL</orient>
+      <object class="sizeritem">
+        <object class="wxRadioBox">
+          <label>Topmost objects start at</label>
+          <content>
+            <item>No Change</item>
+            <item>Top Left</item>
+            <item>Top Right</item>
+            <item>Bottom Left</item>
+            <item>Bottom Right</item>
+            <item>Center</item>
+            <item>Edge</item>
+            <item>Random</item>
+          </content>
+          <style>wxRA_SPECIFY_COLS</style>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <object class="wxButton">
+              <label>Ok</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxButton">
+              <label>Cancel</label>
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="dlgSettings" subclass="SettingsDlg">
+    <title>Settings</title>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxNotebook" name="pnlAllSettings">
+          <object class="notebookpage">
+            <label>General</label>
+            <object class="wxPanel" name="pnlSettingsGeneral">
+              <object class="wxBoxSizer">
+                <orient>wxVERTICAL</orient>
+                <object class="sizeritem">
+                  <object class="wxBoxSizer">
+                    <orient>wxHORIZONTAL</orient>
+                    <object class="sizeritem">
+                      <object class="wxStaticText">
+                        <label>Maximum levels of undo</label>
+                      </object>
+                    </object>
+                    <object class="sizeritem">
+                      <object class="wxSpinCtrl" name="pnlSettingsGeneralMaxUndo">
+                        <value>20</value>
+                        <min>1</min>
+                        <max>100</max>
+                      </object>
+                    </object>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxBoxSizer">
+                    <orient>wxHORIZONTAL</orient>
+                    <object class="sizeritem">
+                      <object class="wxCheckBox" name="checkVisualOverlayDisplay">
+                        <label>Visual overlay display:</label>
+                      </object>
+                    </object>
+                    <object class="sizeritem">
+                      <object class="wxRadioButton" name="rdbColorCoded">
+                        <label>Color Coded</label>
+                      </object>
+                    </object>
+                    <object class="sizeritem">
+                      <object class="wxRadioButton" name="rdbIcons">
+                        <label>Icons</label>
+                      </object>
+                    </object>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxCheckBox" name="checkMakeBackupFiles">
+                    <label>Make backup files</label>
+                    <checked>1</checked>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxCheckBox" name="checkUseDraft">
+                    <label>Use draft display when panning and scrolling</label>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxCheckBox" name="checkPrintIcons">
+                    <label>Print icons as polygons</label>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxCheckBox" name="checkSuppressPrintHyperlinks">
+                    <label>Suppress output of hyperlinks to printer</label>
+                    <checked>1</checked>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxCheckBox" name="checkAntiAliasBitmaps">
+                    <label>Anti-alias bitmaps in the symbol palette</label>
+                    <checked>1</checked>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object class="notebookpage">
+            <label>Selection</label>
+            <object class="wxPanel" name="pnlSettingsSelection">
+              <object class="wxBoxSizer">
+                <orient>wxVERTICAL</orient>
+                <object class="sizeritem">
+                  <object class="wxCheckBox">
+                    <label>Automatically select new objects</label>
+                    <checked>1</checked>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxCheckBox">
+                    <label>Right click prompts to close shape</label>
+                    <checked>1</checked>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxCheckBox">
+                    <label>Freeze properties of selected objects</label>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxCheckBox">
+                    <label>Autogroup complex objects when created</label>
+                    <checked>1</checked>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxCheckBox">
+                    <label>Crosshair on by default</label>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxBoxSizer">
+                    <orient>wxHORIZONTAL</orient>
+                    <object class="sizeritem">
+                      <object class="wxStaticText">
+                        <label>Zoom Factor</label>
+                      </object>
+                    </object>
+                    <object class="sizeritem">
+                      <object class="wxTextCtrl">
+                        <value>2.0</value>
+                      </object>
+                    </object>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object class="notebookpage">
+            <label>Auto-order</label>
+            <object class="wxPanel" name="pnlSettingsAutoOrder">
+              <object class="wxBoxSizer">
+                <orient>wxHORIZONTAL</orient>
+                <object class="sizeritem">
+                  <object class="wxRadioBox">
+                    <label>Auto-Order Setting</label>
+                    <content>
+                      <item>No Change</item>
+                      <item>Top Left</item>
+                      <item>Top Right</item>
+                      <item>Bottom Left</item>
+                      <item>Bottom Right</item>
+                      <item>Center</item>
+                      <item>Edge</item>
+                      <item>Random</item>
+                    </content>
+                    <style>wxRA_SPECIFY_COLS</style>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxStaticText">
+                    <label>Auto-Order allows you to
+automatically order multiple symbols
+after placement. This can be useful
+for symbols designed to overlap in a
+certain way. To leave symbols in the
+exact order that you added them,
+select &quot;No Change&quot;.</label>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object class="notebookpage">
+            <label>Drawing</label>
+            <object class="wxPanel" name="pnlSettingsDrawing">
+              <object class="wxBoxSizer">
+                <orient>wxVERTICAL</orient>
+                <object class="sizeritem">
+                  <object class="wxCheckBox">
+                    <label>New text size is relative to zoom level</label>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxCheckBox">
+                    <label>New icon size is relative to zoom level</label>
+                    <checked>1</checked>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxCheckBox">
+                    <label>New icon size equals the original symbol size</label>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxRadioBox">
+                    <label>Freehand Quality</label>
+                    <content>
+                      <item>Smooth (High Node Density)</item>
+                      <item>Standard</item>
+                      <item>Selective (Low Node Density)</item>
+                    </content>
+                    <selection>1</selection>
+                    <style>wxRA_SPECIFY_COLS</style>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+          <usenotebooksizer>1</usenotebooksizer>
+        </object>
+        <flag>wxEXPAND|wxGROW</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxButton" name="wxID_OK">
+              <label>Ok</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxButton" name="wxID_CANCEL">
+              <label>Cancel</label>
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="dlgMapSettings" subclass="MapSettingsDlg">
+    <title>Map Settings</title>
+    <object class="wxBoxSizer">
+      <orient>wxHORIZONTAL</orient>
+      <object class="sizeritem">
+        <object class="wxNotebook">
+          <usenotebooksizer>1</usenotebooksizer>
+          <object class="notebookpage">
+            <label>Measurement</label>
+            <object class="wxPanel">
+              <object class="wxBoxSizer">
+                <orient>wxVERTICAL</orient>
+                <object class="sizeritem">
+                  <object class="wxBoxSizer">
+                    <orient>wxHORIZONTAL</orient>
+                    <object class="sizeritem">
+                      <object class="wxStaticText">
+                        <label>Units</label>
+                      </object>
+                    </object>
+                    <object class="sizeritem">
+                      <object class="wxComboBox">
+                        <content/>
+                      </object>
+                    </object>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxBoxSizer">
+                    <orient>wxHORIZONTAL</orient>
+                    <object class="sizeritem">
+                      <object class="wxStaticBitmap" name="bmpPolar">
+                        <bitmap>polarimage.png</bitmap>
+                        <style></style>
+                      </object>
+                    </object>
+                    <object class="sizeritem">
+                      <object class="wxStaticBitmap" name="bmpDiamond">
+                        <bitmap>diamondimage.png</bitmap>
+                        <enabled>0</enabled>
+                        <hidden>1</hidden>
+                      </object>
+                    </object>
+                    <object class="sizeritem">
+                      <object class="wxStaticBitmap" name="bmpHalfDiamond">
+                        <bitmap>halfdiamondimage.png</bitmap>
+                        <enabled>0</enabled>
+                        <hidden>1</hidden>
+                      </object>
+                    </object>
+                    <object class="sizeritem">
+                      <object class="wxStaticBitmap" name="bmpHex">
+                        <bitmap>heximage.png</bitmap>
+                        <enabled>0</enabled>
+                        <hidden>1</hidden>
+                      </object>
+                    </object>
+                    <object class="sizeritem">
+                      <object class="wxStaticBitmap" name="bmpRHex">
+                        <bitmap>rheximage.png</bitmap>
+                        <enabled>0</enabled>
+                        <hidden>1</hidden>
+                      </object>
+                    </object>
+                    <object class="sizeritem">
+                      <object class="wxStaticBitmap" name="bmpSquare">
+                        <bitmap>squareimage.png</bitmap>
+                        <enabled>0</enabled>
+                        <hidden>1</hidden>
+                      </object>
+                    </object>
+                    <object class="sizeritem">
+                      <object class="wxStaticBitmap" name="bmpTriangle">
+                        <bitmap>triangleimage.png</bitmap>
+                        <enabled>0</enabled>
+                        <hidden>1</hidden>
+                      </object>
+                    </object>
+                    <object class="sizeritem">
+                      <object class="wxBoxSizer">
+                        <orient>wxVERTICAL</orient>
+                        <object class="sizeritem">
+                          <object class="wxStaticText">
+                            <label>Distances for marked segments</label>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxFlexGridSizer">
+                            <cols>2</cols>
+                            <rows>3</rows>
+                            <object class="sizeritem">
+                              <object class="wxStaticText">
+                                <label>A=</label>
+                              </object>
+                            </object>
+                            <object class="sizeritem">
+                              <object class="wxTextCtrl"/>
+                            </object>
+                            <object class="sizeritem">
+                              <object class="wxStaticText">
+                                <label>B=</label>
+                              </object>
+                            </object>
+                            <object class="sizeritem">
+                              <object class="wxTextCtrl"/>
+                            </object>
+                            <object class="sizeritem">
+                              <object class="wxStaticText">
+                                <label>C=</label>
+                              </object>
+                            </object>
+                            <object class="sizeritem">
+                              <object class="wxTextCtrl"/>
+                            </object>
+                          </object>
+                        </object>
+                      </object>
+                    </object>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object class="notebookpage">
+            <label>Comments</label>
+            <object class="wxPanel">
+              <object class="wxBoxSizer">
+                <orient>wxVERTICAL</orient>
+                <object class="sizeritem">
+                  <object class="wxTextCtrl">
+                    <style>wxTE_MULTILINE</style>
+                    <enabled>1</enabled>
+                  </object>
+                  <option>1</option>
+                  <flag>wxEXPAND|wxGROW</flag>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object class="notebookpage">
+            <label>Grid &amp; Snap</label>
+            <object class="wxPanel">
+              <object class="wxBoxSizer">
+                <orient>wxVERTICAL</orient>
+                <object class="sizeritem">
+                  <object class="wxStaticBoxSizer">
+                    <label>Per View Settings</label>
+                    <orient>wxVERTICAL</orient>
+                    <object class="sizeritem">
+                      <object class="wxBoxSizer">
+                        <orient>wxHORIZONTAL</orient>
+                        <object class="sizeritem">
+                          <object class="wxStaticText">
+                            <label>Current grid Position</label>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxTextCtrl"/>
+                        </object>
+                      </object>
+                    </object>
+                    <object class="sizeritem">
+                      <object class="wxCheckBox">
+                        <label>Draw Grid on Top of Objects</label>
+                      </object>
+                    </object>
+                  </object>
+                </object>
+                <object class="sizeritem">
+                  <object class="wxStaticBoxSizer">
+                    <label></label>
+                    <orient>wxVERTICAL</orient>
+                    <object class="sizeritem">
+                      <object class="wxCheckBox">
+                        <label>Display design grid</label>
+                      </object>
+                    </object>
+                    <object class="sizeritem">
+                      <object class="wxCheckBox">
+                        <label>Snap to design grid</label>
+                      </object>
+                    </object>
+                    <object class="sizeritem">
+                      <object class="wxBoxSizer">
+                        <orient>wxHORIZONTAL</orient>
+                        <object class="sizeritem">
+                          <object class="wxStaticText">
+                            <label>Grid Units</label>
+                          </object>
+                        </object>
+                        <object class="sizeritem">
+                          <object class="wxSpinCtrl">
+                            <value>2</value>
+                            <min>1</min>
+                            <max>16</max>
+                          </object>
+                        </object>
+                      </object>
+                    </object>
+                    <object class="sizeritem">
+                      <object class="wxCheckBox">
+                        <label>Gravity-snap to existing points</label>
+                      </object>
+                    </object>
+                    <object class="sizeritem">
+                      <object class="wxCheckBox">
+                        <label>Gravity-snap to lines and curves</label>
+                      </object>
+                    </object>
+                    <object class="sizeritem">
+                      <object class="wxCheckBox">
+                        <label>Rotate gravity-snapped objects</label>
+                      </object>
+                    </object>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <object class="wxButton">
+              <label>Ok</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxButton">
+              <label>Cancel</label>
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="dlgChooseFont" subclass="ChooseFontDlg">
+    <title>Choose Font</title>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxChoice">
+              <content/>
+            </object>
+            <option>1</option>
+            <flag>wxEXPAND|wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxChoice">
+              <content/>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBitmapButton">
+              <bitmap>speedbold.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBitmapButton">
+              <bitmap>speeditalics.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBitmapButton">
+              <bitmap>speedunderline.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBitmapButton">
+              <bitmap>speedleft.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBitmapButton">
+              <bitmap>speedcenter.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBitmapButton">
+              <bitmap>speedright.png</bitmap>
+            </object>
+          </object>
+        </object>
+        <flag>wxEXPAND|wxGROW</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxTextCtrl"/>
+        <option>1</option>
+        <flag>wxEXPAND|wxGROW</flag>
+        <minsize>386,41</minsize>
+      </object>
+    </object>
+  </object>
+  <object class="wxFrame" name="frmColorTranslationManager" subclass="CTManager">
+    <title>Color Translation Manager</title>
+    <object class="wxBoxSizer">
+      <orient>wxHORIZONTAL</orient>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap">
+              <bitmap></bitmap>
+            </object>
+            <minsize>157,157</minsize>
+          </object>
+          <object class="sizeritem">
+            <object class="wxListBox">
+              <content/>
+            </object>
+            <minsize>157,314</minsize>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>Colors contained in selection:</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="unknown"/>
+            <minsize>466,240</minsize>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBoxSizer">
+              <orient>wxHORIZONTAL</orient>
+              <object class="sizeritem">
+                <object class="wxStaticText">
+                  <label>Replacement Color:</label>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <object class="wxBitmapButton">
+                  <bitmap></bitmap>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <object class="wxButton">
+                  <label>Add/Change</label>
+                </object>
+              </object>
+            </object>
+            <flag>wxEXPAND</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticLine"/>
+            <flag>wxEXPAND</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBoxSizer">
+              <orient>wxHORIZONTAL</orient>
+              <object class="sizeritem">
+                <object class="wxStaticText">
+                  <label>Active Profile</label>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <object class="wxComboBox">
+                  <content/>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>Profile has been modified; you should save it</label>
+              <fg>#FF0000</fg>
+              <hidden>1</hidden>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBoxSizer">
+              <orient>wxHORIZONTAL</orient>
+              <object class="sizeritem">
+                <object class="wxButton">
+                  <label>New</label>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <object class="wxButton">
+                  <label>Save</label>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <object class="wxButton">
+                  <label>Rename</label>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <object class="wxButton">
+                  <label>Delete</label>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="unknown"/>
+            <minsize>466,54</minsize>
+          </object>
+          <object class="sizeritem">
+            <object class="wxBoxSizer">
+              <orient>wxHORIZONTAL</orient>
+              <object class="sizeritem">
+                <object class="wxButton">
+                  <label>Ok</label>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <object class="wxStaticText">
+                  <label>Replacement Color:</label>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <object class="wxBitmapButton">
+                  <bitmap></bitmap>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <object class="wxButton">
+                  <label>Remove Color Translation</label>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+</resource>

@@ -1,0 +1,291 @@
+<?xml version="1.0" ?>
+<resource>
+  <object class="wxDialog" name="dlgFillPattern" subclass="FillPattern">
+    <title>Select Fill Pattern</title>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxGridSizer">
+          <cols>10</cols>
+          <rows>5</rows>
+          <vgap>1</vgap>
+          <hgap>1</hgap>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-00" subclass="clkStaticBitmap">
+              <bitmap>fill-00.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-01" subclass="clkStaticBitmap">
+              <bitmap>fill-01.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-02" subclass="clkStaticBitmap">
+              <bitmap>fill-02.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-03" subclass="clkStaticBitmap">
+              <bitmap>fill-03.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-04" subclass="clkStaticBitmap">
+              <bitmap>fill-04.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-05" subclass="clkStaticBitmap">
+              <bitmap>fill-05.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-06" subclass="clkStaticBitmap">
+              <bitmap>fill-06.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-07" subclass="clkStaticBitmap">
+              <bitmap>fill-07.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-08" subclass="clkStaticBitmap">
+              <bitmap>fill-08.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-09" subclass="clkStaticBitmap">
+              <bitmap>fill-09.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-10" subclass="clkStaticBitmap">
+              <bitmap>fill-10.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-11" subclass="clkStaticBitmap">
+              <bitmap>fill-11.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-12" subclass="clkStaticBitmap">
+              <bitmap>fill-12.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-13" subclass="clkStaticBitmap">
+              <bitmap>fill-13.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-14" subclass="clkStaticBitmap">
+              <bitmap>fill-14.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-15" subclass="clkStaticBitmap">
+              <bitmap>fill-15.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-16" subclass="clkStaticBitmap">
+              <bitmap>fill-16.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-17" subclass="clkStaticBitmap">
+              <bitmap>fill-17.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-18" subclass="clkStaticBitmap">
+              <bitmap>fill-18.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-19" subclass="clkStaticBitmap">
+              <bitmap>fill-19.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-20" subclass="clkStaticBitmap">
+              <bitmap>fill-20.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-21" subclass="clkStaticBitmap">
+              <bitmap>fill-21.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-22" subclass="clkStaticBitmap">
+              <bitmap>fill-22.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-23" subclass="clkStaticBitmap">
+              <bitmap>fill-23.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-24" subclass="clkStaticBitmap">
+              <bitmap>fill-24.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-25" subclass="clkStaticBitmap">
+              <bitmap>fill-25.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-26" subclass="clkStaticBitmap">
+              <bitmap>fill-26.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-27" subclass="clkStaticBitmap">
+              <bitmap>fill-27.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-28" subclass="clkStaticBitmap">
+              <bitmap>fill-28.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-29" subclass="clkStaticBitmap">
+              <bitmap>fill-29.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-30" subclass="clkStaticBitmap">
+              <bitmap>fill-30.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-31" subclass="clkStaticBitmap">
+              <bitmap>fill-31.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-32" subclass="clkStaticBitmap">
+              <bitmap>fill-32.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-33" subclass="clkStaticBitmap">
+              <bitmap>fill-33.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-34" subclass="clkStaticBitmap">
+              <bitmap>fill-34.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-35" subclass="clkStaticBitmap">
+              <bitmap>fill-35.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-36" subclass="clkStaticBitmap">
+              <bitmap>fill-36.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-37" subclass="clkStaticBitmap">
+              <bitmap>fill-37.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-38" subclass="clkStaticBitmap">
+              <bitmap>fill-38.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-39" subclass="clkStaticBitmap">
+              <bitmap>fill-39.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-40" subclass="clkStaticBitmap">
+              <bitmap>fill-40.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-41" subclass="clkStaticBitmap">
+              <bitmap>fill-41.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-42" subclass="clkStaticBitmap">
+              <bitmap>fill-42.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-43" subclass="clkStaticBitmap">
+              <bitmap>fill-43.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-44" subclass="clkStaticBitmap">
+              <bitmap>fill-44.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-45" subclass="clkStaticBitmap">
+              <bitmap>fill-45.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-46" subclass="clkStaticBitmap">
+              <bitmap>fill-46.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-47" subclass="clkStaticBitmap">
+              <bitmap>fill-47.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-48" subclass="clkStaticBitmap">
+              <bitmap>fill-48.png</bitmap>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="fill-49" subclass="clkStaticBitmap">
+              <bitmap>fill-49.png</bitmap>
+            </object>
+          </object>
+        </object>
+        <flag>wxEXPAND</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <object class="wxStaticBitmap" name="bmpCurrPattern" subclass="clkStaticBitmap">
+              <bitmap></bitmap>
+            </object>
+            <flag>wxEXPAND|wxGROW|wxALIGN_CENTRE</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxButton" name="wxID_OK">
+              <label>&amp;Ok</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxButton" name="wxID_CANCEL">
+              <label>&amp;Cancel</label>
+            </object>
+          </object>
+        </object>
+        <border>2</border>
+      </object>
+    </object>
+    <centered>0</centered>
+  </object>
+</resource>
