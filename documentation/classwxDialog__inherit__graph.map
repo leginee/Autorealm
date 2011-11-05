@@ -1,0 +1,24 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classBitmapPropertiesDlg.html" title="Descended from wxDialog, this class is used to BRIEFDESC." alt="" coords="143,5,284,35"/>
+<area shape="rect" id="node5" href="$classChartGrid.html" title="Descended from wxDialog, this class is used to BRIEFDESC." alt="" coords="175,59,252,88"/>
+<area shape="rect" id="node7" href="$classChooseFontDlg.html" title="Descended from wxDialog, this class is used to BRIEFDESC." alt="" coords="157,112,269,141"/>
+<area shape="rect" id="node9" href="$classDefineNewSymbolDlg.html" title="Descended from wxDialog, this class is used to BRIEFDESC." alt="" coords="139,165,288,195"/>
+<area shape="rect" id="node11" href="$classDeleteViewDlg.html" title="Descended from wxDialog, this class is used to BRIEFDESC." alt="" coords="159,219,268,248"/>
+<area shape="rect" id="node13" href="$classDlgTemplate.html" title="Descended from wxDialog, this class is used to BRIEFDESC." alt="" coords="165,272,261,301"/>
+<area shape="rect" id="node15" href="$classFillPattern.html" title="Descended from wxDialog, this class is used to display a list of fill patterns and allow the user to ..." alt="" coords="173,325,253,355"/>
+<area shape="rect" id="node17" href="$classFlipDlg.html" title="Descended from wxDialog, this class is used to BRIEFDESC." alt="" coords="183,379,244,408"/>
+<area shape="rect" id="node19" href="$classfrmMakeFrom3DUnit.html" title="Descended from wxDialog, this class is used to BRIEFDESC." alt="" coords="141,432,285,461"/>
+<area shape="rect" id="node21" href="$classHyperlinkPropDlg.html" title="Descended from wxDialog, this class is used to BRIEFDESC." alt="" coords="152,485,275,515"/>
+<area shape="rect" id="node23" href="$classMapSettingsDlg.html" title="Descended from wxDialog, this class is used to BRIEFDESC." alt="" coords="156,539,271,568"/>
+<area shape="rect" id="node25" href="$classNewGroupDlg.html" title="Descended from wxDialog, this class is used to BRIEFDESC." alt="" coords="161,592,265,621"/>
+<area shape="rect" id="node27" href="$classOrderDlg.html" title="Descended from wxDialog, this class is used to BRIEFDESC." alt="" coords="176,645,251,675"/>
+<area shape="rect" id="node29" href="$classPolygonSidesDlg.html" title="Descended from wxDialog, this class is used to BRIEFDESC." alt="" coords="152,699,275,728"/>
+<area shape="rect" id="node31" href="$classReplacementOverlayDlg.html" title="Descended from wxDialog, this class is used to BRIEFDESC." alt="" coords="132,752,295,781"/>
+<area shape="rect" id="node33" href="$classRotateBitmap.html" title="Descended from wxDialog, this class is used to display a heading control, allowing the user to select..." alt="" coords="163,805,264,835"/>
+<area shape="rect" id="node35" href="$classSaveViewDlg.html" title="Descended from wxDialog, this class is used to BRIEFDESC." alt="" coords="163,859,264,888"/>
+<area shape="rect" id="node37" href="$classScaleDlg.html" title="Descended from wxDialog, this class is used to BRIEFDESC." alt="" coords="176,912,251,941"/>
+<area shape="rect" id="node39" href="$classSettingsDlg.html" title="Descended from wxDialog, this class is used to BRIEFDESC." alt="" coords="168,965,259,995"/>
+<area shape="rect" id="node41" href="$classSkewDlg.html" title="Descended from wxDialog, this class is used to BRIEFDESC." alt="" coords="176,1019,251,1048"/>
+<area shape="rect" id="node43" href="$classTMoveSelection.html" title="Descended from wxDialog, this class is used to BRIEFDESC." alt="" coords="156,1072,271,1101"/>
+<area shape="rect" id="node45" href="$classTSymbolLibraryForm.html" title="Descended from wxDialog, this class is used to BRIEFDESC." alt="" coords="143,1125,284,1155"/>
+</map>

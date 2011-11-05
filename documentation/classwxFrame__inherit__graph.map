@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classAutoNameDlg.html" title="Descended from wxDialog, this class is used to BRIEFDESC." alt="" coords="5,83,109,112"/>
+<area shape="rect" id="node5" href="$classCTManager.html" title="Descended from wxFrame, this class is used to BRIEFDESC." alt="" coords="133,83,224,112"/>
+<area shape="rect" id="node7" href="$classMainWin.html" title="The main window of the application, controls startup, shutdown, and usage of other dialogs..." alt="" coords="248,83,320,112"/>
+</map>

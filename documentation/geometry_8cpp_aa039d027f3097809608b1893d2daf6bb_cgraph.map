@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$geometry_8cpp.html#a4e82aa929c0951d0bc44dfccc29faf87" title="Returns the unit vector corresponding to the two points." alt="" coords="135,5,212,35"/>
+<area shape="rect" id="node5" href="$geometry_8cpp.html#a76f93e3f714974261561fcb389d3841e" title="Returns the distance between the two points." alt="" coords="263,5,332,35"/>
+<area shape="rect" id="node7" href="$geometry_8cpp.html#a17b37056ce7a2601a89d7fc90dcbec96" title="returns the square of the distance between the two points. It&#39;s faster than distance for figuring out..." alt="" coords="383,5,460,35"/>
+</map>

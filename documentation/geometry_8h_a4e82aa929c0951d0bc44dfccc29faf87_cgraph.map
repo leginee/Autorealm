@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$geometry_8cpp.html#a76f93e3f714974261561fcb389d3841e" title="Returns the distance between the two points." alt="" coords="135,5,204,35"/>
+<area shape="rect" id="node5" href="$geometry_8cpp.html#a17b37056ce7a2601a89d7fc90dcbec96" title="returns the square of the distance between the two points. It&#39;s faster than distance for figuring out..." alt="" coords="255,5,332,35"/>
+</map>

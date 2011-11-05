@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classwxApp.html" title="wxApp" alt="" coords="5,197,67,227"/>
+<area shape="rect" id="node6" href="$classMainWin.html" title="The main window of the application, controls startup, shutdown, and usage of other dialogs..." alt="" coords="192,197,264,227"/>
+<area shape="rect" id="node8" href="$classwxFrame.html" title="wxFrame" alt="" coords="21,101,96,131"/>
+<area shape="rect" id="node14" href="$classFillPattern.html" title="Descended from wxDialog, this class is used to display a list of fill patterns and allow the user to ..." alt="" coords="355,101,435,131"/>
+<area shape="rect" id="node16" href="$classwxDialog.html" title="wxDialog" alt="" coords="307,5,381,35"/>
+</map>

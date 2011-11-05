@@ -1,0 +1,22 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$DrawPrimitive_8h.html" title="DrawPrimitive.h" alt="" coords="788,237,903,267"/>
+<area shape="rect" id="node58" href="$matrixmath_8h.html" title="matrixmath.h" alt="" coords="1375,315,1474,344"/>
+<area shape="rect" id="node60" href="$geometry_8h.html" title="geometry.h" alt="" coords="1396,392,1482,421"/>
+<area shape="rect" id="node68" href="$LinePrimitive_8h.html" title="LinePrimitive.h" alt="" coords="650,160,756,189"/>
+<area shape="rect" id="node73" href="$CurvePrimitive_8h.html" title="CurvePrimitive.h" alt="" coords="508,160,626,189"/>
+<area shape="rect" id="node78" href="$PolyLinePrimitive_8h.html" title="PolyLinePrimitive.h" alt="" coords="183,160,316,189"/>
+<area shape="rect" id="node83" href="$PolyCurvePrimitive_8h.html" title="PolyCurvePrimitive.h" alt="" coords="340,160,484,189"/>
+<area shape="rect" id="node88" href="$MapObject_8h.html" title="MapObject.h" alt="" coords="1187,83,1283,112"/>
+<area shape="rect" id="node107" href="$LocalizedStrings_8h.html" title="LocalizedStrings.h" alt="" coords="1714,237,1842,267"/>
+<area shape="rect" id="node110" href="$generic__library_8h.html" title="generic_library.h" alt="" coords="1764,83,1882,112"/>
+<area shape="rect" id="node116" href="$SettingsDlg_8h.html" title="SettingsDlg.h" alt="" coords="432,83,534,112"/>
+<area shape="rect" id="node11" href="$globals_8h.html" title="globals.h" alt="" coords="882,624,956,653"/>
+<area shape="rect" id="node17" href="$Primitives_8h.html" title="Primitives.h" alt="" coords="622,315,712,344"/>
+<area shape="rect" id="node44" href="$ViewPoint_8h.html" title="ViewPoint.h" alt="" coords="839,392,930,421"/>
+<area shape="rect" id="node22" href="$DrawLines_8h.html" title="DrawLines.h" alt="" coords="839,469,932,499"/>
+<area shape="rect" id="node32" href="$MainWin_8h.html" title="MainWin.h" alt="" coords="542,469,624,499"/>
+<area shape="rect" id="node25" href="$types_8h.html" title="types.h" alt="" coords="1391,547,1455,576"/>
+<area shape="rect" id="node39" href="$FillPattern_8h.html" title="FillPattern.h" alt="" coords="639,547,730,576"/>
+<area shape="rect" id="node47" href="$GraphGrid_8h.html" title="GraphGrid.h" alt="" coords="1116,469,1207,499"/>
+<area shape="rect" id="node101" href="$HyperlinkPrimitive_8h.html" title="HyperlinkPrimitive.h" alt="" coords="882,160,1020,189"/>
+</map>

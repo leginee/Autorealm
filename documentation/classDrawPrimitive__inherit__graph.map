@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classBitmapPrimitive.html" title="BitmapPrimitive" alt="" coords="168,5,283,35"/>
+<area shape="rect" id="node5" href="$classCurvePrimitive.html" title="CurvePrimitive" alt="" coords="172,59,279,88"/>
+<area shape="rect" id="node9" href="$classGroupPrimitive.html" title="GroupPrimitive" alt="" coords="172,112,279,141"/>
+<area shape="rect" id="node11" href="$classHyperlinkPrimitive.html" title="HyperlinkPrimitive" alt="" coords="161,165,289,195"/>
+<area shape="rect" id="node13" href="$classLinePrimitive.html" title="LinePrimitive" alt="" coords="177,219,273,248"/>
+<area shape="rect" id="node15" href="$classPolyCurvePrimitive.html" title="PolyCurvePrimitive" alt="" coords="159,272,292,301"/>
+<area shape="rect" id="node17" href="$classPolyLinePrimitive.html" title="PolyLinePrimitive" alt="" coords="164,325,287,355"/>
+<area shape="rect" id="node19" href="$classSymbolPrimitive.html" title="SymbolPrimitive" alt="" coords="167,379,284,408"/>
+<area shape="rect" id="node7" href="$classTextCurvePrimitive.html" title="TextCurvePrimitive" alt="" coords="343,59,476,88"/>
+<area shape="rect" id="node21" href="$classTextPrimitive.html" title="TextPrimitive" alt="" coords="360,379,459,408"/>
+</map>

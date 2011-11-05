@@ -1,0 +1,239 @@
+-----Thread from June 21, 2005, 9:15am to 11:15am
+[9:19:31 AM] *** Mike Condon @ My Jabber is Online
+[9:20:06 AM] <Pedersen> Hey there. Got an unusual challenge, I think, for loading of old maps, saving of new ones. Got a minute?
+[9:20:21 AM] <Mike Condon @ My Jabber> yep. wassup?
+[9:20:42 AM] <Mike Condon @ My Jabber> I was just looking at expat and expatpp
+[9:22:46 AM] <Pedersen> Okay, get ready, cause this one's a doozy.
+
+Certain values are hardcoded in the current version of AutoRealm. Amongst them: The various line endings (for instance, the different arrowheads which can be used at the endpoints of various lines). Now, this means that the line endings are not saved in the file, just an index indicating to use (for instance) line ending number 5.
+
+The next version of the files should not use such an index, but should, instead, allow arbitrary line endings.
+[9:23:09 AM] <Mike Condon @ My Jabber> agreed
+[9:23:17 AM] <Pedersen> I'm having a challenge conceptualizing how to  handle this situation.
+[9:24:15 AM] <Mike Condon @ My Jabber> Hmmm....Why not make line endings an object, and embed them with the document (map) when saved?
+[9:25:03 AM] <Pedersen> True. That part is easy. I'm more concerned with the loading, though.
+
+We can have a default set of line endings. But, what happens when we load a file which has an existing set of line endings?
+[9:28:27 AM] <Mike Condon @ My Jabber> If we went this way, we could pre-create the line ending objects that represent the current line endings when AR starts up. When a Map is loaded and the old style line endings are encountered, we can 'add' a new line ending object to the map which will later be saved. In essence we could 'convert' the files on the load/save turnaround. Or perhaps I haven't had enough coffee :-0
+[9:28:51 AM] <Pedersen> Or.... Something else I just typed:
+-----
+Wait, it's starting to gel...
+
+Okay, we have a default set of line endings. These are always available, immutable.
+
+Next, we have additional line endings which the user can devise on their own. These are appended to the list of available line endings for a given document. So, a document has line endings which add to the existing. That system can work, I think...
+[9:29:22 AM] <Mike Condon @ My Jabber> yep. that's how I see it. How does it sound?
+[9:30:29 AM] <Mike Condon @ My Jabber> It's a kludge, but it's there to accommodate a current design for compatibility reasons. If I were designing this from the ground up, the line endings would simply be objects like everhthing else. So I can live with this 'klidge'.
+[9:32:06 AM] <Mike Condon @ My Jabber> Are you deep in thought or comatose [9:33:26 AM] <Mike Condon @ My Jabber> bbiam
+[9:34:20 AM] <Pedersen> Sorry, also at work.
+[9:34:48 AM] <Pedersen> It'll work, and it'll provide some standards for people, so it's not entirely a kludge.
+[9:35:47 AM] <Pedersen> Drawbacks: We have to do two separate types of line endings when saving: standard and extended. Also need to be aware of it for loading.
+[9:38:06 AM] <Pedersen> Benefits, though (and yes, there actually some benefits): There is always a consistently available set of line endings.
+[9:40:19 AM] <Pedersen> Herm, issue, though... Dang it...
+
+One idea that also comes forth from this is different types of symbol libraries. One for line endings would be beautiful. Ahhhh.... here's an idea: An immutable "line ending symbol library". No changes, additions, or deletions can ever be done to it. However, it's there, and usable. When saving, we copy those line endings into the xml file as symbols. When loading old style files, we do references into the appropriate library... I think I'm making *some* sense. You tell me.
+[9:45:39 AM] <Mike Condon @ My Jabber> thinking...hold on
+[9:50:44 AM] <Mike Condon @ My Jabber> Line Endings (LEs) are basically 'special' symbols. They're associated with lines. There's a tool to add them to lines drawn on the map. I think a symbol lib is a great idea, but I don't want the user to have to go thru the symbol table interface to use them. I want them to be able to simply click on the icon to add a left LE or right LE like AR currently does.  (more to come)
+[9:57:04 AM] <Mike Condon @ My Jabber> I like your idea...as long as the user doesn't have to go thru the Symbol Library (SL) interface to select them....whaddya think? I gotta think more about this one.
+[9:57:31 AM] <Mike Condon @ My Jabber> Those symbols should be represented and available via the icons on the UI.
+[9:58:47 AM] <Mike Condon @ My Jabber> IM is low bandwidth for this conversation, no?
+[9:59:00 AM] <Pedersen> Oh, that's a UI thing. There's no need for them to go through it to select which one they want. Now, adding/changing their own line ending symbols will require something like the symbol library...
+
+Actually, though, I'm planning on a redesign of the SL interface, which would make using them not much more difficult than the current line endings interface (if at all more difficult).
+
+It is, but I am at work [10:05:02 AM] <Mike Condon @ My Jabber> COOL. I agree. Adding/deleting/modifying should go thru the SL iface. But SELECTION should be immediately available like it is now. The user should not be able to delete the set of orig LEs - they should be 'marked' as such in some way so the user knows that they can't delete them from the SL and won't be surprised if they try.
+[10:05:32 AM] <Mike Condon @ My Jabber> How do you edit a symbol? Do you place it on the map and manipulate it and then to a 'create symbol from selected' action?
+[10:06:25 AM] <Mike Condon @ My Jabber> bbiam
+[10:10:22 AM] <Pedersen> Whether or not that's how it is now (though I think it is), that's how it will be in future.
+[10:11:28 AM] <Pedersen> I'll have to do a decent mockup of the UI sometime, so you can see better what I'm thinking of.
+[10:12:45 AM] <Pedersen> Dang, don't have xrced handy, else I'd draw a quick mockup. Think I'll do that tonight.
+[10:22:28 AM] <Mike Condon @ My Jabber> ok. That would help. (a mockup that is). Ya know, doesn't this same issue apply to some degree to line styles?
+[10:22:45 AM] <Pedersen> Yep, and should be solvable in the exact same way.
+[10:23:12 AM] <Mike Condon @ My Jabber> I like it. Sounds like a plan....
+[10:24:30 AM] <Pedersen> So, we actually have a new requirement, when you stop and think about it: The ability to mark a document as immutable.
+[10:25:35 AM] <Mike Condon @ My Jabber> Precisely. So you're using the term 'document' to refer to any object...a whole map, a symbol, an SL object, a line style, whatever.
+[10:25:56 AM] <Pedersen> Something that can be loaded and saved.
+[10:28:00 AM] <Mike Condon @ My Jabber> OK. that helps me understand. Sometimes the terminology is a little fuzzy in the early stages of design - between the designers, that is  COOL. Yes. This will work. I think :-0[10:28:47 AM] <Pedersen> Oh, and technically, displayed. Those are the three key attribues in my definition of document. Okay, four.... Alright, now I'm sounding like the Spanish Inquisition, Monty Python style.
+
+Documents can be loaded, saved, displayed, and they contain stuff (stuff being anything that can be displayed or affect the stuff that will be displayed)
+[10:29:40 AM] <Pedersen> So, a map will be a document. An individual symbol library will be a document. But a symbol, line ending, line style, is not a document. Rather it is something that goes onto a document.
+[10:30:54 AM] <Mike Condon @ My Jabber> hehehe - no one EXPECTS the Spanish Inquisition Why not have them all be documents (i.e. recursive defn)?[10:31:26 AM] <Pedersen> Builder pattern [10:31:39 AM] <Mike Condon @ My Jabber> OH - see you're such a geek [10:32:00 AM] <Mike Condon @ My Jabber> I saw that book to the other day but they wanted $60 for it. 
+[10:32:01 AM] <Pedersen> http://home.earthlink.net/%7Ehuston2/dp/builder.html
+[10:34:43 AM] <Mike Condon @ My Jabber> I'm reading the URL stuff
+[10:36:08 AM] <Pedersen> It's a case of looking at the system, and looking to see what we're going to do. We're going to have a set of load/save routines which need to build a document in memory. Using the Builder pattern accomplishes that exceptionally well, especially with how we'll be handling our load/save routines for most efficient access we can manage.
+
+The Builder pattern is best suited to building a Composite (http://home.earthlink.net/%7Ehuston2/dp/composite.html). The key behind that pattern, though (at least in our case) is to use something which is easily subclassed, and imposes as little structure as possible on the subclasses. Think using a Glyph as the primary object of our document, while the document contains information about the glyphs (for instance, a collection of glyphs), and information about the document as a whole (for instance, the name of the author, time of creation, etc).
+[10:36:27 AM] <Pedersen> Just wanted to send some supplementary information to help explain why I was thinking of those patterns [10:39:24 AM] <Mike Condon @ My Jabber> I understand the builder pattern (I think), but I still don't understand why a document couldn't contain another document. As a use case consider a feature which allows a user to embed one map (like a city map) within another. By taking some action (like a menu drop down action) they could switch to that map.
+[10:40:02 AM] <Mike Condon @ My Jabber> It may be terminology. There has to be one top level container type.
+[10:40:36 AM] <Mike Condon @ My Jabber> you could handle that use case with an embeded link tho.
+[10:41:01 AM] <Mike Condon @ My Jabber> to the other map.
+[10:41:12 AM] <Mike Condon @ My Jabber> Then when you clicked on it, you'd get another tabbed view.
+[10:42:09 AM] <Pedersen> Actually, flip around a very little bit, and you get something different, but still within what AutoRealm already does: Hyperlinks. Instead of embedding a document (which has some potential negative consequences I'll hit in a minute), use Hyperlinks. Since we're going to allow multiple concurrent documents, a clickable link will allow the opening of the document in another tab.
+
+Problem with embedded: If we allow maps to have 10M objects, and each of those needs an 8 byte location field for x, plus another for y, before any extra information, we're talking about 160M of memory.
+[10:42:28 AM] <Pedersen> Now, embedded would double that with a second map.
+[10:42:59 AM] <Mike Condon @ My Jabber> exactly what I was just thinking. I like it.
+[10:43:42 AM] <Pedersen> Now, add in metadata in the document: Author is the simplest and most common. If all objects are ALSO documents, then the author information takes up still more space for EVERY object. Even if it's only 1 byte (which we both know won't be possible), that's another 10M of memory in use.
+[10:44:09 AM] <Pedersen> I'm not a prude about memory, but adding in usage where it's completely unnecessary bugs me [10:47:30 AM] <Mike Condon @ My Jabber> I agree. I just want the objects to be treated in as like a manner as possible. For the Author example, I wouldn't store that with every object. The different object subclasses would only represent (and therefore contain) what they need. Atain, probably terminology and (low) IM bandwidth. Sorry. The link idea is a great one - I'd forgotten about AR's current capability - haven't used it yet.
+[10:47:53 AM] <Mike Condon @ My Jabber> ooops "Atain = Again"
+[10:48:24 AM] <Pedersen> Well, there's one problem: Remember, subclassing gets you everything in the parent class. So, if author is a member of the document class, then you have author appearing in every object.
+[10:51:14 AM] <Mike Condon @ My Jabber> lemme thinkg
+[10:51:22 AM] <Pedersen> Fair enough [10:55:05 AM] <Mike Condon @ My Jabber> 1. Why would we keep the author in mem at all? But that's a moot point since the same reasoning applies to other attributes of docs. 
+
+2. Let's use author as the example. MapDoc could subclass Doc. Doc doesn't have an author member but MapDoc does. SymbolDoc could subclass Doc with no author member. ImmutableSymbolDoc could subclass SymbolDoc without author but with other members.
+
+I'm probably arguing in a circle here [10:55:53 AM] <Mike Condon @ My Jabber> of course there's no author member in SymbolDoc anyway.
+[10:56:01 AM] <Mike Condon @ My Jabber> so ImmutableSymbolDoc won't have it.
+[10:56:04 AM] <Pedersen> Actually, I can see that sort of structure working.
+[10:56:29 AM] <Mike Condon @ My Jabber> Well, you're more experienced in this area. I'm just playing devil's advocate.
+[10:56:30 AM] *Pedersen thinks for a few minutes.
+[10:56:34 AM] <Mike Condon @ My Jabber> bbiam
+[10:58:27 AM] <Pedersen> Doc is, basically, an interface. Since C++ doesn't have a true "interface" concept, everything has to inherit it. Now, using that, the document itself can .... lessee, MapDoc contains other *Doc classes. Drawback, though... Ponder this URL? http://home.earthlink.net/%7Ehuston2/dp/flyweight.html
+[11:03:46 AM] <Mike Condon @ My Jabber> This may be me 'thinking in Java' rather than C++. Yes, I was thinking of a Java iface. This is one case where C++ func and Java func are not equiv. The flyweight pattern looks like it might work. This case is one big one where Java rules, imho.
+[11:04:41 AM] <Pedersen> Yes, you are correct. The interface idea is MUCH nicer, definitely.
+
+The reason for the flyweight pattern is pretty simple: Don't copy the symbol out of the library until it's time to save.
+[11:06:43 AM] <Mike Condon @ My Jabber> Yeah. But, why would you make the Doc base class contain author at all? I'm still confused by that. Since not all  Docs need author, why define it in the base class? The subclasses would contain it where/when needed. Why wouldn't this work as straight C++ subclassing? 
+[11:07:14 AM] <Mike Condon @ My Jabber> This must be a C++ thing.
+[11:07:18 AM] <Pedersen> Well, there should be SOMEPLACE where the meta data is stored.
+[11:07:31 AM] <Pedersen> That's my main concern. Didn't think about the model you had described [11:09:03 AM] <Mike Condon @ My Jabber> Now don't laugh.....but the metadata could just be another type of Doc. I MUST BE COMPLETELY CONFUSED Sorry if I'm hung up on this.[11:09:04 AM] <Pedersen> The more I think about what you've described, the more I like it. The base class can define certain operations (though those will be VERY VERY few, I would think), and then different subclasses would define what they need to. A subclass DocMetaData could contain all the metadata (such as author, etc), and I'd be okay with that.
+[11:09:19 AM] <Mike Condon @ My Jabber> hehehehe
+[11:09:43 AM] <Mike Condon @ My Jabber> That's what I'm thinking. Precisely. That's how I think in Java.
+[11:09:54 AM] <Pedersen> And that's why I want you to think in Java [11:10:03 AM] <Mike Condon @ My Jabber> COOL. Did this bug you or was it productive?
+[11:10:29 AM] <Pedersen> No, it was definitely productive. It's going to help me tonight when I sit down and start drawing up some class diagrams.
+[11:11:09 AM] <Mike Condon @ My Jabber> COOL. Thanks. I thought I was harping on something. But this issue is a big design issue and I like to toss these things around a bit. 
+[11:12:15 AM] <Mike Condon @ My Jabber> Hey - gotta run. Kids are fighting and Mom's gone. I'm gonna save this chat. Give it some thought.  Let's chat later.
+[11:12:28 AM] <Pedersen> It's one of the most important issues in the whole thing. I'll be showing off later today, I hope  
+-----Thread from June 28, 2005, 9:30am to 11:15am
+[9:42:09 AM] <Mike Condon @ My Jabber> yeah. that is ironic. Kinda like having the wolf in charge of the henhouse. Well, being laid off here was a bummer. Being 'asked' to leave is never encouraging. Anyway. Just checking. I was going thru some of the wxFileSystem stuff trying to figure out how to use the ZIP interface....but, like i said, I'm not awake.
+[9:42:40 AM] <Pedersen> Ah, might have something useful. Lemme check.
+[9:42:54 AM] <Mike Condon @ My Jabber> k.
+[9:43:38 AM] <Pedersen> // The following is just to show a way to compress XML before saving.
+// Makes for nice, compact, portable files.
+// #include <wx/wfstream.h>
+// #include <wx/zstream.h>
+//void saveXml() {
+   //wxFileOutputStream fos(wxT("C:\\temp\\file.xml"));
+   //wxZlibOutputStream zos(fos, wxZ_BEST_COMPRESSION, wxZLIB_GZIP);
+   //wxXmlDocument xml;
+   //wxLogNull no;
+   //xml.Load(wxT("f:\\src\\autorealm_wx\\prior\\install\\examples\\Angry Marsh.AuRX"));
+   //xml.Save(zos);
+//}
+
+[9:43:58 AM] <Pedersen> It is NOT how to use a zip archive, but it does do compression.
+[9:45:25 AM] <Mike Condon @ My Jabber> Cool. Seems like I saw this somewhere in our code. And it was commented out there too.
+[9:45:41 AM] <Pedersen> Yep. That's where I copy/pasted it from, in fact (AutoRealmApp.cpp)
+[9:47:02 AM] <Mike Condon @ My Jabber> that's what I thought. Memory ain't what it used to be though. The stream ctor stuff (building one on top of another) looks like Java stream stuff. 
+[9:47:45 AM] <Pedersen> That's okay. That's part of my job, to know everything in every file inside and out. Hey, where'd this expatpp.cpp come from? [9:48:16 AM] <Mike Condon @ My Jabber> It was with expatpp when I downloaded it. 
+[9:48:21 AM] <Mike Condon @ My Jabber> I didn't write it [9:48:45 AM] <Mike Condon @ My Jabber> And, yes, your memory is amazing, I gotta tell ya.
+[9:49:06 AM] <Pedersen> Nah, my memory is freaky, is all. Can't hardly remember dinner, but can remember stuff from years ago.
+[9:50:29 AM] <Mike Condon @ My Jabber> Well, I'm that way sometimes too. I remember old phone numbers, trivia, etc. But soemtimes the obvious stuff is "paged out". One thing that I DO remember better than my wife is our anniverary. And she's got a really good memory too. I think maybe that says something about how she feels about our marriage [9:51:10 AM] <Pedersen> Well, I don't know her, so can't comment on that at all [9:53:27 AM] <Mike Condon @ My Jabber> She'd be laughing. But your'e very diplomatic We gotta figure out how to handle adapter and builder. But that may be a discussion that requires more bandwidth than IM....dunno. Nested objects need to be handled somewhere, either in my code or in the adapter/builder code. expat will do nested parsing (I saw) so we can use that if need be.[9:55:19 AM] <Pedersen> Adapter, in this case... I've been frmulating an idea which would be good in many ways, I think. Tell me what you think:
+
+The Adapter can be guaranteed of only two things: Receiving an object type, and receiving more information about that object. Especially considering that this is how data will be imported, we really only have those two things.
+
+At least, I can't spot others. How about you?
+[9:56:44 AM] <Mike Condon @ My Jabber> That's it from what i see. 
+[10:00:07 AM] <Pedersen> Okay, good. In which case, we really only have a few small options. Of them, the one I'm leaning towards (in fact, the only one I can see) is to use a hashmap for the adapter attributes, something like this (pseudocode, though, not gonna compile):
+
+class ObjectAdapater {
+   ObjectType type;
+   wxArrayString attributes;
+};
+
+
+The wxArrayString is an array of strings, with strings as indices into the array. The end result is an easy ability to iterate over all attributes of an object (as stored by the adapter), picking out what is needed (and letting the builder do what it needs).
+[10:01:08 AM] <Mike Condon @ My Jabber> Yep. Works. But what about nested objects?
+[10:02:25 AM] <Pedersen> Challenging... How about this: The Adapter pays attention to what it's being given attributes. If it detects a nested object type, it adds an adapter as a child object, with the same set of attributes?
+[10:05:35 AM] <Mike Condon @ My Jabber> Yep, in theory. So the class will have another member called something like "childObject" (or possibly a collection of them), right? And these are simply another adapter object? Probably gonna need parentObject too.....might work. Essentially a tree structure
+[10:06:06 AM] <Mike Condon @ My Jabber> Actually migth not need parent for our stuff.
+[10:06:29 AM] <Mike Condon @ My Jabber> no need to traverse between children (probably).
+[10:07:29 AM] <Pedersen> pseudocode:
+
+class ObjectAdapter {
+   ObjectType type;
+   wxArrayString attributes;
+   std::vector<ObjectAdapter> children;
+   void addAttribute(wxString attribname, wxString attribdata);
+};
+
+ObjectAdapter::addAttribute(wxString attribname, wxString attribdata) {
+   if (attribname == wxT("objtype1")) {
+[10:09:01 AM] <Pedersen> 
+       type=objtype1;
+   } else if (attribname == wxT("childtype1")) {
+       addChild() // not defined at all yet
+   } else {
+        attributes.push_back(attribname); //wrong, needs data too
+   }
+}
+[10:10:51 AM] <Mike Condon @ My Jabber> that looks good, actually. At the end of the load, you'll have one "giant" object calld Document or Map (can't remember what the tag is) whose children represent the top level nodes in the map, right?
+[10:11:26 AM] <Mike Condon @ My Jabber> tag=object type
+[10:12:02 AM] <Pedersen> Well, whenever a top level object is finished being put into an adapter, we need to use the builder to get a real arObject, and then add it to the map.
+
+Otherwise, we could just use wxXmlDocument [10:13:33 AM] <Mike Condon @ My Jabber> In the XML file, the one top-level object contains everything else. So you're essentially going to ignore that (which I would) and construct the "real" map objects as they flow in.
+[10:13:42 AM] <Mike Condon @ My Jabber> like line, group, etc...
+[10:13:54 AM] <Pedersen> Yes. That's what I was considering to be top-level objects.
+[10:15:05 AM] <Pedersen> Now, one minor thing that builder needs to provide is the ability to store non-translated data. That way, imports from other programs (when re-saved) will still be correct. ie: ObjectInterface might need an extraData member.
+[10:17:44 AM] <Mike Condon @ My Jabber> That's what I figured. Me too. I need to understand how my stuff wil interact with yours. The XML stuff essentially has 3 callbacks: startElement, charData and endElement. What / when do I pass/call you? That remains to be decided. 
+[10:18:28 AM] <Mike Condon @ My Jabber> Haven't thought about the non-translated data. like stuff we just don't touch?
+[10:19:23 AM] <Mike Condon @ My Jabber> Like CC2 migth have stuff for which we have no provision, right? Then we just hang it on the adapter stuff as-is.
+[10:19:50 AM] <Pedersen> Well, the when is easy: You've finished parsing a second level element, and have put all of the data into an Adapter. The what to pass to the adapter... Well, we've got  provide the following (that I'm aware of):
+
+the name
+any xml attributes
+any xml data (such as the list of points that make up a line)
+
+And yes, you are correct about the CC2 thing. The Builder should still attach that data to the built object, and something should still store it.
+[10:22:14 AM] <Mike Condon @ My Jabber> Yep. I'll have to go see what the structure of hte file actually looks like. I need to generate a small example so I can work with it. My big map is unweildy. But in my case, "being finished" with an element may mean that I've had to process a child element in the interim. 
+[10:22:41 AM] <Pedersen> Yes, this is VERY true. Nesting level will matter for you in a big way.
+[10:22:53 AM] <Mike Condon @ My Jabber> That shouldn't be a problem -- I can use the nesting stuff....
+[10:23:21 AM] <Mike Condon @ My Jabber> Or keep track of it myself. Our nesting won't be that deep.
+[10:23:28 AM] <Mike Condon @ My Jabber> or maybe it will.
+[10:23:46 AM] <Mike Condon @ My Jabber> I'm not that familiar with file structure like you are.
+[10:24:35 AM] <Pedersen> For now, it won't. However, consider this possibility:
+
+I create a group of lines/etc, and turn them into a group. Repeat this for another group, and add the first object to it. Wash, rinse, repeat a few times.
+
+Actually, that rather invalidates the structure for the Adapter we were talking about.
+[10:25:28 AM] <Mike Condon @ My Jabber> I know. That's the possibility I was thinking about. How does it invalidate? 
+[10:25:56 AM] <Pedersen> With that, we've got a child, with a child, with a child, etc. And that structure for the adapter doesn't handle it well.
+[10:26:10 AM] <Mike Condon @ My Jabber> Well, it just gets deep.
+[10:26:33 AM] <Pedersen> What if the whole map is built using a single deeply nested group? Our load/use times go to crap.
+[10:27:01 AM] <Mike Condon @ My Jabber> But at that point we're getting close to building an entire in-memory structure in addition to the builder stuff. That's what your'e saying
+[10:27:21 AM] <Pedersen> Yep. And that's one of the biggies to avoid.
+[10:27:42 AM] <Mike Condon @ My Jabber> k. we gotta think about it. I need a bio break. bbiab.
+[10:28:04 AM] <Pedersen> Okay, so the Adapter is a bad idea in this case, I think. Go straight to Builder. Possibly.
+[10:28:22 AM] <Mike Condon @ My Jabber> I've been thru this in my head. I go back and forth.
+[10:28:28 AM] <Mike Condon @ My Jabber> cya in a few.
+[10:28:32 AM] <Pedersen> cya iaf
+[10:38:29 AM] *** Mike Condon @ My Jabber is Away [Auto Status (idle)]
+[10:40:25 AM] *** Mike Condon @ My Jabber is Online
+[10:45:47 AM] <Mike Condon @ My Jabber> You could go with an adapter but you'd want to avoid the whole tree thing. Stick with some linear (fast) representation. Or go directly to builder. The stuff you've outlined for adapter could be builder instead. 
+[10:46:57 AM] <Pedersen> That's what I'm thinking. And the code calling builder would look like this:
+
+currObj = Builder.AddStuff(xmldata);
+
+Builder will also need to know about a parent object, so that when it closes an object, it can revert to the parent in the tree.
+[10:48:25 AM] <Mike Condon @ My Jabber> Yes. That means that builder maintains nesting state? 
+[10:49:28 AM] <Pedersen> I don't think so. part of xmldata (that was VERY vague on my part) would be a mention of what is happening next, or what has just happened (ie: we're about to open/close, or we have just opened/closed)
+[10:50:59 AM] <Mike Condon @ My Jabber> Yes. I get the tag name on open and close parse events. If I have to maintain nesting state, then I'm building a tree structure like builder is....or am I way off base here. I can give builder the tag name on open and close.
+[10:51:37 AM] <Pedersen> Actually, you only have to maintain nesting level, and pass that to builder. Builder then checks to see if it should go up/down a level.
+[10:52:03 AM] <Mike Condon @ My Jabber> OK. that's easy.  You're right. That'll work. 
+[10:52:35 AM] <Mike Condon @ My Jabber> Yeah. that'll work. Then you know when to go back up.
+[10:53:33 AM] <Mike Condon @ My Jabber> or down.
+[10:53:47 AM] <Pedersen> Yep. Or when to step one level down. And if the objects keep track of parents as well, it becomes even easier.
+[10:54:29 AM] <Mike Condon @ My Jabber> That'll work. At least on paper . [10:55:01 AM] <Pedersen> BTW, just realized why our executable is so big: ui-xrc is 1.4M of data to be stored in the executable.
+[10:55:14 AM] <Pedersen> And yeah, on paper, it will. Let's just hope it transfers nicely to code.
+[10:55:54 AM] <Mike Condon @ My Jabber> Well...that'll add some weight. Yeah. Can you come up with a rough interface sometime. Don't get me wrong, I've got a lot of other stuff to do in the meantime [10:56:37 AM] <Pedersen> Actually, it's helped out a lot. There's a few pieces of stuff that must be added directly to the ObjectInterface that came out of this.
+[10:57:00 AM] <Mike Condon @ My Jabber> yeah. that's true. relationship info for one.
+[10:57:15 AM] <Pedersen> Yep. extra data (from imports) for another.
+[10:58:15 AM] <Mike Condon @ My Jabber> yep. I didn't know you wanted to actually be able to write out another file's format. That's a big thing. Bigger than importing. It means FULLY reverse engineering the format...not just reading what we want and ignoring that which we don't. 
+[11:00:25 AM] <Pedersen> Well, writing them out if we have to reverse engineer is highly unlikely. However, there are some formats (I think, I'm pretty sure I've heard of them) which are fully documented. And for them, we should avoid losing their information.
+
+Playing nice, and all [11:02:25 AM] <Mike Condon @ My Jabber> I agree. I was thinking that some of the formats are proprietary. For them, it's a pita write them back out. Especially when the change. Anyway. I'm gonna go get ready to go to the grocery. I'll be back in while. This has helped quite a bit. I think we're on the right track with this. I'll keep track of nesting depth and we can use that in the builder stuff. See how that goes.
+[11:02:36 AM] <Mike Condon @ My Jabber> Hey - I checked out GIMP. Cool interface.
+[11:02:41 AM] <Mike Condon @ My Jabber> Very nice.
+[11:03:07 AM] <Pedersen> Now, mix gimp with mozilla, and you see what I wanted to do 
+
+Now, go to grocery, and will chat l8r.[11:03:30 AM] <Mike Condon @ My Jabber> k. see ya l8tr Thanks. It's been a nice brain-wake-up.

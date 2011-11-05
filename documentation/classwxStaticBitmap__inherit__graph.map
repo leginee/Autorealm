@@ -1,0 +1,3 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classclkStaticBitmap.html" title="wxStaticBitmap does not pass mouse clicks up the event tree, but we need it to do so..." alt="" coords="5,83,120,112"/>
+</map>

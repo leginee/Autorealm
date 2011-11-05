@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$AutoRealmApp_8cpp.html#af9d48d5ba89076ee6558e996bcece617" title="InitActionsHandler" alt="" coords="228,5,356,35"/>
+<area shape="rect" id="node5" href="$AutoRealmApp_8cpp.html#a13da47d7deb7be47058d68fbcfabde7c" title="InitAutoNameHandler" alt="" coords="219,59,365,88"/>
+<area shape="rect" id="node7" href="$AutoRealmApp_8cpp.html#a2169c41e0bbcb589c575f416f4e35a0c" title="InitCursorsHandler" alt="" coords="227,112,357,141"/>
+<area shape="rect" id="node9" href="$AutoRealmApp_8cpp.html#af24ad3928113f51ab62efdff73e25139" title="InitFillHandler" alt="" coords="241,165,343,195"/>
+<area shape="rect" id="node11" href="$AutoRealmApp_8cpp.html#a5a4da933276cdfbc6f6bbc058fe8ae1d" title="InitInfoHandler" alt="" coords="239,219,345,248"/>
+<area shape="rect" id="node13" href="$AutoRealmApp_8cpp.html#a2db018d719bfed03c586a45736bc7a3f" title="InitMainHandler" alt="" coords="236,272,348,301"/>
+<area shape="rect" id="node15" href="$AutoRealmApp_8cpp.html#af305e8b2b1cb88fe65d4df830f7584e5" title="InitMenusHandler" alt="" coords="231,325,353,355"/>
+<area shape="rect" id="node17" href="$AutoRealmApp_8cpp.html#aa26f58bef387e7a466ce76a58e65af5b" title="InitOverlayColorsHandler" alt="" coords="208,379,376,408"/>
+<area shape="rect" id="node19" href="$AutoRealmApp_8cpp.html#abedd4724b013d122dae0bd8fb995b1fe" title="InitOverlayIconsHandler" alt="" coords="211,432,373,461"/>
+<area shape="rect" id="node21" href="$AutoRealmApp_8cpp.html#a684632052e5dac22cf9abf8dc39d629d" title="InitPushPinHandler" alt="" coords="225,485,359,515"/>
+<area shape="rect" id="node23" href="$AutoRealmApp_8cpp.html#a1f47e1a509ce3107c9554cd74105768f" title="InitSettingsHandler" alt="" coords="225,539,359,568"/>
+<area shape="rect" id="node25" href="$AutoRealmApp_8cpp.html#a6d4069af36d1af76d39eceb9fdb1a901" title="InitSplashHandler" alt="" coords="229,592,355,621"/>
+</map>

@@ -1,0 +1,20 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$geometry_8cpp.html#a9fcbe4518ef7cee1509025b612f722d4" title="Returns the angle?" alt="" coords="228,5,281,35"/>
+<area shape="rect" id="node5" href="$DrawLines_8cpp.html#a3cee274af4a5b44c5bb3123ba8b80853" title=": DDA routine called by Window&#39;s LineDDA procedure. Called by caligraphy type lines." alt="" coords="185,59,324,88"/>
+<area shape="rect" id="node7" href="$DrawLines_8cpp.html#af74daa5c088714daebce2c82468ca007" title=": Used in getting lines perpendicular to the main line for drawing glyph/line tips." alt="" coords="373,216,512,245"/>
+<area shape="rect" id="node9" href="$DrawLines_8cpp.html#aa33729227c53191542f2c1da95d07a0d" title="DDA routine called by Window&#39;s LineDDA procedure. Called by normal dash&#45;dot type lines." alt="" coords="561,191,697,220"/>
+<area shape="rect" id="node13" href="$DrawLines_8cpp.html#a6585989495b907db04f31fa3abcb58eb" title="DrawLineTip" alt="" coords="208,293,301,323"/>
+<area shape="rect" id="node16" href="$LinePoints_8cpp.html#a3c276f9ae2e8b24489cd285de452fdb6" title="LinePoints &#45; executes the callback function for each point to be drawn on the line." alt="" coords="588,296,671,325"/>
+<area shape="rect" id="node28" href="$DrawLines_8cpp.html#a2e41d31ed64b20cb1f75d6d5d9481f5e" title="Get width of line style." alt="" coords="192,347,317,376"/>
+<area shape="rect" id="node30" href="$DrawLines_8cpp.html#a4ef5aabdeea8d1b3270684c5dcee51cc" title="DDA routine called by Window&#39;s LineDDA procedure. Called by glyph type lines (ones with symbols in th..." alt="" coords="375,163,511,192"/>
+<area shape="rect" id="node35" href="$DrawLines_8cpp.html#a951e76af871d9504a39556889768ab5e" title="DDA routine called by Window&#39;s LineDDA procedure. Called by random type lines." alt="" coords="192,476,317,505"/>
+<area shape="rect" id="node40" href="$generic__library_8cpp.html#a568d8fbf916e0d5aa5ff75b435ad55c5" title="Round a given number to a given number of decimal places." alt="" coords="228,529,281,559"/>
+<area shape="rect" id="node42" href="$geometry_8cpp.html#ab1e5f10085eb0b07bbcbf9908771d145" title="Returns a unit vector perpendicular to the vector represented by the two points." alt="" coords="383,581,503,611"/>
+<area shape="rect" id="node45" href="$geometry_8cpp.html#afd78c61d574066cc57bc8160b4b8d96f" title="Returns true if any part of r is inside (or on) vp (viewport)" alt="" coords="208,633,301,663"/>
+<area shape="rect" id="node11" href="$DrawLines_8cpp.html#aae47d33bd4fe4da491b05e3025be2d66" title="Draws a dot on the canvas." alt="" coords="749,333,824,363"/>
+<area shape="rect" id="node18" href="$DrawLines_8cpp.html#a41510f2836083e84fabe6269f7541da8" title="DDA routine called by Window&#39;s LineDDA procedure. Called for drawing symbols at line tips..." alt="" coords="383,269,503,299"/>
+<area shape="rect" id="node22" href="$geometry_8cpp.html#a4e82aa929c0951d0bc44dfccc29faf87" title="Returns the unit vector corresponding to the two points." alt="" coords="404,373,481,403"/>
+<area shape="rect" id="node24" href="$geometry_8cpp.html#a76f93e3f714974261561fcb389d3841e" title="Returns the distance between the two points." alt="" coords="595,528,664,557"/>
+<area shape="rect" id="node26" href="$geometry_8cpp.html#a17b37056ce7a2601a89d7fc90dcbec96" title="returns the square of the distance between the two points. It&#39;s faster than distance for figuring out..." alt="" coords="748,528,825,557"/>
+<area shape="rect" id="node38" href="$DrawLines_8cpp.html#a00b29535ed8f8b966b2afba01fb9a1f4" title="Random number generator." alt="" coords="405,528,480,557"/>
+</map>

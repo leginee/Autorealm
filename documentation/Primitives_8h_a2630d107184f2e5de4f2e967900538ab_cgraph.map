@@ -1,0 +1,31 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classViewPoint.html#a782f91828f3de703706d9a3a5d6c8e07" title="ViewPoint::DeltaCoordToScreen" alt="" coords="197,304,408,333"/>
+<area shape="rect" id="node5" href="$DrawLines_8cpp.html#a0f7bb4fd42571349096c64bdf0af5b42" title="Draws a line (x1,y1)&#45;(x2,y2)." alt="" coords="239,357,367,387"/>
+<area shape="rect" id="node44" href="$generic__library_8cpp.html#a568d8fbf916e0d5aa5ff75b435ad55c5" title="Round a given number to a given number of decimal places." alt="" coords="500,576,553,605"/>
+<area shape="rect" id="node51" href="$classViewPoint.html#ad3900f8a0b0f21f39de078888717d053" title="ViewPoint::FixStyle" alt="" coords="235,524,371,553"/>
+<area shape="rect" id="node53" href="$DrawLines_8cpp.html#a0f0591d611225551b414a3cd2ffab6b5" title="Ends a line." alt="" coords="257,435,348,464"/>
+<area shape="rect" id="node56" href="$DrawLines_8cpp.html#a388fccea70507873ffec9ff1090725e4" title="GetLineStyleStart" alt="" coords="240,681,365,711"/>
+<area shape="rect" id="node62" href="$Primitives_8cpp.html#a2b77a59d69eeb0202ef5e151a22f42e6" title="GetThickLines" alt="" coords="249,628,356,657"/>
+<area shape="rect" id="node70" href="$maputils_8cpp.html#a70a97ba87bd95f77022ae39c7813ebc3" title="VSPointsToArray" alt="" coords="241,735,364,764"/>
+<area shape="rect" id="node7" href="$geometry_8cpp.html#a9fcbe4518ef7cee1509025b612f722d4" title="Returns the angle?" alt="" coords="875,603,928,632"/>
+<area shape="rect" id="node9" href="$DrawLines_8cpp.html#a3cee274af4a5b44c5bb3123ba8b80853" title=": DDA routine called by Window&#39;s LineDDA procedure. Called by caligraphy type lines." alt="" coords="457,317,596,347"/>
+<area shape="rect" id="node11" href="$DrawLines_8cpp.html#af74daa5c088714daebce2c82468ca007" title=": Used in getting lines perpendicular to the main line for drawing glyph/line tips." alt="" coords="645,315,784,344"/>
+<area shape="rect" id="node13" href="$DrawLines_8cpp.html#aa33729227c53191542f2c1da95d07a0d" title="DDA routine called by Window&#39;s LineDDA procedure. Called by normal dash&#45;dot type lines." alt="" coords="833,137,969,167"/>
+<area shape="rect" id="node17" href="$DrawLines_8cpp.html#a6585989495b907db04f31fa3abcb58eb" title="DrawLineTip" alt="" coords="480,421,573,451"/>
+<area shape="rect" id="node20" href="$LinePoints_8cpp.html#a3c276f9ae2e8b24489cd285de452fdb6" title="LinePoints &#45; executes the callback function for each point to be drawn on the line." alt="" coords="860,316,943,345"/>
+<area shape="rect" id="node32" href="$DrawLines_8cpp.html#a2e41d31ed64b20cb1f75d6d5d9481f5e" title="Get width of line style." alt="" coords="464,5,589,35"/>
+<area shape="rect" id="node34" href="$DrawLines_8cpp.html#a4ef5aabdeea8d1b3270684c5dcee51cc" title="DDA routine called by Window&#39;s LineDDA procedure. Called by glyph type lines (ones with symbols in th..." alt="" coords="647,163,783,192"/>
+<area shape="rect" id="node39" href="$DrawLines_8cpp.html#a951e76af871d9504a39556889768ab5e" title="DDA routine called by Window&#39;s LineDDA procedure. Called by random type lines." alt="" coords="464,59,589,88"/>
+<area shape="rect" id="node46" href="$geometry_8cpp.html#ab1e5f10085eb0b07bbcbf9908771d145" title="Returns a unit vector perpendicular to the vector represented by the two points." alt="" coords="655,525,775,555"/>
+<area shape="rect" id="node49" href="$geometry_8cpp.html#afd78c61d574066cc57bc8160b4b8d96f" title="Returns true if any part of r is inside (or on) vp (viewport)" alt="" coords="480,213,573,243"/>
+<area shape="rect" id="node15" href="$DrawLines_8cpp.html#aae47d33bd4fe4da491b05e3025be2d66" title="Draws a dot on the canvas." alt="" coords="1021,72,1096,101"/>
+<area shape="rect" id="node22" href="$DrawLines_8cpp.html#a41510f2836083e84fabe6269f7541da8" title="DDA routine called by Window&#39;s LineDDA procedure. Called for drawing symbols at line tips..." alt="" coords="655,368,775,397"/>
+<area shape="rect" id="node26" href="$geometry_8cpp.html#a4e82aa929c0951d0bc44dfccc29faf87" title="Returns the unit vector corresponding to the two points." alt="" coords="676,472,753,501"/>
+<area shape="rect" id="node28" href="$geometry_8cpp.html#a76f93e3f714974261561fcb389d3841e" title="Returns the distance between the two points." alt="" coords="867,497,936,527"/>
+<area shape="rect" id="node30" href="$geometry_8cpp.html#a17b37056ce7a2601a89d7fc90dcbec96" title="returns the square of the distance between the two points. It&#39;s faster than distance for figuring out..." alt="" coords="1020,497,1097,527"/>
+<area shape="rect" id="node42" href="$DrawLines_8cpp.html#a00b29535ed8f8b966b2afba01fb9a1f4" title="Random number generator." alt="" coords="677,59,752,88"/>
+<area shape="rect" id="node58" href="$DrawLines_8cpp.html#aa9e22b5dd6f2d443fbb041b7c643cc00" title="CleanedLineStyle" alt="" coords="465,736,588,765"/>
+<area shape="rect" id="node60" href="$DrawLines_8cpp.html#a82b325f1b38863b82ad1a551576cb6ee" title="Returns true if the line style is to be inverted (used for &quot;reversing&quot; lines)" alt="" coords="460,683,593,712"/>
+<area shape="rect" id="node64" href="$Primitives_8cpp.html#a7a5e4b369b2cfbd73c89871d21e1a4e4" title="Calc" alt="" coords="503,629,551,659"/>
+<area shape="rect" id="node66" href="$Primitives_8cpp.html#a9f7e65ef8bb3fcf1285b845b6f4a0e9a" title="GetAverageAngle" alt="" coords="653,629,776,659"/>
+</map>

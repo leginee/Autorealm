@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classMainWin.html#a161841cf8bb8f78f10ffa9fdafcddc07" title="resets the color bitmap on a color button" alt="" coords="279,5,425,35"/>
+<area shape="rect" id="node5" href="$classMainWin.html#a3f0311bbf12da85d8b19113826282410" title="generates a color bitmap (used by what could be color buttons) and returns it to the caller..." alt="" coords="476,5,617,35"/>
+</map>
