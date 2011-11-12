@@ -1,0 +1,1871 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: autorealm_wx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2004-11-14 21:19-0500\n"
+"Last-Translator: Michael J. Pedersen <pedermj@comcast.net>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../xrcpo.cpp:1
+msgid "Add Symbol Group"
+msgstr "Add Symbol Group"
+
+#: ../xrcpo.cpp:2
+msgid "Please enter a name for the new symbol group:"
+msgstr "Please enter a name for the new symbol group:"
+
+#: ../xrcpo.cpp:3
+#: ../xrcpo.cpp:12
+#: ../xrcpo.cpp:25
+#: ../xrcpo.cpp:29
+#: ../xrcpo.cpp:33
+#: ../xrcpo.cpp:155
+#: ../xrcpo.cpp:378
+#: ../xrcpo.cpp:409
+#: ../xrcpo.cpp:417
+msgid "&Ok"
+msgstr "&Ok"
+
+#: ../xrcpo.cpp:4
+#: ../xrcpo.cpp:18
+#: ../xrcpo.cpp:26
+#: ../xrcpo.cpp:30
+#: ../xrcpo.cpp:35
+#: ../xrcpo.cpp:156
+#: ../xrcpo.cpp:388
+#: ../xrcpo.cpp:410
+#: ../xrcpo.cpp:418
+msgid "&Cancel"
+msgstr "&Cancel"
+
+#: ../xrcpo.cpp:5
+msgid "AutoName"
+msgstr "AutoName"
+
+#: ../xrcpo.cpp:6
+msgid "Create Array"
+msgstr "Create Array"
+
+#: ../xrcpo.cpp:7
+#: ../xrcpo.cpp:32
+#: ../xrcpo.cpp:52
+#: ../xrcpo.cpp:62
+#: ../xrcpo.cpp:347
+msgid "Horizontal"
+msgstr "Horizontal"
+
+#: ../xrcpo.cpp:8
+#: ../xrcpo.cpp:14
+msgid "Count"
+msgstr "Count"
+
+#: ../xrcpo.cpp:9
+#: ../xrcpo.cpp:15
+msgid "Between"
+msgstr "Between"
+
+#: ../xrcpo.cpp:10
+#: ../xrcpo.cpp:16
+msgid "Every"
+msgstr "Every"
+
+#: ../xrcpo.cpp:11
+#: ../xrcpo.cpp:17
+msgid "Spacing"
+msgstr "Spacing"
+
+#: ../xrcpo.cpp:13
+#: ../xrcpo.cpp:34
+#: ../xrcpo.cpp:54
+#: ../xrcpo.cpp:358
+msgid "Vertical"
+msgstr "Vertical"
+
+#: ../xrcpo.cpp:19
+msgid "Wrap grid around an ellipse"
+msgstr "Wrap grid around an ellipse"
+
+#: ../xrcpo.cpp:20
+msgid "Ellipse"
+msgstr "Ellipse"
+
+#: ../xrcpo.cpp:21
+msgid "Rotate symbols around the ellipse"
+msgstr "Rotate symbols around the ellipse"
+
+#: ../xrcpo.cpp:22
+msgid "Inner horizzontal radius"
+msgstr "Inner horizzontal radius"
+
+#: ../xrcpo.cpp:23
+msgid "Inner Vertical Radius"
+msgstr "Inner Vertical Radius"
+
+#: ../xrcpo.cpp:24
+msgid "Delete View"
+msgstr "Delete View"
+
+#: ../xrcpo.cpp:27
+msgid "Save View"
+msgstr "Save View"
+
+#: ../xrcpo.cpp:28
+msgid "Name of view?"
+msgstr "Name of view?"
+
+#: ../xrcpo.cpp:31
+msgid "Flip Selection"
+msgstr "Flip Selection"
+
+#: ../xrcpo.cpp:36
+#: ../xrcpo.cpp:278
+msgid "Symbol Library"
+msgstr "Symbol Library"
+
+#: ../xrcpo.cpp:37
+#: ../xrcpo.cpp:77
+msgid "Name"
+msgstr "Name"
+
+#: ../xrcpo.cpp:38
+#: ../xrcpo.cpp:78
+msgid "Group"
+msgstr "Group"
+
+#: ../xrcpo.cpp:39
+#: ../xrcpo.cpp:79
+#: ../xrcpo.cpp:482
+msgid "Comments"
+msgstr "Comments"
+
+#: ../xrcpo.cpp:40
+msgid "Sort symbol first in list"
+msgstr "Sort symbol first in list"
+
+#: ../xrcpo.cpp:41
+msgid "Edit Properties"
+msgstr "Edit Properties"
+
+#: ../xrcpo.cpp:42
+msgid "Edit Drawing"
+msgstr "Edit Drawing"
+
+#: ../xrcpo.cpp:43
+#: ../xrcpo.cpp:182
+#: ../xrcpo.cpp:340
+#: ../xrcpo.cpp:505
+msgid "Delete"
+msgstr "Delete"
+
+#: ../xrcpo.cpp:44
+msgid "Insert"
+msgstr "Insert"
+
+#: ../xrcpo.cpp:45
+msgid "Define"
+msgstr "Define"
+
+#: ../xrcpo.cpp:46
+msgid "Close"
+msgstr "Close"
+
+#: ../xrcpo.cpp:47
+msgid "Add Group"
+msgstr "Add Group"
+
+#: ../xrcpo.cpp:48
+msgid "Del Group"
+msgstr "Del Group"
+
+#: ../xrcpo.cpp:49
+msgid "Reload All"
+msgstr "Reload All"
+
+#: ../xrcpo.cpp:50
+msgid "Save All"
+msgstr "Save All"
+
+#: ../xrcpo.cpp:51
+msgid "Skew Selection"
+msgstr "Skew Selection"
+
+#: ../xrcpo.cpp:53
+#: ../xrcpo.cpp:55
+#: ../xrcpo.cpp:60
+#: ../xrcpo.cpp:63
+#: ../xrcpo.cpp:65
+msgid "%"
+msgstr "%"
+
+#: ../xrcpo.cpp:56
+#: ../xrcpo.cpp:66
+#: ../xrcpo.cpp:70
+#: ../xrcpo.cpp:74
+#: ../xrcpo.cpp:81
+#: ../xrcpo.cpp:91
+#: ../xrcpo.cpp:144
+#: ../xrcpo.cpp:152
+#: ../xrcpo.cpp:433
+#: ../xrcpo.cpp:473
+#: ../xrcpo.cpp:493
+#: ../xrcpo.cpp:506
+msgid "Ok"
+msgstr "Ok"
+
+#: ../xrcpo.cpp:57
+#: ../xrcpo.cpp:67
+#: ../xrcpo.cpp:71
+#: ../xrcpo.cpp:75
+#: ../xrcpo.cpp:82
+#: ../xrcpo.cpp:92
+#: ../xrcpo.cpp:145
+#: ../xrcpo.cpp:153
+#: ../xrcpo.cpp:183
+#: ../xrcpo.cpp:434
+#: ../xrcpo.cpp:474
+#: ../xrcpo.cpp:494
+msgid "Cancel"
+msgstr "Cancel"
+
+#: ../xrcpo.cpp:58
+msgid "Scale Selection"
+msgstr "Scale Selection"
+
+#: ../xrcpo.cpp:59
+msgid "Uniform Scaling"
+msgstr "Uniform Scaling"
+
+#: ../xrcpo.cpp:61
+msgid "Assymmetric Scaling"
+msgstr "Assymmetric Scaling"
+
+#: ../xrcpo.cpp:64
+msgid "Vertical Scaling"
+msgstr "Vertical Scaling"
+
+#: ../xrcpo.cpp:68
+msgid "Replacement Overlay"
+msgstr "Replacement Overlay"
+
+#: ../xrcpo.cpp:69
+msgid ""
+"Select a new overlay for all objects\n"
+"within the deleted overlay"
+msgstr ""
+"Select a new overlay for all objects\n"
+"within the deleted overlay"
+
+#: ../xrcpo.cpp:72
+msgid "Polygon Sides"
+msgstr "Polygon Sides"
+
+#: ../xrcpo.cpp:73
+msgid "Enter number of sides"
+msgstr "Enter number of sides"
+
+#: ../xrcpo.cpp:76
+msgid "Define New Symbol"
+msgstr "Define New Symbol"
+
+#: ../xrcpo.cpp:80
+msgid "Show symbol in favorites"
+msgstr "Show symbol in favorites"
+
+#: ../xrcpo.cpp:83
+msgid "Move Selection"
+msgstr "Move Selection"
+
+#: ../xrcpo.cpp:84
+msgid "Cartesian"
+msgstr "Cartesian"
+
+#: ../xrcpo.cpp:85
+msgid "X="
+msgstr "X="
+
+#: ../xrcpo.cpp:86
+msgid "Y="
+msgstr "Y="
+
+#: ../xrcpo.cpp:87
+#: ../xrcpo.cpp:291
+msgid "Polar"
+msgstr "Polar"
+
+#: ../xrcpo.cpp:88
+msgid "Angle="
+msgstr "Angle="
+
+#: ../xrcpo.cpp:89
+msgid "Distance="
+msgstr "Distance="
+
+#: ../xrcpo.cpp:90
+#: ../xrcpo.cpp:477
+msgid "Units"
+msgstr "Units"
+
+#: ../xrcpo.cpp:93
+msgid "Hyperlink/Popup Properties"
+msgstr "Hyperlink/Popup Properties"
+
+#: ../xrcpo.cpp:94
+msgid "Hyperlink"
+msgstr "Hyperlink"
+
+#: ../xrcpo.cpp:95
+msgid "Popup"
+msgstr "Popup"
+
+#: ../xrcpo.cpp:96
+msgid "Hidden"
+msgstr "Hidden"
+
+#: ../xrcpo.cpp:97
+msgid "Rooftops and Columns"
+msgstr "Rooftops and Columns"
+
+#: ../xrcpo.cpp:98
+msgid "Symmetry"
+msgstr "Symmetry"
+
+#: ../xrcpo.cpp:99
+msgid "Cone"
+msgstr "Cone"
+
+#: ../xrcpo.cpp:100
+msgid "Sides/Spars:"
+msgstr "Sides/Spars:"
+
+#: ../xrcpo.cpp:101
+msgid "Cylindrical"
+msgstr "Cylindrical"
+
+#: ../xrcpo.cpp:102
+msgid "Spherical"
+msgstr "Spherical"
+
+#: ../xrcpo.cpp:103
+msgid "Polygonal"
+msgstr "Polygonal"
+
+#: ../xrcpo.cpp:104
+#: ../xrcpo.cpp:307
+msgid "Shape"
+msgstr "Shape"
+
+#: ../xrcpo.cpp:105
+msgid "Elasticity (0-100):"
+msgstr "Elasticity (0-100):"
+
+#: ../xrcpo.cpp:106
+msgid "Top"
+msgstr "Top"
+
+#: ../xrcpo.cpp:107
+msgid "Sides"
+msgstr "Sides"
+
+#: ../xrcpo.cpp:108
+msgid "Height (0-1000):"
+msgstr "Height (0-1000):"
+
+#: ../xrcpo.cpp:109
+msgid "Top Radius(0-100):"
+msgstr "Top Radius(0-100):"
+
+#: ../xrcpo.cpp:110
+msgid "Bottom Radius(0-100):"
+msgstr "Bottom Radius(0-100):"
+
+#: ../xrcpo.cpp:111
+msgid "View"
+msgstr "View"
+
+#: ../xrcpo.cpp:112
+msgid "X Rot."
+msgstr "X Rot."
+
+#: ../xrcpo.cpp:113
+msgid "Y Rot."
+msgstr "Y Rot."
+
+#: ../xrcpo.cpp:114
+msgid "Z Rot."
+msgstr "Z Rot."
+
+#: ../xrcpo.cpp:115
+msgid "Model color"
+msgstr "Model color"
+
+#: ../xrcpo.cpp:116
+#: ../xrcpo.cpp:123
+#: ../xrcpo.cpp:130
+#: ../xrcpo.cpp:137
+msgid "Red"
+msgstr "Red"
+
+#: ../xrcpo.cpp:117
+#: ../xrcpo.cpp:124
+#: ../xrcpo.cpp:131
+#: ../xrcpo.cpp:138
+msgid "Green"
+msgstr "Green"
+
+#: ../xrcpo.cpp:118
+#: ../xrcpo.cpp:125
+#: ../xrcpo.cpp:132
+#: ../xrcpo.cpp:139
+msgid "Blue"
+msgstr "Blue"
+
+#: ../xrcpo.cpp:119
+#: ../xrcpo.cpp:126
+#: ../xrcpo.cpp:133
+#: ../xrcpo.cpp:140
+msgid "Hue"
+msgstr "Hue"
+
+#: ../xrcpo.cpp:120
+#: ../xrcpo.cpp:127
+#: ../xrcpo.cpp:134
+#: ../xrcpo.cpp:141
+msgid "Saturation"
+msgstr "Saturation"
+
+#: ../xrcpo.cpp:121
+#: ../xrcpo.cpp:128
+#: ../xrcpo.cpp:135
+#: ../xrcpo.cpp:142
+msgid "Luminance"
+msgstr "Luminance"
+
+#: ../xrcpo.cpp:122
+msgid "Light Color"
+msgstr "Light Color"
+
+#: ../xrcpo.cpp:129
+msgid "Ambient Color"
+msgstr "Ambient Color"
+
+#: ../xrcpo.cpp:136
+msgid "Outline Color"
+msgstr "Outline Color"
+
+#: ../xrcpo.cpp:143
+msgid "Remove hidden surfaces"
+msgstr "Remove hidden surfaces"
+
+#: ../xrcpo.cpp:146
+msgid "Rotate Selection"
+msgstr "Rotate Selection"
+
+#: ../xrcpo.cpp:147
+msgid "-5"
+msgstr "-5"
+
+#: ../xrcpo.cpp:148
+msgid "-1"
+msgstr "-1"
+
+#: ../xrcpo.cpp:149
+msgid "+5"
+msgstr "+5"
+
+#: ../xrcpo.cpp:150
+msgid "+1"
+msgstr "+1"
+
+#: ../xrcpo.cpp:151
+msgid ""
+"Positive values are clockwise (negative values are\n"
+"counter-clockwise)."
+msgstr ""
+"Positive values are clockwise (negative values are\n"
+"counter-clockwise)."
+
+#: ../xrcpo.cpp:154
+msgid "Select Fill Pattern"
+msgstr "Select Fill Pattern"
+
+#: ../xrcpo.cpp:157
+msgid "About AutoREALM"
+msgstr "About AutoREALM"
+
+#: ../xrcpo.cpp:158
+msgid "Version 2.0"
+msgstr "Version 2.0"
+
+#: ../xrcpo.cpp:159
+msgid ""
+"Andy Gryc:  Original Design & Implementation, Project Maintainer\n"
+"John W. Hicks III:  QA, Creative Consultation\n"
+"Vincent Callies:    Localization, French Translation\n"
+"Antoine Dinimant:   French Translation\n"
+"Sean Mathews:   JPEG enhancements\n"
+"Chad Burnett, LaChimere, Denis Conruyt: Additional symbols\n"
+"Michael Pedersen: Port to wxWidgets/C++\n"
+"---------------------------------------------------------------------------------------------------\n"
+"Web:       http://gryc.ws/autorealm.htm         Email:      support@gryc.ws\n"
+"---------------------------------------------------------------------------------------------------\n"
+"Feature suggestions and bug reports by: Denis Conruyt, Keith Davies, Richard Di Ioia, Joe Slaton, Scott \n"
+"Stanek, Chris Tutty, A. White, and many others...\n"
+"Code additions by: Rick Crew, Tom Deprez, John Dullea, Jakim Friant\n"
+"---------------------------------------------------------------------------------------------------\n"
+"Copyright ? 2000, 2001, 2002, Andrew J. Gryc.  AutoREALM is distributed under the terms of the GNU General Public License (GPL). \n"
+msgstr ""
+"Andy Gryc:  Original Design & Implementation, Project Maintainer\n"
+"John W. Hicks III:  QA, Creative Consultation\n"
+"Vincent Callies:    Localization, French Translation\n"
+"Antoine Dinimant:   French Translation\n"
+"Sean Mathews:   JPEG enhancements\n"
+"Chad Burnett, LaChimere, Denis Conruyt: Additional symbols\n"
+"Michael Pedersen: Port to wxWidgets/C++\n"
+"---------------------------------------------------------------------------------------------------\n"
+"Web:       http://gryc.ws/autorealm.htm         Email:      support@gryc.ws\n"
+"---------------------------------------------------------------------------------------------------\n"
+"Feature suggestions and bug reports by: Denis Conruyt, Keith Davies, Richard Di Ioia, Joe Slaton, Scott \n"
+"Stanek, Chris Tutty, A. White, and many others...\n"
+"Code additions by: Rick Crew, Tom Deprez, John Dullea, Jakim Friant\n"
+"---------------------------------------------------------------------------------------------------\n"
+"Copyright ? 2000, 2001, 2002, Andrew J. Gryc.  AutoREALM is distributed under the terms of the GNU General Public License (GPL). \n"
+
+#: ../xrcpo.cpp:160
+msgid "&OK"
+msgstr "&OK"
+
+#: ../xrcpo.cpp:161
+msgid "AutoREALM"
+msgstr "AutoREALM"
+
+#: ../xrcpo.cpp:162
+#: ../xrcpo.cpp:220
+msgid "500%"
+msgstr "500%"
+
+#: ../xrcpo.cpp:163
+#: ../xrcpo.cpp:219
+msgid "400%"
+msgstr "400%"
+
+#: ../xrcpo.cpp:164
+#: ../xrcpo.cpp:218
+msgid "300%"
+msgstr "300%"
+
+#: ../xrcpo.cpp:165
+#: ../xrcpo.cpp:217
+msgid "200%"
+msgstr "200%"
+
+#: ../xrcpo.cpp:166
+#: ../xrcpo.cpp:216
+msgid "150%"
+msgstr "150%"
+
+#: ../xrcpo.cpp:167
+#: ../xrcpo.cpp:215
+msgid "100%"
+msgstr "100%"
+
+#: ../xrcpo.cpp:168
+#: ../xrcpo.cpp:214
+msgid "75%"
+msgstr "75%"
+
+#: ../xrcpo.cpp:169
+#: ../xrcpo.cpp:213
+msgid "50%"
+msgstr "50%"
+
+#: ../xrcpo.cpp:170
+#: ../xrcpo.cpp:212
+msgid "25%"
+msgstr "25%"
+
+#: ../xrcpo.cpp:171
+#: ../xrcpo.cpp:211
+msgid "10%"
+msgstr "10%"
+
+#: ../xrcpo.cpp:172
+#: ../xrcpo.cpp:210
+msgid "Fit"
+msgstr "Fit"
+
+#: ../xrcpo.cpp:173
+msgid "X"
+msgstr "X"
+
+#: ../xrcpo.cpp:174
+msgid "Y"
+msgstr "Y"
+
+#: ../xrcpo.cpp:175
+msgid "Aspect"
+msgstr "Aspect"
+
+#: ../xrcpo.cpp:176
+msgid "Fractal Settings"
+msgstr "Fractal Settings"
+
+#: ../xrcpo.cpp:177
+msgid "Icon Settings"
+msgstr "Icon Settings"
+
+#: ../xrcpo.cpp:178
+#: ../xrcpo.cpp:283
+#: ../xrcpo.cpp:301
+msgid "Graph Paper"
+msgstr "Graph Paper"
+
+#: ../xrcpo.cpp:179
+#: ../xrcpo.cpp:337
+msgid "Cut"
+msgstr "Cut"
+
+#: ../xrcpo.cpp:180
+#: ../xrcpo.cpp:338
+msgid "Copy"
+msgstr "Copy"
+
+#: ../xrcpo.cpp:181
+#: ../xrcpo.cpp:339
+msgid "Paste"
+msgstr "Paste"
+
+#: ../xrcpo.cpp:184
+msgid "&File"
+msgstr "&File"
+
+#: ../xrcpo.cpp:185
+msgid "&New"
+msgstr "&New"
+
+#: ../xrcpo.cpp:186
+msgid "&Open"
+msgstr "&Open"
+
+#: ../xrcpo.cpp:187
+msgid "&Reopen"
+msgstr "&Reopen"
+
+#: ../xrcpo.cpp:188
+msgid "&Save"
+msgstr "&Save"
+
+#: ../xrcpo.cpp:189
+msgid "Save &As"
+msgstr "Save &As"
+
+#: ../xrcpo.cpp:190
+msgid "&Insert"
+msgstr "&Insert"
+
+#: ../xrcpo.cpp:191
+msgid "&Print"
+msgstr "&Print"
+
+#: ../xrcpo.cpp:192
+msgid "Print S&etup"
+msgstr "Print S&etup"
+
+#: ../xrcpo.cpp:193
+msgid "P&roperties"
+msgstr "P&roperties"
+
+#: ../xrcpo.cpp:194
+msgid "E&xit"
+msgstr "E&xit"
+
+#: ../xrcpo.cpp:195
+msgid "&Edit"
+msgstr "&Edit"
+
+#: ../xrcpo.cpp:196
+msgid "&Undo"
+msgstr "&Undo"
+
+#: ../xrcpo.cpp:197
+msgid "&Redo"
+msgstr "&Redo"
+
+#: ../xrcpo.cpp:198
+msgid "Cu&t"
+msgstr "Cu&t"
+
+#: ../xrcpo.cpp:199
+msgid "&Copy"
+msgstr "&Copy"
+
+#: ../xrcpo.cpp:200
+msgid "&Paste"
+msgstr "&Paste"
+
+#: ../xrcpo.cpp:201
+msgid "&Delete"
+msgstr "&Delete"
+
+#: ../xrcpo.cpp:202
+msgid "Se&lect All"
+msgstr "Se&lect All"
+
+#: ../xrcpo.cpp:203
+msgid "Select &None"
+msgstr "Select &None"
+
+#: ../xrcpo.cpp:204
+msgid "Use Select/Arro&w Tool"
+msgstr "Use Select/Arro&w Tool"
+
+#: ../xrcpo.cpp:205
+msgid "Use &Panning Tool"
+msgstr "Use &Panning Tool"
+
+#: ../xrcpo.cpp:206
+msgid "&View"
+msgstr "&View"
+
+#: ../xrcpo.cpp:207
+msgid "Zoom &In"
+msgstr "Zoom &In"
+
+#: ../xrcpo.cpp:208
+msgid "Zoom &Out"
+msgstr "Zoom &Out"
+
+#: ../xrcpo.cpp:209
+#: ../xrcpo.cpp:310
+msgid "Zoom"
+msgstr "Zoom"
+
+#: ../xrcpo.cpp:221
+#: ../xrcpo.cpp:398
+msgid "Custom"
+msgstr "Custom"
+
+#: ../xrcpo.cpp:222
+msgid "Show &All Objects"
+msgstr "Show &All Objects"
+
+#: ../xrcpo.cpp:223
+msgid "&Read Only"
+msgstr "&Read Only"
+
+#: ../xrcpo.cpp:224
+msgid "&Save Current View"
+msgstr "&Save Current View"
+
+#: ../xrcpo.cpp:225
+msgid "&Delete View"
+msgstr "&Delete View"
+
+#: ../xrcpo.cpp:226
+msgid "&Transform"
+msgstr "&Transform"
+
+#: ../xrcpo.cpp:227
+msgid "&Move"
+msgstr "&Move"
+
+#: ../xrcpo.cpp:228
+msgid "&Scale"
+msgstr "&Scale"
+
+#: ../xrcpo.cpp:229
+msgid "&Rotate"
+msgstr "&Rotate"
+
+#: ../xrcpo.cpp:230
+msgid "S&kew"
+msgstr "S&kew"
+
+#: ../xrcpo.cpp:231
+msgid "&Flip"
+msgstr "&Flip"
+
+#: ../xrcpo.cpp:232
+msgid "&Align"
+msgstr "&Align"
+
+#: ../xrcpo.cpp:233
+msgid "&Create Array"
+msgstr "&Create Array"
+
+#: ../xrcpo.cpp:234
+msgid "&Order"
+msgstr "&Order"
+
+#: ../xrcpo.cpp:235
+msgid "Position"
+msgstr "Position"
+
+#: ../xrcpo.cpp:236
+msgid "Send To &Back"
+msgstr "Send To &Back"
+
+#: ../xrcpo.cpp:237
+msgid "Send Backward"
+msgstr "Send Backward"
+
+#: ../xrcpo.cpp:238
+msgid "Bring Forward"
+msgstr "Bring Forward"
+
+#: ../xrcpo.cpp:239
+msgid "Bring To &Front"
+msgstr "Bring To &Front"
+
+#: ../xrcpo.cpp:240
+msgid "Send Grid Backward"
+msgstr "Send Grid Backward"
+
+#: ../xrcpo.cpp:241
+msgid "Bring Grid Forward"
+msgstr "Bring Grid Forward"
+
+#: ../xrcpo.cpp:242
+msgid "Alter Fractal State"
+msgstr "Alter Fractal State"
+
+#: ../xrcpo.cpp:243
+msgid "Set To Non-Fractal Lines"
+msgstr "Set To Non-Fractal Lines"
+
+#: ../xrcpo.cpp:244
+msgid "Set To Fractal Lines"
+msgstr "Set To Fractal Lines"
+
+#: ../xrcpo.cpp:245
+msgid "Toggle Fractal State"
+msgstr "Toggle Fractal State"
+
+#: ../xrcpo.cpp:246
+msgid "Close Selected Fi&gures"
+msgstr "Close Selected Fi&gures"
+
+#: ../xrcpo.cpp:247
+msgid "Re&verse Line Direction"
+msgstr "Re&verse Line Direction"
+
+#: ../xrcpo.cpp:248
+msgid "&Flip Line Style"
+msgstr "&Flip Line Style"
+
+#: ../xrcpo.cpp:249
+msgid "&Drawing"
+msgstr "&Drawing"
+
+#: ../xrcpo.cpp:250
+#: ../xrcpo.cpp:299
+msgid "Fractal"
+msgstr "Fractal"
+
+#: ../xrcpo.cpp:251
+#: ../xrcpo.cpp:259
+msgid "Freehand"
+msgstr "Freehand"
+
+#: ../xrcpo.cpp:252
+#: ../xrcpo.cpp:260
+msgid "Line"
+msgstr "Line"
+
+#: ../xrcpo.cpp:253
+msgid "Fractal Polyline"
+msgstr "Fractal Polyline"
+
+#: ../xrcpo.cpp:254
+#: ../xrcpo.cpp:262
+msgid "Curve"
+msgstr "Curve"
+
+#: ../xrcpo.cpp:255
+#: ../xrcpo.cpp:263
+msgid "Polycurve"
+msgstr "Polycurve"
+
+#: ../xrcpo.cpp:256
+msgid "Roughness..."
+msgstr "Roughness..."
+
+#: ../xrcpo.cpp:257
+msgid "Seed..."
+msgstr "Seed..."
+
+#: ../xrcpo.cpp:258
+msgid "Lines"
+msgstr "Lines"
+
+#: ../xrcpo.cpp:261
+msgid "Polyline"
+msgstr "Polyline"
+
+#: ../xrcpo.cpp:264
+msgid "Shapes"
+msgstr "Shapes"
+
+#: ../xrcpo.cpp:265
+msgid "Rectangle"
+msgstr "Rectangle"
+
+#: ../xrcpo.cpp:266
+msgid "Circle"
+msgstr "Circle"
+
+#: ../xrcpo.cpp:267
+msgid "Polygon"
+msgstr "Polygon"
+
+#: ../xrcpo.cpp:268
+msgid "Arc"
+msgstr "Arc"
+
+#: ../xrcpo.cpp:269
+msgid "Rosette Chart Lines"
+msgstr "Rosette Chart Lines"
+
+#: ../xrcpo.cpp:270
+msgid "Symbols"
+msgstr "Symbols"
+
+#: ../xrcpo.cpp:271
+msgid "Place Single"
+msgstr "Place Single"
+
+#: ../xrcpo.cpp:272
+msgid "Place Square"
+msgstr "Place Square"
+
+#: ../xrcpo.cpp:273
+msgid "Place Diamond"
+msgstr "Place Diamond"
+
+#: ../xrcpo.cpp:274
+msgid "Place Random"
+msgstr "Place Random"
+
+#: ../xrcpo.cpp:275
+msgid "Icon Size"
+msgstr "Icon Size"
+
+#: ../xrcpo.cpp:276
+msgid "Icon Spread"
+msgstr "Icon Spread"
+
+#: ../xrcpo.cpp:277
+msgid "&Define Selection as New Symbol"
+msgstr "&Define Selection as New Symbol"
+
+#: ../xrcpo.cpp:279
+#: ../xrcpo.cpp:280
+#: ../xrcpo.cpp:308
+msgid "Text"
+msgstr "Text"
+
+#: ../xrcpo.cpp:281
+msgid "Curved Text"
+msgstr "Curved Text"
+
+#: ../xrcpo.cpp:282
+msgid "Hyperlink/Popup"
+msgstr "Hyperlink/Popup"
+
+#: ../xrcpo.cpp:284
+msgid "Blank"
+msgstr "Blank"
+
+#: ../xrcpo.cpp:285
+msgid "Square"
+msgstr "Square"
+
+#: ../xrcpo.cpp:286
+msgid "Hex (Vertical)"
+msgstr "Hex (Vertical)"
+
+#: ../xrcpo.cpp:287
+msgid "Hex (Horizontal)"
+msgstr "Hex (Horizontal)"
+
+#: ../xrcpo.cpp:288
+msgid "Triangle"
+msgstr "Triangle"
+
+#: ../xrcpo.cpp:289
+msgid "Diamond"
+msgstr "Diamond"
+
+#: ../xrcpo.cpp:290
+msgid "Half Diamond"
+msgstr "Half Diamond"
+
+#: ../xrcpo.cpp:292
+msgid "Grid Size..."
+msgstr "Grid Size..."
+
+#: ../xrcpo.cpp:293
+msgid "Secondary grid Size..."
+msgstr "Secondary grid Size..."
+
+#: ../xrcpo.cpp:294
+msgid "Tool&bar"
+msgstr "Tool&bar"
+
+#: ../xrcpo.cpp:295
+msgid "Restore Default Toolbars"
+msgstr "Restore Default Toolbars"
+
+#: ../xrcpo.cpp:296
+msgid "Color"
+msgstr "Color"
+
+#: ../xrcpo.cpp:297
+#: ../xrcpo.cpp:465
+msgid "Drawing"
+msgstr "Drawing"
+
+#: ../xrcpo.cpp:298
+msgid "Editing"
+msgstr "Editing"
+
+#: ../xrcpo.cpp:300
+#: ../xrcpo.cpp:436
+msgid "General"
+msgstr "General"
+
+#: ../xrcpo.cpp:302
+msgid "Linestyle"
+msgstr "Linestyle"
+
+#: ../xrcpo.cpp:303
+msgid "Icon"
+msgstr "Icon"
+
+#: ../xrcpo.cpp:304
+msgid "Overlay"
+msgstr "Overlay"
+
+#: ../xrcpo.cpp:305
+msgid "Pushpins"
+msgstr "Pushpins"
+
+#: ../xrcpo.cpp:306
+#: ../xrcpo.cpp:435
+msgid "Settings"
+msgstr "Settings"
+
+#: ../xrcpo.cpp:309
+msgid "Transform"
+msgstr "Transform"
+
+#: ../xrcpo.cpp:311
+msgid "&Options"
+msgstr "&Options"
+
+#: ../xrcpo.cpp:312
+msgid "Settings..."
+msgstr "Settings..."
+
+#: ../xrcpo.cpp:313
+msgid "Autoname..."
+msgstr "Autoname..."
+
+#: ../xrcpo.cpp:314
+msgid "Snap To Grid"
+msgstr "Snap To Grid"
+
+#: ../xrcpo.cpp:315
+msgid "Gravity-Snap"
+msgstr "Gravity-Snap"
+
+#: ../xrcpo.cpp:316
+msgid "&Wizards"
+msgstr "&Wizards"
+
+#: ../xrcpo.cpp:317
+msgid "Columns and Rooftops"
+msgstr "Columns and Rooftops"
+
+#: ../xrcpo.cpp:318
+msgid "&Help"
+msgstr "&Help"
+
+#: ../xrcpo.cpp:319
+msgid "Contents"
+msgstr "Contents"
+
+#: ../xrcpo.cpp:320
+msgid "Getting Started"
+msgstr "Getting Started"
+
+#: ../xrcpo.cpp:321
+msgid "Search Help"
+msgstr "Search Help"
+
+#: ../xrcpo.cpp:322
+msgid "How Do I ... ?"
+msgstr "How Do I ... ?"
+
+#: ../xrcpo.cpp:323
+msgid "Read.Me Contents"
+msgstr "Read.Me Contents"
+
+#: ../xrcpo.cpp:324
+msgid "About"
+msgstr "About"
+
+#: ../xrcpo.cpp:325
+msgid "No Pushpoint Selected"
+msgstr "No Pushpoint Selected"
+
+#: ../xrcpo.cpp:326
+msgid "Create Waypoint"
+msgstr "Create Waypoint"
+
+#: ../xrcpo.cpp:327
+msgid "Clear History"
+msgstr "Clear History"
+
+#: ../xrcpo.cpp:328
+#: ../xrcpo.cpp:504
+msgid "Rename"
+msgstr "Rename"
+
+#: ../xrcpo.cpp:329
+msgid "Copy waypoints for checked pushpins"
+msgstr "Copy waypoints for checked pushpins"
+
+#: ../xrcpo.cpp:330
+msgid "Paste waypoints from clipboard"
+msgstr "Paste waypoints from clipboard"
+
+#: ../xrcpo.cpp:331
+msgid "Show waypoints"
+msgstr "Show waypoints"
+
+#: ../xrcpo.cpp:332
+msgid "Display waypoint number"
+msgstr "Display waypoint number"
+
+#: ../xrcpo.cpp:333
+msgid "Display waypoint note"
+msgstr "Display waypoint note"
+
+#: ../xrcpo.cpp:334
+msgid "Create open figure"
+msgstr "Create open figure"
+
+#: ../xrcpo.cpp:335
+msgid "Create closed figure"
+msgstr "Create closed figure"
+
+#: ../xrcpo.cpp:336
+msgid "Suppres this menu and use Shift for closed figures"
+msgstr "Suppres this menu and use Shift for closed figures"
+
+#: ../xrcpo.cpp:341
+msgid "Select None"
+msgstr "Select None"
+
+#: ../xrcpo.cpp:342
+msgid "Selection Tool"
+msgstr "Selection Tool"
+
+#: ../xrcpo.cpp:343
+msgid "Single Icon"
+msgstr "Single Icon"
+
+#: ../xrcpo.cpp:344
+msgid "Place Pushpin"
+msgstr "Place Pushpin"
+
+#: ../xrcpo.cpp:345
+msgid "Change Units"
+msgstr "Change Units"
+
+#: ../xrcpo.cpp:346
+msgid "Alignment"
+msgstr "Alignment"
+
+#: ../xrcpo.cpp:348
+msgid "N&o Change"
+msgstr "N&o Change"
+
+#: ../xrcpo.cpp:349
+msgid "Align &Left"
+msgstr "Align &Left"
+
+#: ../xrcpo.cpp:350
+msgid "Align C&enter"
+msgstr "Align C&enter"
+
+#: ../xrcpo.cpp:351
+msgid "Align &Right"
+msgstr "Align &Right"
+
+#: ../xrcpo.cpp:352
+msgid "Slant Left"
+msgstr "Slant Left"
+
+#: ../xrcpo.cpp:353
+msgid "Slant Right"
+msgstr "Slant Right"
+
+#: ../xrcpo.cpp:354
+#: ../xrcpo.cpp:365
+#: ../xrcpo.cpp:376
+#: ../xrcpo.cpp:386
+msgid "Scatter"
+msgstr "Scatter"
+
+#: ../xrcpo.cpp:355
+#: ../xrcpo.cpp:366
+#: ../xrcpo.cpp:377
+#: ../xrcpo.cpp:387
+msgid "Jog"
+msgstr "Jog"
+
+#: ../xrcpo.cpp:356
+msgid "Space E&qually"
+msgstr "Space E&qually"
+
+#: ../xrcpo.cpp:357
+msgid "&Stack"
+msgstr "&Stack"
+
+#: ../xrcpo.cpp:359
+msgid "&No Change"
+msgstr "&No Change"
+
+#: ../xrcpo.cpp:360
+msgid "Align &Top"
+msgstr "Align &Top"
+
+#: ../xrcpo.cpp:361
+msgid "Align &Center"
+msgstr "Align &Center"
+
+#: ../xrcpo.cpp:362
+msgid "Align &Bottom"
+msgstr "Align &Bottom"
+
+#: ../xrcpo.cpp:363
+msgid "Slant Up"
+msgstr "Slant Up"
+
+#: ../xrcpo.cpp:364
+msgid "Slant Down"
+msgstr "Slant Down"
+
+#: ../xrcpo.cpp:367
+msgid "Space Eq&ually"
+msgstr "Space Eq&ually"
+
+#: ../xrcpo.cpp:368
+msgid "Stac&k"
+msgstr "Stac&k"
+
+#: ../xrcpo.cpp:369
+msgid "Width"
+msgstr "Width"
+
+#: ../xrcpo.cpp:370
+#: ../xrcpo.cpp:380
+#: ../xrcpo.cpp:425
+#: ../xrcpo.cpp:456
+msgid "No Change"
+msgstr "No Change"
+
+#: ../xrcpo.cpp:371
+msgid "Narrowest"
+msgstr "Narrowest"
+
+#: ../xrcpo.cpp:372
+#: ../xrcpo.cpp:382
+msgid "Average"
+msgstr "Average"
+
+#: ../xrcpo.cpp:373
+msgid "Widest"
+msgstr "Widest"
+
+#: ../xrcpo.cpp:374
+#: ../xrcpo.cpp:384
+msgid "Increasing"
+msgstr "Increasing"
+
+#: ../xrcpo.cpp:375
+#: ../xrcpo.cpp:385
+msgid "Decreasing"
+msgstr "Decreasing"
+
+#: ../xrcpo.cpp:379
+msgid "Height"
+msgstr "Height"
+
+#: ../xrcpo.cpp:381
+msgid "Shortest"
+msgstr "Shortest"
+
+#: ../xrcpo.cpp:383
+msgid "Tallest"
+msgstr "Tallest"
+
+#: ../xrcpo.cpp:389
+msgid "Bitmap Properties"
+msgstr "Bitmap Properties"
+
+#: ../xrcpo.cpp:390
+msgid "Bitmap Size"
+msgstr "Bitmap Size"
+
+#: ../xrcpo.cpp:391
+msgid "320x200"
+msgstr "320x200"
+
+#: ../xrcpo.cpp:392
+msgid "640x480"
+msgstr "640x480"
+
+#: ../xrcpo.cpp:393
+msgid "800x600"
+msgstr "800x600"
+
+#: ../xrcpo.cpp:394
+msgid "1024x768"
+msgstr "1024x768"
+
+#: ../xrcpo.cpp:395
+msgid "1152x864"
+msgstr "1152x864"
+
+#: ../xrcpo.cpp:396
+msgid "1280x1024"
+msgstr "1280x1024"
+
+#: ../xrcpo.cpp:397
+msgid "1600x1200"
+msgstr "1600x1200"
+
+#: ../xrcpo.cpp:399
+msgid "Window Size"
+msgstr "Window Size"
+
+#: ../xrcpo.cpp:400
+msgid "Custom Window Size"
+msgstr "Custom Window Size"
+
+#: ../xrcpo.cpp:401
+msgid "x"
+msgstr "x"
+
+#: ../xrcpo.cpp:402
+msgid "Scaling"
+msgstr "Scaling"
+
+#: ../xrcpo.cpp:403
+msgid "Current Zoom Level"
+msgstr "Current Zoom Level"
+
+#: ../xrcpo.cpp:404
+msgid "Show Entire Map"
+msgstr "Show Entire Map"
+
+#: ../xrcpo.cpp:405
+msgid "JPEG Settings"
+msgstr "JPEG Settings"
+
+#: ../xrcpo.cpp:406
+msgid "Image Quality"
+msgstr "Image Quality"
+
+#: ../xrcpo.cpp:407
+msgid "Image Smoothing"
+msgstr "Image Smoothing"
+
+#: ../xrcpo.cpp:408
+msgid "Progressive Encoding"
+msgstr "Progressive Encoding"
+
+#: ../xrcpo.cpp:411
+msgid "Rosette Chart Grid"
+msgstr "Rosette Chart Grid"
+
+#: ../xrcpo.cpp:412
+msgid "Perimeter Points"
+msgstr "Perimeter Points"
+
+#: ../xrcpo.cpp:413
+msgid "8"
+msgstr "8"
+
+#: ../xrcpo.cpp:414
+msgid "16"
+msgstr "16"
+
+#: ../xrcpo.cpp:415
+msgid "32"
+msgstr "32"
+
+#: ../xrcpo.cpp:416
+msgid "Other"
+msgstr "Other"
+
+#: ../xrcpo.cpp:419
+msgid "Rosette Appearance"
+msgstr "Rosette Appearance"
+
+#: ../xrcpo.cpp:420
+msgid "Number vertices to skip"
+msgstr "Number vertices to skip"
+
+#: ../xrcpo.cpp:421
+msgid "Crop rosette after placement"
+msgstr "Crop rosette after placement"
+
+#: ../xrcpo.cpp:422
+msgid "Extend lines to crop rectangle"
+msgstr "Extend lines to crop rectangle"
+
+#: ../xrcpo.cpp:423
+msgid "Order"
+msgstr "Order"
+
+#: ../xrcpo.cpp:424
+msgid "Topmost objects start at"
+msgstr "Topmost objects start at"
+
+#: ../xrcpo.cpp:426
+#: ../xrcpo.cpp:457
+msgid "Top Left"
+msgstr "Top Left"
+
+#: ../xrcpo.cpp:427
+#: ../xrcpo.cpp:458
+msgid "Top Right"
+msgstr "Top Right"
+
+#: ../xrcpo.cpp:428
+#: ../xrcpo.cpp:459
+msgid "Bottom Left"
+msgstr "Bottom Left"
+
+#: ../xrcpo.cpp:429
+#: ../xrcpo.cpp:460
+msgid "Bottom Right"
+msgstr "Bottom Right"
+
+#: ../xrcpo.cpp:430
+#: ../xrcpo.cpp:461
+msgid "Center"
+msgstr "Center"
+
+#: ../xrcpo.cpp:431
+#: ../xrcpo.cpp:462
+msgid "Edge"
+msgstr "Edge"
+
+#: ../xrcpo.cpp:432
+#: ../xrcpo.cpp:463
+msgid "Random"
+msgstr "Random"
+
+#: ../xrcpo.cpp:437
+msgid "Maximum levels of undo"
+msgstr "Maximum levels of undo"
+
+#: ../xrcpo.cpp:438
+msgid "Visual overlay display:"
+msgstr "Visual overlay display:"
+
+#: ../xrcpo.cpp:439
+msgid "Color Coded"
+msgstr "Color Coded"
+
+#: ../xrcpo.cpp:440
+msgid "Icons"
+msgstr "Icons"
+
+#: ../xrcpo.cpp:441
+msgid "Make backup files"
+msgstr "Make backup files"
+
+#: ../xrcpo.cpp:442
+msgid "Use draft display when panning and scrolling"
+msgstr "Use draft display when panning and scrolling"
+
+#: ../xrcpo.cpp:443
+msgid "Print icons as polygons"
+msgstr "Print icons as polygons"
+
+#: ../xrcpo.cpp:444
+msgid "Suppress output of hyperlinks to printer"
+msgstr "Suppress output of hyperlinks to printer"
+
+#: ../xrcpo.cpp:445
+msgid "Anti-alias bitmaps in the symbol palette"
+msgstr "Anti-alias bitmaps in the symbol palette"
+
+#: ../xrcpo.cpp:446
+msgid "Selection"
+msgstr "Selection"
+
+#: ../xrcpo.cpp:447
+msgid "Automatically select new objects"
+msgstr "Automatically select new objects"
+
+#: ../xrcpo.cpp:448
+msgid "Right click prompts to close shape"
+msgstr "Right click prompts to close shape"
+
+#: ../xrcpo.cpp:449
+msgid "Freeze properties of selected objects"
+msgstr "Freeze properties of selected objects"
+
+#: ../xrcpo.cpp:450
+msgid "Autogroup complex objects when created"
+msgstr "Autogroup complex objects when created"
+
+#: ../xrcpo.cpp:451
+msgid "Crosshair on by default"
+msgstr "Crosshair on by default"
+
+#: ../xrcpo.cpp:452
+msgid "Zoom Factor"
+msgstr "Zoom Factor"
+
+#: ../xrcpo.cpp:453
+msgid "2.0"
+msgstr "2.0"
+
+#: ../xrcpo.cpp:454
+msgid "Auto-order"
+msgstr "Auto-order"
+
+#: ../xrcpo.cpp:455
+msgid "Auto-Order Setting"
+msgstr "Auto-Order Setting"
+
+#: ../xrcpo.cpp:464
+msgid ""
+"Auto-Order allows you to\n"
+"automatically order multiple symbols\n"
+"after placement. This can be useful\n"
+"for symbols designed to overlap in a\n"
+"certain way. To leave symbols in the\n"
+"exact order that you added them,\n"
+"select \"No Change\"."
+msgstr ""
+"Auto-Order allows you to\n"
+"automatically order multiple symbols\n"
+"after placement. This can be useful\n"
+"for symbols designed to overlap in a\n"
+"certain way. To leave symbols in the\n"
+"exact order that you added them,\n"
+"select \"No Change\"."
+
+#: ../xrcpo.cpp:466
+msgid "New text size is relative to zoom level"
+msgstr "New text size is relative to zoom level"
+
+#: ../xrcpo.cpp:467
+msgid "New icon size is relative to zoom level"
+msgstr "New icon size is relative to zoom level"
+
+#: ../xrcpo.cpp:468
+msgid "New icon size equals the original symbol size"
+msgstr "New icon size equals the original symbol size"
+
+#: ../xrcpo.cpp:469
+msgid "Freehand Quality"
+msgstr "Freehand Quality"
+
+#: ../xrcpo.cpp:470
+msgid "Smooth (High Node Density)"
+msgstr "Smooth (High Node Density)"
+
+#: ../xrcpo.cpp:471
+msgid "Standard"
+msgstr "Standard"
+
+#: ../xrcpo.cpp:472
+msgid "Selective (Low Node Density)"
+msgstr "Selective (Low Node Density)"
+
+#: ../xrcpo.cpp:475
+msgid "Map Settings"
+msgstr "Map Settings"
+
+#: ../xrcpo.cpp:476
+msgid "Measurement"
+msgstr "Measurement"
+
+#: ../xrcpo.cpp:478
+msgid "Distances for marked segments"
+msgstr "Distances for marked segments"
+
+#: ../xrcpo.cpp:479
+msgid "A="
+msgstr "A="
+
+#: ../xrcpo.cpp:480
+msgid "B="
+msgstr "B="
+
+#: ../xrcpo.cpp:481
+msgid "C="
+msgstr "C="
+
+#: ../xrcpo.cpp:483
+msgid "Grid & Snap"
+msgstr "Grid & Snap"
+
+#: ../xrcpo.cpp:484
+msgid "Per View Settings"
+msgstr "Per View Settings"
+
+#: ../xrcpo.cpp:485
+msgid "Current grid Position"
+msgstr "Current grid Position"
+
+#: ../xrcpo.cpp:486
+msgid "Draw Grid on Top of Objects"
+msgstr "Draw Grid on Top of Objects"
+
+#: ../xrcpo.cpp:487
+msgid "Display design grid"
+msgstr "Display design grid"
+
+#: ../xrcpo.cpp:488
+msgid "Snap to design grid"
+msgstr "Snap to design grid"
+
+#: ../xrcpo.cpp:489
+msgid "Grid Units"
+msgstr "Grid Units"
+
+#: ../xrcpo.cpp:490
+msgid "Gravity-snap to existing points"
+msgstr "Gravity-snap to existing points"
+
+#: ../xrcpo.cpp:491
+msgid "Gravity-snap to lines and curves"
+msgstr "Gravity-snap to lines and curves"
+
+#: ../xrcpo.cpp:492
+msgid "Rotate gravity-snapped objects"
+msgstr "Rotate gravity-snapped objects"
+
+#: ../xrcpo.cpp:495
+msgid "Choose Font"
+msgstr "Choose Font"
+
+#: ../xrcpo.cpp:496
+msgid "Color Translation Manager"
+msgstr "Color Translation Manager"
+
+#: ../xrcpo.cpp:497
+msgid "Colors contained in selection:"
+msgstr "Colors contained in selection:"
+
+#: ../xrcpo.cpp:498
+#: ../xrcpo.cpp:507
+msgid "Replacement Color:"
+msgstr "Replacement Color:"
+
+#: ../xrcpo.cpp:499
+msgid "Add/Change"
+msgstr "Add/Change"
+
+#: ../xrcpo.cpp:500
+msgid "Active Profile"
+msgstr "Active Profile"
+
+#: ../xrcpo.cpp:501
+msgid "Profile has been modified; you should save it"
+msgstr "Profile has been modified; you should save it"
+
+#: ../xrcpo.cpp:502
+msgid "New"
+msgstr "New"
+
+#: ../xrcpo.cpp:503
+msgid "Save"
+msgstr "Save"
+
+#: ../xrcpo.cpp:508
+msgid "Remove Color Translation"
+msgstr "Remove Color Translation"
+
+#: ../xrcpo.cpp:509
+msgid "Please wait, loading..."
+msgstr "Please wait, loading..."
+
+#: ../xrcpo.cpp:510
+msgid "Status:"
+msgstr "Status:"
+
+#: ../AutoRealmApp.cpp:48
+msgid "Status: Initializing Action Forms"
+msgstr "Status: Initializing Action Forms"
+
+#: ../AutoRealmApp.cpp:53
+msgid "Status: Initializing Settings Forms"
+msgstr "Status: Initializing Settings Forms"
+
+#: ../AutoRealmApp.cpp:58
+msgid "Status: Initializing Information Forms"
+msgstr "Status: Initializing Information Forms"
+
+#: ../AutoRealmApp.cpp:63
+msgid "Status: Initializing Menus"
+msgstr "Status: Initializing Menus"
+
+#: ../AutoRealmApp.cpp:68
+msgid "Status: Initializing Fill Types"
+msgstr "Status: Initializing Fill Types"
+
+#: ../AutoRealmApp.cpp:73
+msgid "Status: Initializing Overlay Colors"
+msgstr "Status: Initializing Overlay Colors"
+
+#: ../AutoRealmApp.cpp:78
+msgid "Status: Initializing Overlay Icons"
+msgstr "Status: Initializing Overlay Icons"
+
+#: ../AutoRealmApp.cpp:83
+msgid "Status: Initializing Pushpins"
+msgstr "Status: Initializing Pushpins"
+
+#: ../AutoRealmApp.cpp:88
+msgid "Status: Initializing Main Form"
+msgstr "Status: Initializing Main Form"
+
+#: ../AutoRealmApp.cpp:93
+msgid "Prepping main screen..."
+msgstr "Prepping main screen..."
+
+#: ../MainWin.cpp:363
+msgid "Really exit?"
+msgstr "Really exit?"
+
+#: ../MainWin.cpp:1221
+#, c-format
+msgid "Version: %s, Build: %d"
+msgstr "Version: %s, Build: %d"
+
+#: ../GraphGrid.cpp:30
+msgid "Centimeters"
+msgstr "Centimeters"
+
+#: ../GraphGrid.cpp:31
+msgid "Inches"
+msgstr "Inches"
+
+#: ../GraphGrid.cpp:32
+msgid "Feet"
+msgstr "Feet"
+
+#: ../GraphGrid.cpp:33
+msgid "Cubits"
+msgstr "Cubits"
+
+#: ../GraphGrid.cpp:34
+msgid "Yards"
+msgstr "Yards"
+
+#: ../GraphGrid.cpp:35
+msgid "Meters"
+msgstr "Meters"
+
+#: ../GraphGrid.cpp:36
+msgid "Fathoms"
+msgstr "Fathoms"
+
+#: ../GraphGrid.cpp:37
+msgid "Rods"
+msgstr "Rods"
+
+#: ../GraphGrid.cpp:38
+msgid "Chains"
+msgstr "Chains"
+
+#: ../GraphGrid.cpp:39
+msgid "Furlongs"
+msgstr "Furlongs"
+
+#: ../GraphGrid.cpp:40
+msgid "Kilometers"
+msgstr "Kilometers"
+
+#: ../GraphGrid.cpp:41
+msgid "Stadia"
+msgstr "Stadia"
+
+#: ../GraphGrid.cpp:42
+msgid "Miles"
+msgstr "Miles"
+
+#: ../GraphGrid.cpp:43
+msgid "Nautical Miles"
+msgstr "Nautical Miles"
+
+#: ../GraphGrid.cpp:44
+msgid "Leagues"
+msgstr "Leagues"
+
+#: ../GraphGrid.cpp:45
+msgid "Days by foot on rugged terrain, burdened"
+msgstr "Days by foot on rugged terrain, burdened"
+
+#: ../GraphGrid.cpp:46
+msgid "Days by foot, burdened"
+msgstr "Days by foot, burdened"
+
+#: ../GraphGrid.cpp:47
+msgid "Days by foot on rugged terrain"
+msgstr "Days by foot on rugged terrain"
+
+#: ../GraphGrid.cpp:48
+msgid "Days by wagon"
+msgstr "Days by wagon"
+
+#: ../GraphGrid.cpp:49
+msgid "Days by foot"
+msgstr "Days by foot"
+
+#: ../GraphGrid.cpp:50
+msgid "Days by war horse"
+msgstr "Days by war horse"
+
+#: ../GraphGrid.cpp:51
+msgid "Days by oared galley"
+msgstr "Days by oared galley"
+
+#: ../GraphGrid.cpp:52
+msgid "Days by horse"
+msgstr "Days by horse"
+
+#: ../GraphGrid.cpp:53
+msgid "Days by sailed galley"
+msgstr "Days by sailed galley"
+
+#: ../GraphGrid.cpp:54
+msgid "AU"
+msgstr "AU"
+
+#: ../GraphGrid.cpp:55
+msgid "Light Years"
+msgstr "Light Years"
+
+#: ../GraphGrid.cpp:56
+msgid "Parsecs"
+msgstr "Parsecs"
+

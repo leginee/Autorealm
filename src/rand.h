@@ -36,6 +36,17 @@ void setRndSeed(wxUint32 seed);
 wxUint32 getRndSeed();
 
 /**
- * An implementation of the minimal standard random number generator listed above.
+ * This is a rewrite of the PRNG from Delphi. The algorithm was supplied
+ * by AndyGryc, who wrote it in C, using GCC data types (long long, for
+ * instance).
+ *
+ * This rewrite was then written by myself (Michael Pedersen) from that
+ * code.  This is necessary to preserve compatibility with the fractal
+ * line generator used by prior versions of AutoRealm. It is also worth
+ * noting the speed boost achieved by this method: 100,000,000 calls to
+ * this function takes between 1 and 2 seconds, at most.
+ *
+ * @param range The maximum value of the random number to be produced. Defaults
+ * to 2^32-1
  */
-wxUint32 getRndNumber(wxUint32 range);
+wxUint32 getRndNumber(wxUint32 range=2147483637);

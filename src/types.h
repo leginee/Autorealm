@@ -1,10 +1,10 @@
 /*
- * Port of AutoREALM from Delphi/Object Pascal to wxWidgets/C++
+ * Rewrite of AutoREALM from Delphi/Object Pascal to wxWidgets/C++
  * Used in rpgs and hobbyist GIS applications for mapmaking
- * Copyright (C) 2004 Michael J. Pedersen <m.pedersen@icelus.org>
+ * Copyright 2004-2006 The AutoRealm Team (http://www.autorealm.org/)
  * 
  * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
+ * it under the terms of the Lesser GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
  * 
@@ -22,7 +22,8 @@
  */
 #ifndef AR_TYPES_H
 #define AR_TYPES_H
-#include "globals.h"
+#include "arRealTypes.h"
+
 #include <vector>
 #include <math.h>
 
@@ -60,4 +61,29 @@ typedef std::vector<wxPoint> VSPoints;
  * by AutoREALM
  */
 typedef std::vector<int> IntVec;
+
+/**
+ * The maximum number of overlays allowed. Mostly used to provide
+ * a check elsewhere in the system, and can be safely grown.
+ */
+const unsigned int MAX_OVERLAYS=256;
+
+/**
+ * @brief Used to provide a vector for overlays which is guaranteed to be
+ * initialized to false at time of construction.
+ * 
+ * This vector is to be used as such: Any member which is marked as true
+ * means that that member is a part of the overlay set. That overlay set
+ * should also have a member in ARDocument->overlays which gives it a
+ * name.
+ */
+class OverlayVector : public std::vector<bool> {
+	public:
+   		/**
+		 * Default constructor, used to force the overlays to be all false for an object
+		 */
+		OverlayVector(int size=MAX_OVERLAYS) : std::vector<bool>(size) {
+			for (int i=0; i<size; i++) { at(i) = false; }
+		};
+};
 #endif // AR_TYPES_H

@@ -1,7 +1,7 @@
 /*
  * Port of AutoREALM from Delphi/Object Pascal to wxWidgets/C++
  * Used in rpgs and hobbyist GIS applications for mapmaking
- * Copyright (C) 2004 Michael J. Pedersen <m.pedersen@icelus.org>
+ * Copyright 2004-2006 The AutoRealm Team (http://www.autorealm.org/)
  * 
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,32 +24,44 @@
 #include <wx/log.h>
 #include <string>
 
-const static int MIMELEN=65;
-const static int MIMEPAD=64;
+///@todo include a way to return base64 *without* cr/lf!
+namespace {
+	const int MIMELEN=65;
+	const int MIMEPAD=64;
 
-const static wxChar table[MIMELEN] = {
-    wxT('A'), wxT('B'), wxT('C'), wxT('D'), wxT('E'), wxT('F'), wxT('G'),
-    wxT('H'), wxT('I'), wxT('J'), wxT('K'), wxT('L'), wxT('M'), wxT('N'),
-    wxT('O'), wxT('P'), wxT('Q'), wxT('R'), wxT('S'), wxT('T'), wxT('U'),
-    wxT('V'), wxT('W'), wxT('X'), wxT('Y'), wxT('Z'), wxT('a'), wxT('b'),
-    wxT('c'), wxT('d'), wxT('e'), wxT('f'), wxT('g'), wxT('h'), wxT('i'),
-    wxT('j'), wxT('k'), wxT('l'), wxT('m'), wxT('n'), wxT('o'), wxT('p'),
-    wxT('q'), wxT('r'), wxT('s'), wxT('t'), wxT('u'), wxT('v'), wxT('w'),
-    wxT('x'), wxT('y'), wxT('z'), wxT('0'), wxT('1'), wxT('2'), wxT('3'),
-    wxT('4'), wxT('5'), wxT('6'), wxT('7'), wxT('8'), wxT('9'), wxT('+'),
-    wxT('/'), wxT('=')
+	const wxChar table[MIMELEN] = {
+    	wxT('A'), wxT('B'), wxT('C'), wxT('D'), wxT('E'), wxT('F'), wxT('G'),
+    	wxT('H'), wxT('I'), wxT('J'), wxT('K'), wxT('L'), wxT('M'), wxT('N'),
+    	wxT('O'), wxT('P'), wxT('Q'), wxT('R'), wxT('S'), wxT('T'), wxT('U'),
+    	wxT('V'), wxT('W'), wxT('X'), wxT('Y'), wxT('Z'), wxT('a'), wxT('b'),
+    	wxT('c'), wxT('d'), wxT('e'), wxT('f'), wxT('g'), wxT('h'), wxT('i'),
+    	wxT('j'), wxT('k'), wxT('l'), wxT('m'), wxT('n'), wxT('o'), wxT('p'),
+    	wxT('q'), wxT('r'), wxT('s'), wxT('t'), wxT('u'), wxT('v'), wxT('w'),
+    	wxT('x'), wxT('y'), wxT('z'), wxT('0'), wxT('1'), wxT('2'), wxT('3'),
+    	wxT('4'), wxT('5'), wxT('6'), wxT('7'), wxT('8'), wxT('9'), wxT('+'),
+    	wxT('/'), wxT('=')
+	};
+
+	/** 
+	 * @brief Used to convert a character into an index into the table
+	 * above. Basically, it does a reverse lookup, telling where the
+	 * character is.
+	 * 
+	 * @param t The character to look up
+	 * 
+	 * @return The index of the character
+	 */
+	int mimeIndexOf(wxChar t) {
+    	int i;
+    	int retval = -1;
+    	for (i=0; i<MIMELEN; i++) {
+        	if (table[i] == t) {
+            	retval = i;
+        	}
+    	}
+    	return(retval);
+	}
 };
-
-int mimeIndexOf(wxChar t) {
-    int i;
-    int retval = -1;
-    for (i=0; i<MIMELEN; i++) {
-        if (table[i] == t) {
-            retval = i;
-        }
-    }
-    return(retval);
-}
 
 wxString base64encode(const wxString& data) {
     return(base64encode((const void*)data.mb_str(), data.Len()));
@@ -137,7 +149,7 @@ void* base64decode(const wxString& instring, int& len) {
 }
 
 wxString base64decode(const wxString& instring) {
-    int len = instring.Len();
+    int len;
     wxInt8* data;
     std::string hold;
     wxString decode;
@@ -147,4 +159,5 @@ wxString base64decode(const wxString& instring) {
 	hold = (char*)data;
     decode = wxString(hold.c_str(), *wxConvCurrent);
 	delete data;
+	return(decode);
 }

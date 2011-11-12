@@ -1,0 +1,70 @@
+/*
+ * Rewrite of AutoREALM from Delphi/Object Pascal to wxWidgets/C++
+ * Used in rpgs and hobbyist GIS applications for mapmaking
+ * Copyright 2004-2006 The AutoRealm Team (http://www.autorealm.org/)
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the Lesser GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ */
+/**
+ * @file
+ */
+#include "test/runner.h"
+
+#include <wx/wx.h>
+#include "XMLFileManager.h"
+
+/** 
+ * @brief Used to test the XMLFileManagerFactory.
+ */
+class XMLFileManagerTest : public CppUnit::TestFixture {
+	private:
+
+	public:
+		/** 
+		 * @brief Required by TestFixture, does nothing yet. Will do
+		 * something when the test cases begin being written
+		 */
+		void setUp() {
+		}
+
+		/** 
+		 * @brief Required by TestFixture, does nothing yet. Will do
+		 * something when the test cases begin being written
+		 */
+		void tearDown() {
+		}
+
+		/** 
+		 * @brief Useless test. Written to help me learn how to use
+		 * CppUnit, and to show others the basics.
+		 */
+		void testXMLFileManager() {
+		}
+
+		/**
+		 * Used for TestSuite
+		 */
+		CPPUNIT_TEST_SUITE(XMLFileManagerTest);
+		/**
+		 * Used for TestSuite
+		 */
+		CPPUNIT_TEST(testXMLFileManager);
+		/**
+		 * Used for TestSuite
+		 */
+		CPPUNIT_TEST_SUITE_END();
+};
+
+RUNNERADD(XMLFileManagerTest);

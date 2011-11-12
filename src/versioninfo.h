@@ -1,10 +1,10 @@
 /*
- * Port of AutoREALM from Delphi/Object Pascal to wxWidgets/C++
+ * Rewrite of AutoREALM from Delphi/Object Pascal to wxWidgets/C++
  * Used in rpgs and hobbyist GIS applications for mapmaking
- * Copyright (C) 2004 Michael J. Pedersen <m.pedersen@icelus.org>
+ * Copyright 2004-2006 The AutoRealm Team (http://www.autorealm.org/)
  * 
  * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
+ * it under the terms of the Lesser GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
  * 
@@ -24,12 +24,10 @@
 #ifndef VERSIONINFO_H
 #define VERSIONINFO_H
 /**
- * @var const wxString BUILDVER
  * Expands to be a wxString holding the current version number
  */
-const wxString BUILDVER(wxT("2.4.0"));
+const wxString BUILDVER(wxT("3.0.0-Alpha2-Pre"));
 /**
- * @var const wxString BUILDTIME
  * Expands to be a wxString holding the current build date/time
  */
 const wxString BUILDTIME(wxString(__TDATE__) + wxString(wxT(", ")) + wxString(__TTIME__));

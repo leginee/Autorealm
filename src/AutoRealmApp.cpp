@@ -1,11 +1,10 @@
 /*
- * Port of AutoREALM from Delphi/Object Pascal to wxWidgets/C++
+ * Rewrite of AutoREALM from Delphi/Object Pascal to wxWidgets/C++
  * Used in rpgs and hobbyist GIS applications for mapmaking
- * Copyright (C) 2004 Michael J. Pedersen <m.pedersen@icelus.org>,
- *                    Michael D. Condon <mcondon@austin.rr.com>
+ * Copyright 2004-2006 The AutoRealm Team (http://www.autorealm.org/)
  * 
  * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
+ * it under the terms of the Lesser GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
  * 
@@ -22,7 +21,6 @@
  * @file 
  */
 
-#include "globals.h"
 #include <wx/spinctrl.h>
 #include <wx/cmdline.h>
 #include <wx/arrstr.h>
@@ -31,11 +29,12 @@
 #include "AutoRealmApp.h"
 #include "types.h"
 #include "versioninfo.h"
-#include "generic_library.h"
 #include "Map.xpm"
-#include "MapObject.h"
+#include "ARExcept.h"
+#include "MainWin.h"
+#include "Tracer.h"
 
-static const wxString className=wxT("AutoRealmApp");
+TRACEFLAG(wxT("AutoRealmApp"));
 
 // The following is just to show a way to compress XML before saving.
 // Makes for nice, compact, portable files.
@@ -107,7 +106,7 @@ extern void InitAutoNameHandler();
 static const wxCmdLineEntryDesc cmdLineDesc[] = {
 #ifdef __WXDEBUG__
     { wxCMD_LINE_OPTION, wxT("t"), wxT("trace"),
-        wxT("comma separated list of classes to trace"),
+        wxT("comma separated list of classes to trace. 'ALL' means all classes"),
         wxCMD_LINE_VAL_STRING, wxCMD_LINE_PARAM_OPTIONAL },
 #endif // __WXDEBUG__
     { wxCMD_LINE_SWITCH, wxT("h"), wxT("help"),
@@ -123,6 +122,7 @@ static const wxCmdLineEntryDesc cmdLineDesc[] = {
  * to get the application initialization completed. No parameters
  */
 bool AutoRealmApp::OnInit() {
+	TRACER(wxT("OnInit"));
     wxStaticText *lbl;
     wxFrame win;
     wxCmdLineParser cmd(cmdLineDesc, argc, argv);
@@ -143,22 +143,29 @@ bool AutoRealmApp::OnInit() {
             wxString currclass = tok.GetNextToken();
             wxLogDebug(wxT("Initialization: Adding trace mask '%s'"), currclass.c_str());
             wxLog::AddTraceMask(currclass);
+			if (currclass == wxT("ALL")) {
+				tracesvector* v=TracerSingleton::Get();
+				for (unsigned int i=0; i<v->size(); i++) {
+					wxLogDebug(wxT("Initialization: Adding trace mask '%s'"), currclass.c_str());
+					wxLog::AddTraceMask(v->at(i));
+				}
+			}
         }
     }
     const wxArrayString traces = wxLog::GetTraceMasks();
-    for (int i=0; i<traces.GetCount(); i++) {
+    for (unsigned int i=0; i<traces.GetCount(); i++) {
         wxLogDebug(wxT("Initialization: Trace Mask on for '%s'"), traces[i].c_str());
     }
 #endif // __WXDEBUG__
 
-    locale.Init();
-    locale.AddCatalog(wxT("en_US"));
+    m_locale.Init();
+    //m_locale.AddCatalog(wxT("en_US")); used to show how to add locales at startup
 
-    wxLogTrace(className, wxT("beginning onInit"));
+    TRACE(wxT("beginning onInit"));
     wxInitAllImageHandlers();
     wxXmlResource::Get()->InitAllHandlers();
 
-    wxLogTrace(className, wxT("Getting splash screen"));
+    TRACE(wxT("Getting splash screen"));
     InitSplashHandler();
     wxXmlResource::Get()->LoadFrame(&win, NULL, wxT("frmSplash"));
     win.SetIcon(wxICON(autorealm));
@@ -166,79 +173,87 @@ bool AutoRealmApp::OnInit() {
     Yield();
     lbl = (wxStaticText*)win.FindWindowByName(wxT("lblSplashStatus"), &win);
 
-    wxLogTrace(className, wxT("Getting actions forms"));
+    TRACE(wxT("Getting actions forms"));
     lbl->SetLabel(_("Status: Initializing Action Forms"));
     Yield();
     InitActionsHandler();
 
-    wxLogTrace(className, wxT("Getting settings forms"));
+    TRACE(wxT("Getting settings forms"));
     lbl->SetLabel(_("Status: Initializing Settings Forms"));
     Yield();
     InitSettingsHandler();
 
-    wxLogTrace(className, wxT("Getting information forms"));
+    TRACE(wxT("Getting information forms"));
     lbl->SetLabel(_("Status: Initializing Information Forms"));
     Yield();
     InitInfoHandler();
 
-    wxLogTrace(className, wxT("Getting menus"));
+    TRACE(wxT("Getting menus"));
     lbl->SetLabel(_("Status: Initializing Menus"));
     Yield();
     InitMenusHandler();
 
-    wxLogTrace(className, wxT("Getting AutoName form"));
+    TRACE(wxT("Getting AutoName form"));
     lbl->SetLabel(_("Status: Initializing AutoName Form"));
     Yield();
     InitAutoNameHandler();
 
-    wxLogTrace(className, wxT("Getting fill types"));
+    TRACE(wxT("Getting fill types"));
     lbl->SetLabel(_("Status: Initializing Fill Types"));
     Yield();
     InitFillHandler();
 
-    wxLogTrace(className, wxT("Getting overlay colors"));
+    TRACE(wxT("Getting overlay colors"));
     lbl->SetLabel(_("Status: Initializing Overlay Colors"));
     Yield();
     InitOverlayColorsHandler();
 
-    wxLogTrace(className, wxT("Getting overlay icons"));
+    TRACE(wxT("Getting overlay icons"));
     lbl->SetLabel(_("Status: Initializing Overlay Icons"));
     Yield();
     InitOverlayIconsHandler();
 
-    wxLogTrace(className, wxT("Getting pushpins"));
+    TRACE(wxT("Getting pushpins"));
     lbl->SetLabel(_("Status: Initializing Pushpins"));
     Yield();
     InitPushPinHandler();
 
-    wxLogTrace(className, wxT("Getting main form"));
+    TRACE(wxT("Getting main form"));
     lbl->SetLabel(_("Status: Initializing Main Form"));
     Yield();
     InitMainHandler();
 
-    wxLogTrace(className, wxT("Getting cursors"));
+    TRACE(wxT("Getting cursors"));
     lbl->SetLabel(_("Status: Initializing Cursors"));
     Yield();
     InitCursorsHandler();
 
-    wxLogTrace(className, wxT("Prepping to show main form"));
+    TRACE(wxT("Prepping to show main form"));
     lbl->SetLabel(_("Prepping main screen..."));
     Yield();
 
-    mainwin = new MainWin(NULL, XRCID("frmMain"), wxT("frmMain"));
-	extern MainWin* glbMainWin;
-	glbMainWin=mainwin;
-    mainwin->Show();
-    SetTopWindow(mainwin);
+    m_mainwin = new MainWin();
+	wxXmlResource::Get()->LoadFrame(m_mainwin, NULL, wxT("frmMain"));
+    m_mainwin->Show();
+    SetTopWindow(m_mainwin);
 
-    wxLogTrace(className, wxT("Disposing of main window"));
+    TRACE(wxT("Disposing of main window"));
     win.Close();
 
-    extern MapCollection* mapcollection;
-    mapcollection = new MapCollection(mainwin);
-
-    wxLogTrace(className, wxT("done with onInit"));
     return(true);
+}
+
+void AutoRealmApp::OnUnhandledException() {
+	///@todo Add logging to file of exception information, try to provide stack trace (if possible), etc.
+	try {
+		throw;
+	}
+	catch (ARException& e) {
+		wxMessageBox(wxT("An error has occured, and the program will now exit. Details:\n") + e.what(), wxT("Program Ending Error"));
+	}
+	catch (...) {
+		wxMessageBox(wxT("An error has occured, and the program will now exit. No details are available"), wxT("Program Ending Error"));
+	}
 }
 
 IMPLEMENT_APP(AutoRealmApp)
